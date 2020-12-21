@@ -1,6 +1,20 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import Logo from '../images/lhamann-logo.png';
+import { css } from '@emotion/react';
+import styled from '@emotion/styled';
+
+const NavDiv = styled('div')`
+    background-color: ${props => props.opened ? '#fbfafb' : 'transparent'};
+    height: auto;
+    padding-bottom: 5px;
+    min-width: auto;
+    width: ${props => props.opened ? '60vw' : 'auto'};
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+`;
+
 
 class Header extends React.Component{
     constructor(props) {
@@ -17,22 +31,27 @@ class Header extends React.Component{
     }
     render() {
         return ( 
-            <header className="flex-row">
+            <header className="flex-row align-ends">
                 <Link to="/"><img src={Logo} alt="lhamann-logo" /></Link>
-                <div className={this.state.opened ? "container change" : "container"} onClick={this.click}>
-                    <div className="bar1"></div>
-                    <div className="bar2"></div>
-                    <div className="bar3"></div>
-                    <nav className={this.state.opened ? "visible" : "hidden"}>
+                <NavDiv opened={this.state.opened} css={css`
+                            align-self: flex-start;
+                            padding: 3px;
+                        `}>
+                    <nav className={this.state.opened ? "visible" : "hidden"} css={css` padding-top: 5vh;`}>
                         <ul>
                             <Link to="/" className="selected"><li className="nav-item">Home</li></Link>
-                            <Link to="/" className="selected"><li className="nav-item">Projects</li></Link>
-                            <Link to="/" className="selected"><li className="nav-item">Blogs</li></Link>
-                            <Link to="/" className="selected"><li className="nav-item">About</li></Link>
-                            <Link to="/" className="selected"><li className="nav-item">Contact</li></Link>
+                            <Link to="/"><li className="nav-item">Projects</li></Link>
+                            <Link to="/"><li className="nav-item">Blogs</li></Link>
+                            <Link to="/"><li className="nav-item">About</li></Link>
+                            <Link to="/"><li className="nav-item">Contact</li></Link>
                         </ul>
                     </nav>
-                </div>
+                    <div className={this.state.opened ? "container change" : "container"} onClick={this.click} onKeyDown={this.click} role = "button" tabIndex={0}>
+                        <div className="bar1"></div>
+                        <div className="bar2"></div>
+                        <div className="bar3"></div>
+                    </div>
+                </NavDiv>
             </header>
         );
     }
