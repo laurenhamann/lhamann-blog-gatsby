@@ -98,13 +98,22 @@ const Layout = ({ children }) => (
         }
         h1{
             font-family: 'Bad Script';
-            font-size: 32px;
+            font-size: 4em;
+        }
+
+        h2 {
+            font-size: 2em;
+        }
+
+        h3{
+            font-size: 1.75em;
         }
         a{
             font-family: 'Lemonmilk';
             font-weight: 300;
             font-size: 18px;
             text-decoration: none;
+            height: auto;
         }
         a:hover,
         a.selected {
@@ -123,7 +132,35 @@ const Layout = ({ children }) => (
         .flex-row {
             display:flex;
             flex-direction: row;
+        }
+        /* styling for preview blog-title*/
+        .blog-title a{
+            color: #000;
+            font-family: 'modern';
+            cursor:pointer;
+            text-align:center;
+        }
+        /** styling for author span  */
+        .author-span{
+            color: #a2aebf;
+            font-family: lato;
+            font-size: 0.50em;
+        }  
+
+       /* Figure out img styling */
+        .align-ends{
+            justify-content: space-between;
+            align-items: center;
+        }
+        .align-center{
+            align-items: center;
             justify-content: space-around;
+        }
+
+        .w-80{
+            width: 80vw;
+            margin-left: auto;
+            margin-right: auto;
         }
         /* styling for open and close Navigation */
         .bar1,
@@ -148,12 +185,25 @@ const Layout = ({ children }) => (
         }
         .hidden{
             opacity: 0;
+            display:none;
         }
         .visible {
             transition: opacity 0.6s;
             opacity: 1;
+            display: flex;
         }
-      `}
+
+        /* global li styles */
+        .selected li{
+            color: #db777c;
+        }
+        li{
+            color: #fbc3bc;
+            list-style: none;
+            text-shadow: 0px 2px 1px #C0C0C0;
+            padding-bottom: 1vh;
+        }
+    `}
     />
     <section>
         <Header />
