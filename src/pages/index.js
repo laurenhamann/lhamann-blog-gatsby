@@ -1,16 +1,38 @@
 import * as React from "react";
+import PreviewHome from '../components/previews-index';
 import Layout from "../components/layout";
 
+
 // markup
-const IndexPage = () => {
-  return (
-    <Layout>
-      <div className="flex-row">
-        <a href="/" className="selected page-links">Projects</a>
-        <a href="/" className="page-links">Blogs</a>
-      </div>
-    </Layout>
-  );
-};
+class IndexPage extends React.Component{
+  constructor(props) {
+    super(props);
+    this.state = {
+      previewBlog: true
+    }
+    this.displayChangeOnClick = this.displayChangeOnClick.bind(this);
+  }
+
+  displayChangeOnClick(e){
+    e.preventDefault();
+    console.log(e.target.id);
+    if(e.target.id === "project"){
+      this.setState({
+        previewBlog: false
+      })
+    } else {
+      this.setState({
+        previewBlog: true
+      })
+    }
+  }
+    render() {
+      return (
+        <Layout>
+          <PreviewHome displayChangeOnClick={this.displayChangeOnClick} previewBlog={this.state.previewBlog} />
+        </Layout>
+      );
+    }
+  }
 
 export default IndexPage;
