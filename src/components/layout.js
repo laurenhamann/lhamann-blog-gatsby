@@ -95,6 +95,7 @@ const Layout = ({ children }) => (
         }
         section {
             background-color: #fbfafb;
+            width: 100vw;
         }
         h1{
             font-family: 'Bad Script';
@@ -102,11 +103,20 @@ const Layout = ({ children }) => (
         }
 
         h2 {
+            font-family: 'Lato';
+            font-weight: 400;
             font-size: 2em;
         }
 
         h3{
+            font-family: 'modern';
+            text-decoration: underline;
             font-size: 1.75em;
+        }
+
+        p{
+            font-family: 'Lato';
+            font-weight: 300;
         }
         a{
             font-family: 'Lemonmilk';
@@ -118,6 +128,20 @@ const Layout = ({ children }) => (
         a:hover,
         a.selected {
             text-decoration: underline;
+        }
+
+        /* shadowing for sections*/
+
+        .top-section {
+            box-shadow: 0 2px 10px 0 rgba(75, 75, 75, 0.5);
+        }
+
+        .mid-section {
+            box-shadow: 0 -1px 8px 0 #4b4b4b, 0 2px 8px 0 #4b4b4b;
+        }
+
+        .end-section {
+            box-shadow: 0 -1px 8px 0 #4b4b4b;
         }
          /*  index page project and blog links */
         .page-links{
@@ -133,19 +157,78 @@ const Layout = ({ children }) => (
             display:flex;
             flex-direction: row;
         }
-        /* styling for preview blog-title*/
-        .blog-title a{
+        /* styling for preview blog-title + project-title*/
+        .blog-title a,
+        .project-title a,
+        .title{
             color: #000;
             font-family: 'modern';
             cursor:pointer;
             text-align:center;
         }
+
         /** styling for author span  */
         .author-span{
             color: #a2aebf;
             font-family: lato;
             font-size: 0.50em;
         }  
+        .main-span{
+            font-size: 0.70em;
+        }
+        /** aligning for author span in post page */
+        .main {
+            text-align: center;
+        }
+
+        .entry-body{
+            padding-top: 3vh;
+        }
+
+
+        /* flex for entry */
+        .entry-flex {
+            padding-top: 5vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+        .entry-flex .project-title {
+            padding-bottom: 5vh;
+        }
+
+        .entry-flex p,
+        .entry-flex h3 {
+            padding-top: 3vh;
+        }
+
+        .entry-flex a{
+            text-align: left;
+            font-size: 0.75em;
+            padding: 2.5vh;
+        }
+
+        /* index mid styles */
+        .mid-li {
+            color: #000;
+            font-family: 'modern';
+            font-size: 1.5em;
+            text-align: left;
+        }
+        /* adding dashes before each li for quick facts */
+        .mid-li:before {
+            content: " - ";
+        }
+        
+        /* special link styling for middle section on index page*/
+
+        .special-link {
+            padding-top: 3vh;
+            color: #516684;
+            font-family: 'lemonmilk';
+            font-size: 0.85em;
+        }
 
        /* Figure out img styling */
         .align-ends{
@@ -204,11 +287,12 @@ const Layout = ({ children }) => (
             padding-bottom: 1vh;
         }
     `}
-    />
-    <section>
-        <Header />
-        {children}
-    </section>
-  </>
+        />
+        <section className="top-section">
+            <Header />
+        
+            {children}
+        </section>
+    </>
 );
 export default Layout;
