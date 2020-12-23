@@ -18,13 +18,18 @@ export const query = graphql`
 `;
 
 const PostTemplate = ({ data: {mdx: post} }) => (
-    <Layout>
-        <h1>{post.frontmatter.title}</h1>
-        <span>{post.frontmatter.author}</span>
-        <MDXRenderer>{post.body}</MDXRenderer>
-        <p>{post.frontmatter.body}</p>
-        <Link to="/">&larr; back to all blog posts</Link>
-    </Layout>
+    <>
+    <Layout />
+        <section className="mid-section" css={css` margin-top: 5vh;`}>
+            <div className="entry-flex">
+                <h1 className="title main">{post.frontmatter.title}</h1>
+                <span className="author-span main-span">author: {post.frontmatter.author}</span>
+                <MDXRenderer>{post.body}</MDXRenderer>
+                <p>{post.frontmatter.body}</p>
+                <Link to="/" className="load-link">&larr; back to all blog posts</Link>
+            </div>
+        </section>
+    </>
 )
 
 export default PostTemplate;
