@@ -2,30 +2,23 @@ import { graphql, useStaticQuery } from 'gatsby';
 
 const usePosts = () => {
     const data = useStaticQuery(graphql`
-        query MyQuery {
-            allMdx {
-                nodes {
-                    frontmatter {
-                        title
-                        slug
-                        author
-                        image {
-                            childImageSharp {
-                                fluid(
-                                    maxWidth: 100
-                                    maxHeight: 100
-                                    duotone:{
-                                        shadow:"#516684"
-                                        highlight:"#fbfafb"
-                                    }
-                                ){
-                                    ...GatsbyImageSharpFluid_withWebp
-                                }
-                            }
-                        }
+    query {
+        allMdx(filter: {frontmatter: {type: {eq: "post"}}}) {
+            nodes {
+                frontmatter {
+                author
+                slug
+                title
+                image {
+                    sharp: childImageSharp {
+                    fluid(maxHeight: 100, maxWidth: 100) {
+                        ...GatsbyImageSharpFluid_withWebp
                     }
-                    excerpt
+                    }
                 }
+                }
+                excerpt
+            }
             }
         }
     `)
