@@ -8,8 +8,8 @@ module.exports = {
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-mdx",
-    "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
     {
       resolve: 'gatsby-plugin-mdx',
       options: {
@@ -34,6 +34,14 @@ module.exports = {
         path: "./src/pages/",
       },
       __key: "pages",
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "projects",
+        path: `${__dirname}/src/projects/`,
+      },
+      __key: "projects",
     },
     {
       resolve: "gatsby-source-filesystem",
