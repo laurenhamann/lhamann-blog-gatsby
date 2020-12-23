@@ -1,8 +1,9 @@
 import * as React from "react";
 import PreviewHome from '../components/previews-index';
 import Layout from "../components/layout";
-
-
+import { css } from '@emotion/react';
+import MidIndex from '../components/mid-index';
+import Footer from '../components/footer';
 // markup
 class IndexPage extends React.Component{
   constructor(props) {
@@ -28,9 +29,15 @@ class IndexPage extends React.Component{
   }
     render() {
       return (
+        <>
         <Layout>
-          <PreviewHome displayChangeOnClick={this.displayChangeOnClick} previewBlog={this.state.previewBlog} />
-        </Layout>
+          <div css={css` min-height: 60vh; `}>
+            <PreviewHome displayChangeOnClick={this.displayChangeOnClick} previewBlog={this.state.previewBlog} />
+          </div>
+          </Layout>
+          <MidIndex />
+          <Footer />
+        </>
       );
     }
   }
