@@ -31,7 +31,7 @@ class Header extends React.Component{
     }
     render() {
         return ( 
-            <header className="flex-row align-ends">
+            <header className="flex-header align-ends">
                 <Link to="/"><img src={Logo} alt="lhamann-logo" /></Link>
                 <NavDiv opened={this.state.opened} css={css`
                             align-self: flex-start;
@@ -39,11 +39,11 @@ class Header extends React.Component{
                         `}>
                     <nav className={this.state.opened ? "visible" : "hidden"} css={css` padding-top: 5vh;`}>
                         <ul>
-                            <Link to="/" className="selected"><li className="nav-item">Home</li></Link>
-                            <Link to="/"><li className="nav-item">Projects</li></Link>
-                            <Link to="/"><li className="nav-item">Blogs</li></Link>
-                            <Link to="/"><li className="nav-item">About</li></Link>
-                            <Link to="/"><li className="nav-item">Contact</li></Link>
+                            <Link to="/" activeClassName="active"><li className="nav-item">Home</li></Link>
+                            <Link to="/" activeClassName="active"><li className="nav-item">Projects</li></Link>
+                            <Link to="/" activeClassName="active"><li className="nav-item">Blogs</li></Link>
+                            <Link to="/about" activeClassName="active"><li className="nav-item">About</li></Link>
+                            <Link to="/" activeClassName="active"><li className="nav-item">Contact</li></Link>
                         </ul>
                     </nav>
                     <div className={this.state.opened ? "container change" : "container"} onClick={this.click} onKeyDown={this.click} role = "button" tabIndex={0}>
