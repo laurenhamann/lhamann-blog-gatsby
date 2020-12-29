@@ -4,22 +4,12 @@ import { css, Global } from "@emotion/react";
 import 'typeface-bad-script';
 import 'typeface-lato';
 import Header from './header';
+import Footer from './footer';
 
 const Layout = ({ children }) => (
-  <>
+    <>
     <Global
         styles={css`
-        @font-face {
-            font-family: 'Bad Script';
-            font-style: normal;
-            font-display: swap;
-            font-weight: 400;
-            src:
-                local('Bad Script Regular '),
-                local('Bad Script-Regular'),
-                url('./files/bad-script-latin-400.woff2') format('woff2'), /* Super Modern Browsers */
-                url('./files/bad-script-latin-400.woff') format('woff'); /* Modern Browsers */
-        }
         /* lato-300normal - latin */
         @font-face {
         font-family: 'Lato';
@@ -85,6 +75,13 @@ const Layout = ({ children }) => (
                 font-weight: normal;
                 font-style: normal;
         }
+        @font-face {
+            font-family: 'joselyna';
+            src: url('./fonts/joselyna-webfont.woff2') format('woff2'),
+                    url('./fonts/joselyna-webfont.woff') format('woff');
+                font-weight: normal;
+                font-style: normal;
+        }
         * {
             box-sizing: border-box;
             margin: 0;
@@ -92,20 +89,26 @@ const Layout = ({ children }) => (
         html,
         body {
             background-color: #516684;
+            max-width: 100vw;
         }
+    /** seperation of the sections from the background color */
         section {
             background-color: #fbfafb;
             width: 100vw;
         }
+
+    
         h1{
-            font-family: 'Bad Script';
+            font-family: 'joselyna';
             font-size: 4em;
+            margin: 2vh 0;
         }
 
         h2 {
             font-family: 'Lato';
-            font-weight: 400;
-            font-size: 2em;
+            font-weight: 200;
+            font-size: 1.4em;
+            margin-bottom: 2vh;
         }
 
         h3{
@@ -125,111 +128,112 @@ const Layout = ({ children }) => (
             text-decoration: none;
             height: auto;
         }
-        a:hover,
-        a.selected {
+        a:hover {
             text-decoration: underline;
         }
 
-        /* shadowing for sections*/
-
+/**************************** HEADER ***************************/
         .top-section {
             box-shadow: 0 2px 10px 0 rgba(75, 75, 75, 0.5);
         }
-
-        .mid-section {
-            box-shadow: 0 -1px 8px 0 #4b4b4b, 0 2px 8px 0 #4b4b4b;
-        }
-
-        .end-section {
-            box-shadow: 0 -1px 8px 0 #4b4b4b;
-        }
-         /*  index page project and blog links */
-        .page-links{
-            color: #516684;
-        }
-        /* Link color for nav-link and for the loading more button */
-        .load-link,
-        .nav-link{
-            color:#db777c;
-        }
-        /*Global class for putting a container into flex-row styling */
-        .flex-row {
+        .flex-header {
             display:flex;
             flex-direction: row;
         }
-        /* styling for preview blog-title + project-title*/
-        .blog-title a,
-        .project-title a,
-        .title{
+
+        /** Navigation **/
+        nav ul .active li{
+            /** active link color */
+            color: #516684;
+            text-decoration: underline;
+        }
+        /** //END// Navigation **/
+/**************************** //END// HEADER ***************************/
+/**************************** MIDDLE SECTIONS ***************************/
+        .mid-section {
+            box-shadow: 0 -1px 8px 0 #4b4b4b, 0 2px 8px 0 #4b4b4b;
+            margin: 5vh 0;
+        }
+        .load-link {
+            color:#FBC3BC;
+        }
+        /**** Index page ****/
+        .page-links{
+            /*  index page project and blog links */
+            color: #516684;
+        }
+        /* blog-preview */
+        .title a {
+            /* h3 */
+            font-size: 1.1em; 
             color: #000;
             font-family: 'modern';
             cursor:pointer;
             text-align:center;
         }
-
-        /** styling for author span  */
         .author-span{
             color: #a2aebf;
             font-family: lato;
-            font-size: 0.50em;
-        }  
-        .main-span{
             font-size: 0.70em;
+            padding: 1vh 0;
+        } 
+        /* //END// Blog-preview */
+        /* li */
+        .mid-li {
+            color: #000;
+            font-family: 'modern';
+            font-size: .75em;
+            text-align: left;
+            list-style: none;
+            padding-bottom: 0.5vh;
         }
-        /** aligning for author span in post page */
-        .main {
-            text-align: center;
+        .mid-li:before {
+            /* adding dashes before each li for quick facts */
+            content: " - ";
         }
-
-        .entry-body{
-            padding-top: 3vh;
+        .special-link {
+            /* special link styling for middle section on index page*/
+            color: #516684;
+            font-family: 'lemonmilk';
+            font-size: 0.65em;
         }
+        /* //END// li */
+        /**** // END // Index page ****/
 
 
+        /**** TEMPLATE PAGE *****/
         /* flex for entry */
-        .entry-flex {
+        .article-flex {
             padding-top: 5vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             text-align: center;
         }
-        .entry-flex .project-title {
-            padding-bottom: 5vh;
+        .article-flex h1 {
+            font-size: 5em;
         }
 
-        .entry-flex p,
-        .entry-flex h3 {
+        .article-flex p,
+        .article-flex h3 {
             padding-top: 3vh;
         }
 
-        .entry-flex a{
+        .article-flex a{
             text-align: left;
             font-size: 0.75em;
             padding: 2.5vh;
         }
-
-        /* index mid styles */
-        .mid-li {
-            color: #000;
-            font-family: 'modern';
-            font-size: 1.5em;
-            text-align: left;
-        }
-        /* adding dashes before each li for quick facts */
-        .mid-li:before {
-            content: " - ";
-        }
-        
-        /* special link styling for middle section on index page*/
-
-        .special-link {
+        .article-body{
             padding-top: 3vh;
-            color: #516684;
-            font-family: 'lemonmilk';
-            font-size: 0.85em;
         }
-
+        /****** //END// TEMPLATE *****/
+/************************* //END// MIDDLE SECTION **************************/
+/************************* FOOTER **************************/
+        .end-section {
+            box-shadow: 0 -1px 8px 0 #4b4b4b;
+        }
+/************************* //END// FOOTER **************************/
        /* Figure out img styling */
         .align-ends{
             justify-content: space-between;
@@ -277,22 +281,37 @@ const Layout = ({ children }) => (
         }
 
         /* global li styles */
-        .selected li{
-            color: #db777c;
-        }
-        li{
+        nav a li{
             color: #fbc3bc;
             list-style: none;
             text-shadow: 0px 2px 1px #C0C0C0;
             padding-bottom: 1vh;
         }
+        /** about middle styles */
+        .about-links{
+            font-size: 1em;
+            text-decoration: none;
+            color: #516684;
+        }
+
+        .about-font-span{
+            text-align: left;
+        }
+
+        /** footer icons styling */
+        .social-links a {
+            margin-right: 2vw;
+        }
+        .svg-inline--fa path {
+            fill: #FBC3BC;
+        }
     `}
         />
-        <section className="top-section">
+        <section className="top-section" >
             <Header />
-        
-            {children}
         </section>
+            {children}
+            <Footer />
     </>
 );
 export default Layout;
