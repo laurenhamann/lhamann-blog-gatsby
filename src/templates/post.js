@@ -19,7 +19,7 @@ export const query = graphql`
 const PostTemplate = ({ data: {mdx: post} }) => (
     <Layout>
         <section className="mid-section">
-            <article className="article-flex">
+            <article className="article-flex flex-col">
                 <h1 className="title main">{post.frontmatter.title}</h1>
                 <span className="author-span" css={css` font-size: 0.70em;`}>author: {post.frontmatter.author}</span>
                 <MDXRenderer>{post.body}</MDXRenderer>

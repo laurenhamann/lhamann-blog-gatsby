@@ -17,7 +17,7 @@ export const query = graphql`
 const ProjectTemplate = ({ data: {mdx: project} }) => (
     <Layout>
         <section className="mid-section">
-            <div className="article-flex">
+            <div className="article-flex flex-col">
                 <h1 className="title main">
                     {project.frontmatter.title}
                 </h1>

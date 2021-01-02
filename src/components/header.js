@@ -31,7 +31,7 @@ class Header extends React.Component{
     }
     render() {
         return ( 
-            <header className="flex-header align-ends">
+            <header className="flex-row align-ends">
                 <Link to="/"><img src={Logo} alt="lhamann-logo" /></Link>
                 <NavDiv opened={this.state.opened} css={css`
                             align-self: flex-start;

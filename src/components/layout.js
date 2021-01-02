@@ -132,13 +132,28 @@ const Layout = ({ children }) => (
             text-decoration: underline;
         }
 
+/**************************** Universal ***************************/
+        .flex-row{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .flex-col{
+            display: flex;
+            flex-direction: column;
+        }
+        .align-ends{
+            justify-content: space-between;
+            align-items: center;
+        }
+        .align-center{
+            align-items: center;
+            justify-content: space-around;
+        }
+/**************************** //END// Universal ***************************/
 /**************************** HEADER ***************************/
         .top-section {
             box-shadow: 0 2px 10px 0 rgba(75, 75, 75, 0.5);
-        }
-        .flex-header {
-            display:flex;
-            flex-direction: row;
         }
 
         /** Navigation **/
@@ -205,8 +220,6 @@ const Layout = ({ children }) => (
         /* flex for entry */
         .article-flex {
             padding-top: 5vh;
-            display: flex;
-            flex-direction: column;
             justify-content: center;
             text-align: center;
         }
@@ -235,14 +248,6 @@ const Layout = ({ children }) => (
         }
 /************************* //END// FOOTER **************************/
        /* Figure out img styling */
-        .align-ends{
-            justify-content: space-between;
-            align-items: center;
-        }
-        .align-center{
-            align-items: center;
-            justify-content: space-around;
-        }
 
         .w-80{
             width: 80vw;
