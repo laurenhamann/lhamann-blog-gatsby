@@ -247,6 +247,12 @@ const Layout = ({ children }) => (
             box-shadow: 0 -1px 8px 0 #4b4b4b;
         }
 /************************* //END// FOOTER **************************/
+/************************* Contact **************************/
+        .contact-section{
+            text-align: center;
+            height: 60vh;
+        }
+/************************* //END// Contact **************************/
        /* Figure out img styling */
 
         .w-80{
