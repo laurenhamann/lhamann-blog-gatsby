@@ -1,8 +1,8 @@
 import React from 'react';
-import { Link } from 'gatsby';
-import Logo from '../images/lhamann-logo.png';
+import { Link, graphql } from 'gatsby';
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
+import Logo from './logo';
 
 const NavDiv = styled('div')`
     background-color: ${props => props.opened ? '#fbfafb' : 'transparent'};
@@ -24,6 +24,7 @@ class Header extends React.Component{
         }
         this.click = this.click.bind(this);      
     }
+
     click(x){
         this.setState({
             opened: !this.state.opened
@@ -32,7 +33,7 @@ class Header extends React.Component{
     render() {
         return ( 
             <header className="flex-row align-ends">
-                <Link to="/"><img src={Logo} alt="lhamann-logo" /></Link>
+                <Link to="/" css={css` min-height: 50px; min-width: 100px; height: 40%; width: 50%; max-width: 400px; max-height: 350px;`}><Logo /></Link>
                 <NavDiv opened={this.state.opened} css={css`
                             align-self: flex-start;
                             padding: 3px;
