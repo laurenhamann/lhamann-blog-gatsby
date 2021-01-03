@@ -7,7 +7,9 @@ const Contact = (props) => (
         <section className="contact-section mid-section">
             <h1> Write to me below</h1>
             <h4> I would love to hear from you </h4>
-            <form id="contact-form" className="flex-col">
+            <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact" id="contact-form" className="flex-col">
+                <input type="hidden" name="bot-field" />
+                <input type="hidden" name="form-name" value="contact" />
                 <label>
                     Name:
                     <input type="text" name="name" />
