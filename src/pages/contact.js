@@ -5,10 +5,9 @@ import Layout from '../components/layout';
 const Contact = (props) => (
     <Layout>
         <section className="contact-section mid-section">
-            <h1> Write to me below &darr;</h1>
-            <h3> I would love to hear from you </h3>
+            <h1> Write to me below</h1>
+            <h4> I would love to hear from you </h4>
             <form id="contact-form" className="flex-col">
-                {/* first name */}
                 <label>
                     Name:
                     <input type="text" name="name" />
@@ -21,14 +20,11 @@ const Contact = (props) => (
                     Subject:
                     <input type="text" name="subject" />
                 </label>
-                <textarea name="body" form="contact-form" />
-                <input type="submit" value="Send" />
-
-
-                {/* email */}
-                {/* subject */}
-                {/* body */}
-                {/* submit button */}
+                <label>
+                    Message:
+                    <textarea name="body" form="contact-form" />
+                </label>
+                <input type="submit" value="Send" id="submit-btn" />
             </form>
         </section>
     </Layout>

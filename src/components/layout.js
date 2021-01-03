@@ -250,8 +250,75 @@ const Layout = ({ children }) => (
 /************************* Contact **************************/
         .contact-section{
             text-align: center;
-            height: 60vh;
+            min-height: 60vh;
+            height: auto;
+            padding: 3vh;
         }
+
+        .contact-section h1{
+            margin-bottom: 0;
+        }
+
+        #contact-form {
+            margin-top: 2vh;
+            height: auto;
+            padding: 2vmin;
+            background-color: #516684;
+            box-shadow: inset 0 0 10px rgb(75, 75, 75),
+                        inset -1px -1px 10px rgb(75, 75, 75);
+        }
+        #contact-form label {
+            display: flex;
+            flex-direction: column;
+            margin: 1vh auto;
+            font-family: 'modern';
+            font-size: 14px;
+            color: #fff;
+
+        }
+
+        #contact-form label input{
+            margin-top: 0.5vh;
+            min-width: 150px;
+            width: 50vw;
+            max-width: 400px;
+            min-height: 25px;
+            height: 4.5vh;
+            max-height: 45px;
+            border: none;
+            box-shadow: -1px 2px 4px rgba(50, 50, 50, 0.5);
+        }
+
+        #contact-form label textarea{
+            box-shadow: -1px 2px 4px rgba(50, 50, 50, 0.5);
+            width: 65vw;
+            max-width: 500px;
+            min-height: 15vh;
+            margin: 2vh auto;
+        }
+
+        #submit-btn{
+            width: 35vw;
+            max-width: 300px;
+            min-height: 25px;
+            height: 5vh;
+            margin: 1vh auto;
+            border-radius: 10px;
+            outline: none;
+            border: none;
+            box-shadow: -1px 2px 4px rgba(50, 50, 50, 0.5);
+            background-color: #FBC3BC;
+            font-family: 'Lato';
+            font-weight: 400;
+            text-shadow: 1px 1px 2px rgba(50, 50, 50);
+            color: #fff;
+        }
+        #submit-btn:hover {
+            background-color: #fff;
+            color: #FBC3BC;
+            text-shadow: none;
+        }
+
 /************************* //END// Contact **************************/
        /* Figure out img styling */
 
