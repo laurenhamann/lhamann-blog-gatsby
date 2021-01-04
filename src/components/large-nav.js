@@ -18,9 +18,9 @@ const NavStyle = styled('nav')`
         margin-left: 5vw;
         a .nav-item {
             padding-right: 1.5vw;
-            font-size: 0.7em;
-            ${mq[1]} {
-                font-size: 1em;
+            font-size: 0.6em;
+            ${mq[3]} {
+                font-size: 0.8em;
             }
         }
     }

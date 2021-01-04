@@ -197,7 +197,7 @@ const Layout = ({ children }) => {
 
             /**** TEMPLATE PAGE *****/
             /* flex for entry */
-            .article-flex {
+            ${'' /* .article-flex {
                 padding-top: 5vh;
                 justify-content: center;
                 text-align: center;
@@ -218,7 +218,7 @@ const Layout = ({ children }) => {
             }
             .article-body{
                 padding-top: 3vh;
-            }
+            } */}
             /****** //END// TEMPLATE *****/
     /************************* //END// MIDDLE SECTION **************************/
     /************************* FOOTER **************************/

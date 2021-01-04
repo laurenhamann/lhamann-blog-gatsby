@@ -5,7 +5,7 @@ import MiddleStyle from '../components/middle-style';
 
 
 const MidIndex = ({ props }) => (
-    <MiddleStyle>
+    <MiddleStyle className="mid-section">
         <h1> Quick Facts </h1>
         <ul>
             <li className="mid-li"> Learning and Developing for 5 years </li>

@@ -2,6 +2,8 @@ import React from 'react';
 import { graphql, Link } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import Layout from '../components/layout';
+import TemplateStyle from '../components/template-style';
+
 export const query = graphql`
     query($slug: String!) {
         mdx(frontmatter: {slug: { eq: $slug }}){
@@ -16,7 +18,7 @@ export const query = graphql`
 
 const ProjectTemplate = ({ data: {mdx: project} }) => (
     <Layout>
-        <section className="mid-section">
+        <TemplateStyle className="mid-section">
             <div className="article-flex flex-col">
                 <h1 className="title main">
                     {project.frontmatter.title}
@@ -24,11 +26,11 @@ const ProjectTemplate = ({ data: {mdx: project} }) => (
                 <span className="author-span main-span">
                 creator: {project.frontmatter.creator}</span>
                 <MDXRenderer>{project.body}</MDXRenderer>
-                <p className="article-body">{project.frontmatter.body}</p>
+                <p>{project.frontmatter.body}</p>
                 {/* possibly add state to change to projects displaying */}
-                <Link to="/" className="load-link">&larr; back to all projects</Link>
+                <Link to="/" className="load-link"><span className="arrow-pink">&larr;</span> back to all projects</Link>
             </div>
-        </section>
+        </TemplateStyle>
     </Layout>
 )
 

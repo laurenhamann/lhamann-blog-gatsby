@@ -4,17 +4,22 @@ const mq = breakpoints.map(
     bp => `@media (min-width: ${bp}px)`
 )
 
+const pink = '#FBC3BC';
+const navy = '#516684';
+const grey = '#a2aebf';
+const dkPink = '#db777c';
+const black = '#000';
+
 const MiddleStyle = styled('section') `
     width: 100vw;
     display: flex;
     flex-direction: column;
     margin: 5vh 0;
     align-items: center;
-    box-shadow: 0 -1px 8px 0 #4b4b4b, 0 2px 8px 0 #4b4b4b;
     ${mq[1]} {
         &:hover {
             h1 {
-                color: #db777c;
+                color: ${dkPink};
             }
         }
     }
@@ -26,7 +31,7 @@ const MiddleStyle = styled('section') `
         justify-content: space-between;
     }
     & h1 {
-        color: #000;
+        color: ${black};
         transition: color 1s;
         ${mq[2]} {
             font-size: 10em;
@@ -43,7 +48,7 @@ const MiddleStyle = styled('section') `
             align-self: flex-end;
         }
         .mid-li {
-            color: #000;
+            color: ${black};
             font-family: 'modern';
             font-size: .75em;
             text-align: left;
@@ -70,7 +75,7 @@ const MiddleStyle = styled('section') `
     }
     .special-link {
         /* special link styling for middle section on index page*/
-        color: #516684;
+        color: ${navy};
         font-family: 'lemonmilk';
         font-size: 0.65em;
         ${mq[2]} {
@@ -78,7 +83,7 @@ const MiddleStyle = styled('section') `
         }
     }
     .load-link {
-        color:#FBC3BC;
+        color:${pink};
         ${mq[2]} {
             font-size: 1em;
         }

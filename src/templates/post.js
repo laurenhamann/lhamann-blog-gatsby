@@ -3,6 +3,7 @@ import { graphql, Link } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import Layout from '../components/layout';
 import { css } from '@emotion/react';
+import TemplateStyle from '../components/template-style';
 
 export const query = graphql`
     query($slug: String!) {
@@ -16,17 +17,19 @@ export const query = graphql`
     }
 `;
 
+
+
 const PostTemplate = ({ data: {mdx: post} }) => (
     <Layout>
-        <section className="mid-section">
+        <TemplateStyle className="mid-section">
             <article className="article-flex flex-col">
                 <h1 className="title main">{post.frontmatter.title}</h1>
-                <span className="author-span" css={css` font-size: 0.70em;`}>author: {post.frontmatter.author}</span>
+                <span className="author-span">author: {post.frontmatter.author}</span>
                 <MDXRenderer>{post.body}</MDXRenderer>
                 <p>{post.frontmatter.body}</p>
-                <Link to="/" className="load-link">&larr; back to all blog posts</Link>
+                <Link to="/" className="load-link"><span className="arrow-pink">&larr;</span> back to all blog posts</Link>
             </article>
-        </section>
+        </TemplateStyle>
     </Layout>
 )
 
