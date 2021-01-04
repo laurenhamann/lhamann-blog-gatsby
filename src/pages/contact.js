@@ -1,10 +1,11 @@
 import React from 'react';
 import Layout from '../components/layout';
+import ContactStyle from '../components/contact-style';
 
 
 const Contact = (props) => (
     <Layout>
-        <section className="contact-section mid-section">
+        <ContactStyle className="mid-section">
             <h1> Write to me below</h1>
             <h4> I would love to hear from you </h4>
             <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact" id="contact-form" className="flex-col">
@@ -28,7 +29,7 @@ const Contact = (props) => (
                 </label>
                 <input type="submit" value="Send" id="submit-btn" />
             </form>
-        </section>
+        </ContactStyle>
     </Layout>
 )
 

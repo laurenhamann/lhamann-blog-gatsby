@@ -9,7 +9,12 @@ import Footer from './footer';
 //possibly flowers or maybe a hover effect on computers that create a moving border
 //760 fonts
 //1024 & < fonts and spacing
-
+const pink = '#FBC3BC';
+const navy = '#516684';
+const grey = '#a2aebf';
+const dkPink = '#db777c';
+const black = '#000';
+const white = '#fbfafb';
 const Layout = ({ children }) => {
     const breakpoints = [768, 1024, 1400, 1600]
     const mq = breakpoints.map(
@@ -97,12 +102,12 @@ const Layout = ({ children }) => {
             }
             html,
             body {
-                background-color: #516684;
+                background-color: ${navy};
                 max-width: 100vw;
             }
         /** seperation of the sections from the background color */
             section {
-                background-color: #fbfafb;
+                background-color: ${white};
                 width: 100vw;
             }
 
@@ -179,7 +184,7 @@ const Layout = ({ children }) => {
             /** Navigation **/
             nav ul .active li{
                 /** active link color */
-                color: #516684;
+                color: ${navy};
                 text-decoration: underline;
             }
             /** //END// Navigation **/
@@ -199,79 +204,6 @@ const Layout = ({ children }) => {
                 box-shadow: 0 -1px 8px 0 #4b4b4b;
             }
     /************************* //END// FOOTER **************************/
-    /************************* Contact **************************/
-            .contact-section{
-                text-align: center;
-                min-height: 60vh;
-                height: auto;
-                padding: 3vh;
-            }
-
-            .contact-section h1{
-                margin-bottom: 0;
-            }
-
-            #contact-form {
-                margin-top: 2vh;
-                height: auto;
-                padding: 2vmin;
-                background-color: #516684;
-                box-shadow: inset 0 0 10px rgb(75, 75, 75),
-                            inset -1px -1px 10px rgb(75, 75, 75);
-            }
-            #contact-form label {
-                display: flex;
-                flex-direction: column;
-                margin: 1vh auto;
-                font-family: 'modern';
-                font-size: 14px;
-                color: #fff;
-
-            }
-
-            #contact-form label input{
-                margin-top: 0.5vh;
-                min-width: 150px;
-                width: 50vw;
-                max-width: 400px;
-                min-height: 25px;
-                height: 4.5vh;
-                max-height: 45px;
-                border: none;
-                box-shadow: -1px 2px 4px rgba(50, 50, 50, 0.5);
-            }
-
-            #contact-form label textarea{
-                box-shadow: -1px 2px 4px rgba(50, 50, 50, 0.5);
-                width: 65vw;
-                max-width: 500px;
-                min-height: 15vh;
-                margin: 2vh auto;
-            }
-
-            #submit-btn{
-                width: 35vw;
-                max-width: 300px;
-                min-height: 25px;
-                height: 5vh;
-                margin: 1vh auto;
-                border-radius: 10px;
-                outline: none;
-                border: none;
-                box-shadow: -1px 2px 4px rgba(50, 50, 50, 0.5);
-                background-color: #FBC3BC;
-                font-family: 'Lato';
-                font-weight: 400;
-                text-shadow: 1px 1px 2px rgba(50, 50, 50);
-                color: #fff;
-            }
-            #submit-btn:hover {
-                background-color: #fff;
-                color: #FBC3BC;
-                text-shadow: none;
-            }
-
-    /************************* //END// Contact **************************/
         /* Figure out img styling */
 
             /* styling for open and close Navigation */
@@ -307,17 +239,12 @@ const Layout = ({ children }) => {
 
             /* global li styles */
             nav a li{
-                color: #fbc3bc;
+                color: ${pink};
                 list-style: none;
                 text-shadow: 0px 2px 1px #C0C0C0;
                 padding-bottom: 1vh;
             }
             /** about middle styles */
-            .about-links{
-                font-size: 1em;
-                text-decoration: none;
-                color: #516684;
-            }
 
         `}
             />

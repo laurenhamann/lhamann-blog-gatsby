@@ -35,6 +35,11 @@ const MidAbout = () => (
             ${mq[1]} {
                 font-size: 2em;
             }
+            .about-links{
+                font-size: 1em;
+                text-decoration: none;
+                color: ${navy};
+            }
         }
     `}>
         <Link to="/"><h3 className="about-links"><span>&larr;</span> Go to Projects</h3></Link>
