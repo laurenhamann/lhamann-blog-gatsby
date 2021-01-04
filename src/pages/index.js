@@ -1,7 +1,6 @@
 import * as React from "react";
 import PreviewHome from '../components/previews-index';
 import Layout from "../components/layout";
-import { css } from '@emotion/react';
 import MidIndex from '../components/mid-index';
 // markup
 class IndexPage extends React.Component{
