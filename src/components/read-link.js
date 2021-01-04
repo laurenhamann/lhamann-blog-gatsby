@@ -11,12 +11,15 @@ const ReadLink = styled(Link)`
         font-style: italic;
         font-weight: 300;
         align-self: flex-end;
-        padding-top: 3px;
+        padding-top: 3vh;
         ${mq[0]} {
                 font-size: 1em;
         }
         ${mq[1]} {
                 font-size: 1.3em;
+        }
+        ${mq[2]} {
+                font-size: 1.6em;
         }
 `;
 

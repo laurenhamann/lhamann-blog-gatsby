@@ -14,7 +14,7 @@ const MidIndex = ({ props }) => (
             <li className="mid-li"> Definitely number 4 </li>
             <li className="mid-li"> .... maybe a number 5 </li>
         </ul>
-        <Link to="/about" css={css`align-self: flex-end;`}><span className="load-link special-link" css={css` color: #516684;`}>Want to know more?<span className="load-link">&rarr;</span></span></Link>
+        <Link to="/about" css={css`align-self: flex-end;`}><span className="special-link">Want to know more?</span><span className="load-link">&rarr;</span></Link>
     </MiddleStyle>
 );
 

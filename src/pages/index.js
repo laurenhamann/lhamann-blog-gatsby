@@ -29,11 +29,9 @@ class IndexPage extends React.Component{
     render() {
       return (
         <>
-        <Layout>
-          <div css={css` min-height: 60vh; `}>
+          <Layout>
             <PreviewHome displayChangeOnClick={this.displayChangeOnClick} previewBlog={this.state.previewBlog} />
-          </div>
-          <MidIndex />
+            <MidIndex />
           </Layout>
         </>
       );

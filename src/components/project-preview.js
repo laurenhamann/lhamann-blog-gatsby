@@ -8,7 +8,7 @@ import ArticleStyle from './preview-article';
 const ProjectPreview = () => {
     const projects = useProjects();
     const allProjects = projects.map(project => (
-        <ArticleStyle key={project.slug} className="project-preview-container"  alignself='flex-end'>
+        <ArticleStyle key={project.slug} className="project-preview-container"  alignself='center'>
                 <Link to={project.slug}>
                     <Image
                         fluid={project.image.img.fluid} 

@@ -11,7 +11,7 @@ const useProjects = () => {
                 creator
                 image {
                     img: childImageSharp {
-                    fluid(maxHeight: 70, maxWidth: 60) {
+                    fluid(maxHeight: 350, maxWidth: 400) {
                         ...GatsbyImageSharpFluid_withWebp
                     }
                     }

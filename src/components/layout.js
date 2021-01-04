@@ -111,6 +111,12 @@ const Layout = ({ children }) => {
                 font-family: 'joselyna';
                 font-size: 4em;
                 margin: 2vh 0;
+                ${mq[0]} {
+                    font-size: 5em;
+                }
+                ${mq[1]} {
+                    font-size: 5.3em;
+                }
             }
 
             h2 {
@@ -139,6 +145,12 @@ const Layout = ({ children }) => {
                 font-size: 18px;
                 text-decoration: none;
                 height: auto;
+                ${mq[0]} {
+                    font-size: 1.5em;
+                }
+                ${mq[1]} {
+                    font-size: 1.8em;
+                }
             }
             a:hover {
                 text-decoration: underline;
@@ -158,13 +170,6 @@ const Layout = ({ children }) => {
                 justify-content: space-between;
                 align-items: center;
             }
-            .align-center{
-                align-items: center;
-                justify-content: space-around;
-                ${mq[0]} {
-                    justify-content: center;
-                }
-            }
     /**************************** //END// Universal ***************************/
     /**************************** HEADER ***************************/
             .top-section {
@@ -183,40 +188,11 @@ const Layout = ({ children }) => {
             .mid-section {
                 box-shadow: 0 -1px 8px 0 #4b4b4b, 0 2px 8px 0 #4b4b4b;
                 margin: 5vh 0;
-            }
-            .load-link {
-                color:#FBC3BC;
-            }
-            /**** Index page ****/
-            .page-links{
-                /*  index page project and blog links */
-                color: #516684;
-                ${mq[0]} {
-                    font-size: 1.6em;
-                    margin:auto 4vw;
+                ${mq[3]} {
+                    margin: 8vh 0;
                 }
             }
-            /* li */
-            .mid-li {
-                color: #000;
-                font-family: 'modern';
-                font-size: .75em;
-                text-align: left;
-                list-style: none;
-                padding-bottom: 0.5vh;
-            }
-            .mid-li:before {
-                /* adding dashes before each li for quick facts */
-                content: " - ";
-            }
-            .special-link {
-                /* special link styling for middle section on index page*/
-                color: #516684;
-                font-family: 'lemonmilk';
-                font-size: 0.65em;
-            }
-            /* //END// li */
-            /**** // END // Index page ****/
+            
 
 
             /**** TEMPLATE PAGE *****/
@@ -325,12 +301,6 @@ const Layout = ({ children }) => {
     /************************* //END// Contact **************************/
         /* Figure out img styling */
 
-            .w-80{
-                width: 80vw;
-                max-width: 500px;
-                margin-left: auto;
-                margin-right: auto;
-            }
             /* styling for open and close Navigation */
             .bar1,
             .bar2,
@@ -378,14 +348,6 @@ const Layout = ({ children }) => {
 
             .about-font-span{
                 text-align: left;
-            }
-
-            /** footer icons styling */
-            .social-links a {
-                margin-right: 2vw;
-            }
-            .svg-inline--fa path {
-                fill: #FBC3BC;
             }
         `}
             />

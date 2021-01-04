@@ -24,7 +24,7 @@ const BlogPreview = () =>  {
                     </h3>
                     <span className="author-span">{post.author}</span>
                     <p>{post.excerpt}</p>
-                    <ReadLink to={post.slug} css={css`padding-top: 3px;`}>Read This Post &rarr;</ReadLink>
+                    <ReadLink to={post.slug}>Read This Post &rarr;</ReadLink>
                 </div>
             </ArticleStyle>
         ))
