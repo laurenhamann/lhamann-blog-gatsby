@@ -1,7 +1,5 @@
 import React from "react";
-import "fontsource-open-sans";
 import { css, Global } from "@emotion/react";
-import 'typeface-bad-script';
 import 'typeface-lato';
 import Header from './header';
 import Footer from './footer';
@@ -9,11 +7,11 @@ import Footer from './footer';
 //possibly flowers or maybe a hover effect on computers that create a moving border
 //760 fonts
 //1024 & < fonts and spacing
-const pink = '#FBC3BC';
+// const pink = '#FBC3BC';
 const navy = '#516684';
-const grey = '#a2aebf';
-const dkPink = '#db777c';
-const black = '#000';
+// const grey = '#a2aebf';
+// const dkPink = '#db777c';
+// const black = '#000';
 const white = '#fbfafb';
 const Layout = ({ children }) => {
     const breakpoints = [768, 1024, 1400, 1600]
@@ -24,7 +22,6 @@ const Layout = ({ children }) => {
         <>
         <Global
             styles={css`
-            /* lato-300normal - latin */
             @font-face {
             font-family: 'Lato';
             font-style: normal;
@@ -181,13 +178,6 @@ const Layout = ({ children }) => {
                 box-shadow: 0 2px 10px 0 rgba(75, 75, 75, 0.5);
             }
 
-            /** Navigation **/
-            nav ul .active li{
-                /** active link color */
-                color: ${navy};
-                text-decoration: underline;
-            }
-            /** //END// Navigation **/
     /**************************** //END// HEADER ***************************/
     /**************************** MIDDLE SECTIONS ***************************/
             .mid-section {
@@ -204,46 +194,6 @@ const Layout = ({ children }) => {
                 box-shadow: 0 -1px 8px 0 #4b4b4b;
             }
     /************************* //END// FOOTER **************************/
-        /* Figure out img styling */
-
-            /* styling for open and close Navigation */
-            .bar1,
-            .bar2,
-            .bar3{
-                width: 35px;
-                height: 5px;
-                background-color: #333;
-                margin: 6px 0;
-                transition: 0.4s;
-            }
-            .change .bar1 {
-                -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-                transform: rotate(-45deg) translate(-9px, 6px);
-            }
-
-            .change .bar2 {opacity: 0;}
-
-            .change .bar3 {
-                -webkit-transform: rotate(45deg) translate(-8px, -8px);
-                transform: rotate(45deg) translate(-8px, -8px);
-            }
-            .hidden{
-                opacity: 0;
-                display:none;
-            }
-            .visible {
-                transition: opacity 0.6s;
-                opacity: 1;
-                display: flex;
-            }
-
-            /* global li styles */
-            nav a li{
-                color: ${pink};
-                list-style: none;
-                text-shadow: 0px 2px 1px #C0C0C0;
-                padding-bottom: 1vh;
-            }
             /** about middle styles */
 
         `}

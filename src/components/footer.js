@@ -9,9 +9,9 @@ const Footer = () => (
             <h1>Say Hello!</h1>
             <h2> You can reach me at the links below</h2>
             <div className="social-links">
-                <SocialIcon url={'https://www.github.com'} icon={faGithub} />
-                <SocialIcon url={"https://www.twitter.com"} icon={faTwitter} />
-                <SocialIcon url={"https://www.gmail.com"} icon={faEnvelope} />
+                <SocialIcon url={'https://www.github.com'} label="Github" icon={faGithub} />
+                <SocialIcon url={"https://www.twitter.com"} label="Twitter" icon={faTwitter} />
+                <SocialIcon url={"https://www.gmail.com"} label="Email" icon={faEnvelope} />
             </div>
         </FooterStyle>
 );
