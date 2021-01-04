@@ -2,7 +2,6 @@ import React from 'react';
 import { graphql, Link } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import Layout from '../components/layout';
-import { css } from '@emotion/react';
 import TemplateStyle from '../components/template-style';
 
 export const query = graphql`

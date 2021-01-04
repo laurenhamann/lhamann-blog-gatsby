@@ -40,6 +40,10 @@ const FooterStyle = styled('section')`
         margin-bottom: 3vh;
         a{
             margin-right: 2vw;
+            ${mq[0]} {
+                font-size: 3vh;
+                padding-bottom: -3.5vh;
+            }
             ${mq[2]} {
                 font-size: 4vh;
                 padding-bottom: -3.5vh;
