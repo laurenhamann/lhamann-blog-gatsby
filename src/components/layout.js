@@ -3,10 +3,7 @@ import { css, Global } from "@emotion/react";
 import 'typeface-lato';
 import Header from './header';
 import Footer from './footer';
-// add breakpoint mapping 
-//possibly flowers or maybe a hover effect on computers that create a moving border
-//760 fonts
-//1024 & < fonts and spacing
+import '../../public/static/fonts/fonts.css';
 // const pink = '#FBC3BC';
 const navy = '#516684';
 // const grey = '#a2aebf';
@@ -30,11 +27,10 @@ const Layout = ({ children }) => {
             src:
                 local('Lato Light '),
                 local('Lato-Light'),
-                url('./files/lato-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
-                url('./files/lato-latin-300.woff') format('woff'); /* Modern Browsers */
+                url('./files/lato-latin-300.woff2') format('woff2'), 
+                url('./files/lato-latin-300.woff') format('woff'); 
             }
 
-            /* lato-300italic - latin */
             @font-face {
             font-family: 'Lato';
             font-style: italic;
@@ -43,11 +39,10 @@ const Layout = ({ children }) => {
             src:
                 local('Lato Light italic'),
                 local('Lato-Lightitalic'),
-                url('./files/lato-latin-300italic.woff2') format('woff2'), /* Super Modern Browsers */
-                url('./files/lato-latin-300italic.woff') format('woff'); /* Modern Browsers */
+                url('./files/lato-latin-300italic.woff2') format('woff2'), 
+                url('./files/lato-latin-300italic.woff') format('woff'); 
             }
 
-            /* lato-400normal - latin */
             @font-face {
             font-family: 'Lato';
             font-style: normal;
@@ -56,11 +51,10 @@ const Layout = ({ children }) => {
             src:
                 local('Lato Regular '),
                 local('Lato-Regular'),
-                url('./files/lato-latin-400.woff2') format('woff2'), /* Super Modern Browsers */
-                url('./files/lato-latin-400.woff') format('woff'); /* Modern Browsers */
+                url('./files/lato-latin-400.woff2') format('woff2'),
+                url('./files/lato-latin-400.woff') format('woff'); 
             }
 
-    /* lato-400italic - latin */
             @font-face {
             font-family: 'Lato';
             font-style: italic;
@@ -69,30 +63,8 @@ const Layout = ({ children }) => {
             src:
                 local('Lato Regular italic'),
                 local('Lato-Regularitalic'),
-                url('./files/lato-latin-400italic.woff2') format('woff2'), /* Super Modern Browsers */
-                url('./files/lato-latin-400italic.woff') format('woff'); /* Modern Browsers */
-            }
-            @font-face {
-                font-family: 'lemonmilk';
-                src: url('../fonts/lemonmilklight-webfont.woff2') format('woff2'),
-                        url('../fonts/lemonmilklight-webfont.woff') format('woff');
-                    font-weight: normal;
-                    font-style: normal;
-            }
-            @font-face {
-                font-family: 'modern';
-                src:    url('../fonts/ModernSansLight.woff2') format('woff2'),
-                        url('../fonts/ModernSansLight.woff') format('woff');
-                        font-weight: 300;
-                        font-style: normal;
-                        font-display: swap;
-            }
-            @font-face {
-                font-family: 'joselyna';
-                src: url('../fonts/joselyna-webfont.woff2') format('woff2'),
-                        url('../fonts/joselyna-webfont.woff') format('woff');
-                    font-weight: normal;
-                    font-style: normal;
+                url('./files/lato-latin-400italic.woff2') format('woff2'), 
+                url('./files/lato-latin-400italic.woff') format('woff'); 
             }
             * {
                 box-sizing: border-box;
