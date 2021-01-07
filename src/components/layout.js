@@ -81,8 +81,8 @@ const Layout = ({ children }) => {
             }
             @font-face {
                 font-family: 'modern';
-                src: url('./fonts/modernsans-light-webfont.woff2') format('woff2'),
-                        url('./fonts/modernsans-light-webfont.woff') format('woff');
+                src: url('./fonts/ModernSansLight.woff2') format('woff2'),
+                        url('./fonts/ModernSansLight.woff') format('woff');
                     font-weight: normal;
                     font-style: normal;
             }
@@ -129,7 +129,7 @@ const Layout = ({ children }) => {
             }
 
             h3{
-                font-family: 'Modern';
+                font-family: 'modern';
                 text-decoration: underline;
                 font-size: 1.75em;
             }

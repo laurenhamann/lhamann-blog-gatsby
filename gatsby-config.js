@@ -52,6 +52,15 @@ module.exports = {
       __key: "posts",
     },
     {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        custom: {
+          families: ["Lato, Modern, Lemonmilk, Joselyna"],
+          urls: ["/fonts/fonts.css"],
+        },
+      },
+    },
+    {
       resolve: 'gatsby-plugin-webpack-bundle-analyzer',
       options: {
         production: true,
