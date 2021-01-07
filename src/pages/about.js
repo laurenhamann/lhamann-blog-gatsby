@@ -36,7 +36,13 @@ const About = ({ data: {file}}) => (
                 </h2>
                 <Img fluid={file.childImageSharp.fluid} alt="family" />
                 <FlowerBorder />
-                <p> Professionally promote seamless initiatives vis-a-vis pandemic models. Seamlessly simplify process-centric experiences rather than 24/365 catalysts for change. Dramatically mesh cross-unit expertise for low-risk high-yield methodologies. Dramatically grow error-free core competencies and intermandated benefits. Globally drive business methods of empowerment vis-a-vis robust architectures.
+                <h3>TL/DR</h3>
+                <p> 
+                    I am a Frontend Web Developer for 5 years. I love to code and solve difficult problems. Generally, I am a very creative person. I journal constantly and always look for new creative hobbies. I have two boys and a little girl. I am a stay at home mom and freelance developer currently looking for my first offical developer position.
+                    <br />
+                    I am using Gatsby for one of the first times, with a long-time knowledge of React. I enjoy all things Frontend but Javascript (and the frameworks using it) are some of my favorite aspects. 
+                    <br />
+                    My blogs will be an online journal of my problem-solving/struggles I have encountered, to look back on and hopefully help someone that is just starting out to not get discouraged. 
                 </p>
             </AboutPage>
         <MidAbout />

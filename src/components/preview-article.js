@@ -27,7 +27,7 @@ const ArticleStyle = styled.article(props => ({
 	'&:first-of-type': {
 		marginTop: '2vh',
 		[mq[0]]: {
-			marginTop: '4vh',
+			marginTop: '10vh',
 		},
 		[mq[3]]: {
 			marginTop: '8vh',
@@ -89,14 +89,13 @@ const ArticleStyle = styled.article(props => ({
 	'.author-span' : {
 		color: '#a2aebf',
 		fontFamily: 'lato',
+		fontWeight: '300',
+		fontStyle: 'italic',
 		fontSize: '0.70em',
 		padding: '1vh 0',
 		[mq[0]]: {
-			fontSize: '1em',
+			fontSize: '0.9em',
 		},
-		[mq[1]]: {
-			fontSize: '1.2em',
-		}
 	}
 
 }))

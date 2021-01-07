@@ -28,6 +28,9 @@ const FooterStyle = styled('section')`
     } 
 
     & h2 {
+        ${mq[1]} {
+            padding-bottom: 1.5vh;
+        }
         ${mq[2]} {
             font-size: 2em;
             padding-bottom: 1vh;
@@ -44,9 +47,8 @@ const FooterStyle = styled('section')`
                 font-size: 3vh;
                 padding-bottom: -3.5vh;
             }
-            ${mq[2]} {
+            ${mq[1]} {
                 font-size: 4vh;
-                padding-bottom: -3.5vh;
             }
         }
     }

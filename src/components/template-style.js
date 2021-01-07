@@ -29,7 +29,7 @@ const TemplateStyle = styled('section')`
         }
         & span {
             font-size: 0.70em;
-            color: #000000e6;
+            color: ${grey};
             font-family: Lato;
             font-weight: 400;
             ${mq[0]} {

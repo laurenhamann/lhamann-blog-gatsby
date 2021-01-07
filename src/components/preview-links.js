@@ -18,7 +18,7 @@ const PreviewLinks = styled('div') `
         /*  index page project and blog links */
         color: #516684;
         ${mq[0]} {
-            font-size: 1.6em;
+            font-size: 1.1em;
             margin:auto 4vw;
         }  
         ${mq[1]} {

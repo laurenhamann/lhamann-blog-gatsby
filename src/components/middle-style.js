@@ -49,7 +49,8 @@ const MiddleStyle = styled('section') `
         }
         .mid-li {
             color: ${black};
-            font-family: 'modern';
+            font-family: 'Lato';
+            font-weight: 200;
             font-size: .75em;
             text-align: left;
             list-style: none;
@@ -59,14 +60,7 @@ const MiddleStyle = styled('section') `
             }
             ${mq[1]} {
                 font-size: 1em;
-            }
-            ${mq[1]} {
-                font-size: 1.2em;
-            }
-            ${mq[1]} {
-                font-size: 1.5em;
-            }
-            
+            } 
         }
         .mid-li:before {
             /* adding dashes before each li for quick facts */
@@ -77,13 +71,15 @@ const MiddleStyle = styled('section') `
         /* special link styling for middle section on index page*/
         color: ${navy};
         font-family: 'lemonmilk';
-        font-size: 0.65em;
+        font-size: 0.45em;
         ${mq[2]} {
             font-size: 0.9em;
         }
     }
     .load-link {
         color:${pink};
+        font-size: 0.45em;
+        margin-right: 1vw;
         ${mq[2]} {
             font-size: 1em;
         }

@@ -129,7 +129,7 @@ const Layout = ({ children }) => {
             }
 
             h3{
-                font-family: 'modern';
+                font-family: 'Modern';
                 text-decoration: underline;
                 font-size: 1.75em;
             }

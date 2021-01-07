@@ -32,9 +32,11 @@ const AllBlogs = () => {
     return (
         <Layout>
             <GridStyle className="mid-section">
-                <h1> Search Blogs </h1>
-                <button className="filter" ariaLabel="filter-blogs">+</button>
-                {allPosts}
+                <div>
+                    <h1> Search Blogs </h1>
+                    <button className="filter" ariaLabel="filter-blogs">+</button>
+                </div>
+                    {allPosts}
             </GridStyle>
         </Layout>
 

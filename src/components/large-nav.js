@@ -19,16 +19,18 @@ const NavStyle = styled('nav')`
         flex-direction: row;
         flex-wrap: wrap;
         width: 50vw;
-        justify-content: space-between;
+        justify-content: center;
         padding: 1vh;
         margin-left: 5vw;
         a .nav-item {
-            padding-right: 1.5vw;
-            font-size: 0.6em;
-            color: ${pink};
+            font-size: 0.5em;
+            color: ${dkPink};
             list-style: none;
             text-shadow: 0px 2px 1px #C0C0C0;
             padding-bottom: 1vh;
+            ${mq[1]} {
+                margin-right: 1vw;
+            }
             ${mq[3]} {
                 font-size: 0.8em;
             }
