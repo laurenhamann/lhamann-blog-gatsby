@@ -3,10 +3,10 @@ import styled from '@emotion/styled';
 import { Link } from 'gatsby';
 const pink = '#FBC3BC';
 const navy = '#516684';
-const grey = '#a2aebf';
-const dkPink = '#db777c';
-const black = '#000';
-const white = '#fbfafb';
+// const grey = '#a2aebf';
+// const dkPink = '#db777c';
+// const black = '#000';
+// const white = '#fbfafb';
 
 
 

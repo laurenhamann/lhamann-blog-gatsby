@@ -81,10 +81,12 @@ const Layout = ({ children }) => {
             }
             @font-face {
                 font-family: 'modern';
-                src: url('./fonts/ModernSansLight.woff2') format('woff2'),
+                src:    url('./fonts/ModernSans-Light.otf') format('OpenType'),
+                        url('./fonts/ModernSansLight.woff2') format('woff2'),
                         url('./fonts/ModernSansLight.woff') format('woff');
-                    font-weight: normal;
-                    font-style: normal;
+                        font-weight: 300;
+                        font-style: normal;
+                        font-display: swap;
             }
             @font-face {
                 font-family: 'joselyna';

@@ -1,9 +1,9 @@
 import styled from '@emotion/styled';
-const pink = '#FBC3BC';
-const navy = '#516684';
-const grey = '#a2aebf';
+// const pink = '#FBC3BC';
+// const navy = '#516684';
+// const grey = '#a2aebf';
 const dkPink = '#db777c';
-const black = '#000';
+// const black = '#000';
 
 const breakpoints = [768, 1024, 1400, 1600]
 const mq = breakpoints.map(

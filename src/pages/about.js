@@ -1,5 +1,4 @@
 import React from 'react';
-import { css } from '@emotion/react';
 import Layout from '../components/layout';
 import FlowerBorder from '../components/flower-border';
 import MidAbout from '../components/mid-about';

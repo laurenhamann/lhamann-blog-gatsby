@@ -9,7 +9,7 @@ const mq = breakpoints.map(
 
 const pink = '#FBC3BC';
 const navy = '#516684';
-const grey = '#a2aebf';
+//const grey = '#a2aebf';
 const MidAbout = () => (
     <section className="mid-section" css={css`
         display: flex;
