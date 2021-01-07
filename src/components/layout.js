@@ -74,24 +74,23 @@ const Layout = ({ children }) => {
             }
             @font-face {
                 font-family: 'lemonmilk';
-                src: url('./fonts/lemonmilklight-webfont.woff2') format('woff2'),
-                        url('./fonts/lemonmilklight-webfont.woff') format('woff');
+                src: url('../../static/fonts/lemonmilklight-webfont.woff2') format('woff2'),
+                        url('../../static/fonts/lemonmilklight-webfont.woff') format('woff');
                     font-weight: normal;
                     font-style: normal;
             }
             @font-face {
                 font-family: 'modern';
-                src:    url('./fonts/ModernSans-Light.otf') format('OpenType'),
-                        url('./fonts/ModernSansLight.woff2') format('woff2'),
-                        url('./fonts/ModernSansLight.woff') format('woff');
+                src:    url('../../static/fonts/ModernSansLight.woff2') format('woff2'),
+                        url('../../static/fonts/ModernSansLight.woff') format('woff');
                         font-weight: 300;
                         font-style: normal;
                         font-display: swap;
             }
             @font-face {
                 font-family: 'joselyna';
-                src: url('./fonts/joselyna-webfont.woff2') format('woff2'),
-                        url('./fonts/joselyna-webfont.woff') format('woff');
+                src: url('../../static/fonts/joselyna-webfont.woff2') format('woff2'),
+                        url('../../static/fonts/joselyna-webfont.woff') format('woff');
                     font-weight: normal;
                     font-style: normal;
             }
