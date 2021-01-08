@@ -3,6 +3,7 @@ import { css, Global } from "@emotion/react";
 import 'typeface-lato';
 import Header from './header';
 import Footer from './footer';
+import '../static/fonts/fonts.css';
 // const pink = '#FBC3BC';
 const navy = '#516684';
 // const grey = '#a2aebf';
@@ -65,29 +66,6 @@ const Layout = ({ children }) => {
                 url('./files/lato-latin-400italic.woff2') format('woff2'), 
                 url('./files/lato-latin-400italic.woff') format('woff'); 
             }
-            @font-face {
-                font-family: 'lemonmilk';
-                src: url('./static/fonts/lemonmilklight-webfont.woff2') format('woff2'),
-                        url('./static/fonts/lemonmilklight-webfont.woff') format('woff');
-                    font-weight: normal;
-                    font-style: normal;
-            }
-            @font-face {
-                font-family: 'modern';
-                src:    url('./static/fonts/ModernSansLight.woff2') format('woff2'),
-                        url('./static/fonts/ModernSansLight.woff') format('woff');
-                        font-weight: 300;
-                        font-style: normal;
-                        font-display: swap;
-            }
-            @font-face {
-                font-family: 'joselyna';
-                src: url('./static/fonts/joselyna-webfont.woff2') format('woff2'),
-                        url('./static/fonts/joselyna-webfont.woff') format('woff');
-                    font-weight: normal;
-                    font-style: normal;
-            }
-
             * {
                 box-sizing: border-box;
                 margin: 0;
