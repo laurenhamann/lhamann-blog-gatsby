@@ -24,18 +24,8 @@ const AboutPage = styled('section')`
     width: 100vw;
     align-items: center;
     & h2 {
-        font-size: 1.8em;
-        ${mq[0]} {
-            font-size: 2.4em;
-        }
-        ${mq[1]} {
-            font-size: 3.4em;
-        }
-        ${mq[2]} {
-            font-size: 3.9em;
-        }
         & span {
-            font-size: 2.5em;
+            font-size: 4.5vmax;
             font-family: 'Lato';
             font-weight: 200;
             align-self: flex-start;

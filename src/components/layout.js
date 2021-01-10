@@ -83,49 +83,63 @@ const Layout = ({ children }) => {
 
         
             h1{
-                font-family: 'joselyna';
-                font-size: 4em;
+                font-family: 'modern';
+                font-size: 4vmax;
                 margin: 2vh 0;
-                ${mq[0]} {
-                    font-size: 5em;
-                }
                 ${mq[1]} {
-                    font-size: 5.3em;
+                    font-size: 2.9em;
+                }
+                ${mq[2]} {
+                    font-size: 3.5em;
+                }
+                ${mq[3]} {
+                    font-size: 4em;
+                }
+            }
+
+            .special {
+                font-family: 'joselyna';
+                font-size: 10vmax;
+                margin: 2vh 0;
+
+                ${mq[1]}{
+                    font-size: 8vmax;
                 }
             }
 
             h2 {
                 font-family: 'Lato';
-                font-weight: 200;
-                font-size: 1.4em;
-                margin-bottom: 2vh;
+                font-weight: 300;
+                font-size: 3.4vmax;
+                margin: 1vh 1vw 2vh 1vw;
+
             }
 
             h3{
-                font-family: 'modern';
+                font-family: 'Lato';
+                font-weight: 400;
                 text-decoration: underline;
-                font-size: 1.75em;
+                font-size: 3vmax;
+            }
+
+            h4{
+                font-family: 'Lato';
+                font-weight: 200;
+                font-style: italic;
+                font-size: 2.6vmax;
             }
 
             p{
                 font-family: 'Lato';
                 font-weight: 300;
-                ${mq[0]} {
-                    font-size: 1.1em;
-                }
+                font-size: 2.3vmax;
             }
             a{
                 font-family: 'Lemonmilk';
                 font-weight: 300;
-                font-size: 18px;
+                font-size: 1.7vmax;
                 text-decoration: none;
                 height: auto;
-                ${'' /* ${mq[0]} {
-                    font-size: 1.5em;
-                } */}
-                ${mq[1]} {
-                    font-size: 1.8em;
-                }
             }
             a:hover {
                 text-decoration: underline;

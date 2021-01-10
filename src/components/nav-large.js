@@ -7,36 +7,28 @@ const navy = '#516684';
 const dkPink = '#db777c';
 // const black = '#000';
 // const white = '#fbfafb';
-const breakpoints = [768, 1024, 1400, 1600]
-const mq = breakpoints.map(
-    bp => `@media (min-width: ${bp}px)`
-)
+
 
 const NavStyle = styled('nav')`
     padding-top: 5vh;
+    align-self: center;
     & ul {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        width: 50vw;
-        justify-content: center;
+        justify-content: flex-end;
         padding: 1vh;
         margin-left: 5vw;
         a .nav-item {
-            font-size: 0.5em;
-            color: ${dkPink};
+            color: ${navy};
             list-style: none;
             text-shadow: 0px 2px 1px #C0C0C0;
             padding-bottom: 1vh;
-            ${mq[1]} {
-                margin-right: 1vw;
-            }
-            ${mq[3]} {
-                font-size: 0.8em;
-            }
+            margin-right: 1vw;
+            font-size: 1.4vmax;
         }
         .active li {
-            color: ${navy};
+            color: ${dkPink};
             text-decoration: underline;
         }
     }

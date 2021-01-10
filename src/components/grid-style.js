@@ -13,7 +13,7 @@ const mq = breakpoints.map(
 const GridStyle = styled('section')`
     display: flex;
     flex-direction: column;
-    padding: 4vmin;
+    padding: 4vmax;
     min-height: 60vh;
 
     div {
@@ -35,95 +35,65 @@ const GridStyle = styled('section')`
     button {
         outline: none;
         border: none;
-        width: 25vw;
-        heigth: 5vh;
+        width: 15vmin;
+        height: auto;
         margin: 1vh auto;
         background-color: ${pink};
         border-radius: 10px;
         font-family: Lato;
         font-weight: 400;
-        font-size: 0.6em;
+        font-size: 1.7vmax;
         box-shadow: -1px 2px 4px rgba(50, 50, 50, 0.5);
         ${mq[0]} {
-            width: 15vw;
-            font-size: 1em;
+            width: 25vmin;
         }
         ${mq[1]} {
             margin: 2vh auto 0 2vw;
-            align-self: center;
-            width: 10vw;
+            align-self: flex-start;
+            width: 30vmin;
+        }
+    }
+    .grid-div{
+        display: flex;
+        flex-direction: column;
+        margin-top: 5%;
+        ${mq[0]}{
+            flex-direction: row;
+
         }
     }
     article {
         width: 90%;
+        margin: 0 auto;
         ${mq[0]} {
             flex-direction: column;
             flex-wrap: wrap;
-            width: 30%;
+            width: 40%;
         }
         ${mq[2]} {
-            width: 22%;
+            width: 30%;
         }
 
         & a {
             ${mq[0]} {
-                width: 150px;
+                width: 45%;
                 margin: 0.5vh auto;
                 padding: 0;
-            }
-            ${mq[1]} {
-                width: 250px;
-            }
-            ${mq[3]} {
-                width: 300px;
             }
         }
         .article-div{
             width: 100%;
+            text-align: center;
             ${mq[0]} {
-                width: 150px;
-                margin-left: 0;
-            }
-            ${mq[1]} {
-                width: 250px;
-            }
-            ${mq[3]} {
-                width: 300px;
-            }
-            h3 a {
-                font-size: 0.8em;
-                ${mq[1]} {
-                    font-size: 1.2em;
-                }
-            }
-            .author-span{
-                font-size: 0.4em;
-                ${mq[1]} {
-                    font-size: 0.9em;
-                }
-            }
-            p {
-                font-size: 0.6em;
-                ${mq[1]} {
-                    font-size: 1em;
-                }
-                ${mq[3]} {
-                    font-size: 1.2em;
-                }
+                width: 100%;
+                margin-left: 4%;
             }
             a {
                 text-align: right;
-                font-size: 0.4em;
                 ${mq[0]} {
                     text-align: center;
                     padding: 0;
                     margin-top: 0;
-                }
-                ${mq[1]} {
-                    font-size: 0.9em;
-                }
-                ${mq[3]} {
-                    font-size: 1em;
                 }
             }   
         }

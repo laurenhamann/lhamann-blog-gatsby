@@ -12,8 +12,6 @@ const black = '#000';
 
 const MiddleStyle = styled('section') `
     width: 100vw;
-    display: flex;
-    flex-direction: column;
     margin: 5vh 0;
     align-items: center;
     ${mq[1]} {
@@ -23,66 +21,58 @@ const MiddleStyle = styled('section') `
             }
         }
     }
-    ${mq[2]} {
-        min-height: auto;
-        height: 40vh;
-        padding: 5vh;
-        flex-direction: row;
-        justify-content: space-between;
+
+    .mid-div{
+        width: 80%;
+        padding: 3% 0;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
+
     & h1 {
         color: ${black};
         transition: color 1s;
-        ${mq[2]} {
-            font-size: 10em;
-            margin-top: -1vh;
-            margin-left: 6vw;
-            margin-right: -8vw;
-            align-self: flex-start;
-        }
+        width: auto;
+        align-self: center;
+        margin-bottom: 0;
     }
 
     & ul {
-        ${mq[2]} {
-            margin-left: -20vw;
-            align-self: flex-end;
-        }
+        width: auto;
+        align-self: center;
+        padding-left: 0;
         .mid-li {
             color: ${black};
             font-family: 'Lato';
             font-weight: 200;
-            font-size: .75em;
+            font-size: 2vmax;
             text-align: left;
             list-style: none;
-            padding-bottom: 0.5vh;
-            ${mq[0]} {
-                font-size: 0.9em;
+            padding-bottom: 0.5vh; 
+            ${mq[1]}{
+                font-size: 1.7vmax;
             }
-            ${mq[1]} {
-                font-size: 1em;
-            } 
         }
         .mid-li:before {
             /* adding dashes before each li for quick facts */
             content: " - ";
         }
     }
+    a {
+        padding: 2% 0;
+        width: auto;
+        align-self: center;
+    }
     .special-link {
         /* special link styling for middle section on index page*/
         color: ${navy};
         font-family: 'lemonmilk';
-        font-size: 0.45em;
-        ${mq[2]} {
-            font-size: 0.9em;
-        }
     }
     .load-link {
         color:${pink};
-        font-size: 0.45em;
         margin-right: 1vw;
-        ${mq[2]} {
-            font-size: 1em;
-        }
     }
 `;
 

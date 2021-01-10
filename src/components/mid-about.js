@@ -27,19 +27,19 @@ const MidAbout = () => (
             justify-content: center;
         }
         a{
+            font-size: 2vmax;
             ${mq[0]} {
-                font-size: 1.5em;
+                font-size: 2vmax;
                 margin: auto 10vw;
             }
-
-            ${mq[1]} {
-                font-size: 2em;
-            }
             .about-links{
-                font-size: 1em;
                 text-decoration: none;
                 color: ${navy};
+                ${mq[2]}{
+                    font-size: 1.7vmax;
+                }
             }
+            
         }
     `}>
         <Link to="/"><h3 className="about-links"><span>&larr;</span> Go to Projects</h3></Link>

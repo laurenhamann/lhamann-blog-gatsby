@@ -6,28 +6,21 @@ const mq = breakpoints.map(
 )
 const PreviewLinks = styled('div') `
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     ${mq[0]} {
         justify-content: center;
     }
-    width: 80vw;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 80%;
+    padding: 2.5% 0;
+    margin: 0 auto;
     .page-links{
         /*  index page project and blog links */
         color: #516684;
-        ${mq[0]} {
-            font-size: 1.1em;
-            margin:auto 4vw;
-        }  
-        ${mq[1]} {
-            margin:auto 6vw;
-        }                 
-        ${mq[3]} {
-            font-size: 2em;
-            margin:auto 10vw;
-        }
+        font-size: 2vmax;
+        margin:auto 10%;   
+        ${mq[2]} {
+            font-size: 1.5vmax;
+        }               
     }
 
 `

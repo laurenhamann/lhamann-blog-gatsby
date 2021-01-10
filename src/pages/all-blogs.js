@@ -3,7 +3,7 @@ import Layout from '../components/layout';
 import usePosts from '../hooks/use-posts';
 import { Link } from 'gatsby';
 import Image from 'gatsby-image';
-import ArticleStyle from '../components/preview-article';
+import ArticleStyle from '../components/article-preview';
 import ReadLink from '../components/read-link';
 import GridStyle from '../components/grid-style';
 
@@ -36,7 +36,9 @@ const AllBlogs = () => {
                     <h1> Search Blogs </h1>
                     <button className="filter" ariaLabel="filter-blogs">+</button>
                 </div>
+                <div className="grid-div">
                     {allPosts}
+                </div>
             </GridStyle>
         </Layout>
 

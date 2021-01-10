@@ -8,6 +8,7 @@ const FooterStyle = styled('section')`
     flex-direction: column;
     text-align: center; 
     justify-content: center;
+    height: auto;
     ${mq[1]} {
         &:hover {
             h1 {
@@ -15,25 +16,26 @@ const FooterStyle = styled('section')`
             }
         }
     }
-    ${mq[2]} {
-            height: 35vh;
-        }
     & h1 {
         color: #000;
         transition: color 1s;
+        margin-bottom: 0;
         ${mq[2]} {
             font-size: 8em;
-            padding-bottom: 1.5vh;
+        }
+        ${mq[2]} {
+            margin-bottom: 1vh;
+            font-size: 8em;
         }
     } 
 
-    & h2 {
+    & h4 {
+        padding-bottom: 3vh;
         ${mq[1]} {
             padding-bottom: 1.5vh;
         }
         ${mq[2]} {
-            font-size: 2em;
-            padding-bottom: 1vh;
+            padding-bottom: 6vh;
         }
     }
     & .social-links {
@@ -43,12 +45,18 @@ const FooterStyle = styled('section')`
         margin-bottom: 3vh;
         a{
             margin-right: 2vw;
+            font-size: 3.5vmin;
             ${mq[0]} {
-                font-size: 3vh;
                 padding-bottom: -3.5vh;
             }
             ${mq[1]} {
-                font-size: 4vh;
+                font-size: 4vmin;
+            }
+            ${mq[2]} {
+                font-size: 5.5vmin;
+            }
+            ${mq[3]} {
+                font-size: 6vmin;
             }
         }
     }

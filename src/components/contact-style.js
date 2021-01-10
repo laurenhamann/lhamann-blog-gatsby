@@ -24,7 +24,7 @@ const ContactStyle = styled('section')`
                     color: ${dkPink};
                 }
                 h4 {
-                    color: ${pink};
+                    color: ${navy};
                 }
             }
         }
@@ -33,22 +33,12 @@ const ContactStyle = styled('section')`
         color: ${black};
         margin-bottom: 0;
         transition: color 1s;
-        ${mq[0]} {
-            font-size: 7em;
-        }
-        ${mq[0]} {
-            font-size: 9em;
-        }
     }
 
     & h4 {
         color: ${black};
         transition: color 1s;
         padding-bottom: 5vh;
-        ${mq[0]} {
-            font-size: 2em;
-            font-weight: 200;
-        }
     }
 
     #contact-form {
@@ -78,30 +68,18 @@ const ContactStyle = styled('section')`
         flex-direction: column;
         margin: 1vh auto;
         font-family: 'modern';
-        font-size: 14px;
+        font-size: 1.9vmax;
         color: #fff;
-        ${mq[0]} {
-            font-size: 1.2em;
-        }
-        ${mq[1]} {
-            font-size: 1.4em;
-        }
-        ${mq[2]} {
-            font-size: 1.6em;
+        ${mq[2]}{
+            font-size: 1.7vmax;
         }
     }
 
     #contact-form label:focus-within{
         color: ${pink};
-        font-size: 16px;
-        ${mq[0]} {
-            font-size: 1.3em;
-        }
-        ${mq[1]} {
-            font-size: 1.5em;
-        }
+        font-size: 2vmax;
         ${mq[2]} {
-            font-size: 1.7em;
+            font-size: 1.9vmax;
         }
     }
 
@@ -136,10 +114,8 @@ const ContactStyle = styled('section')`
     }
 
     #submit-btn{
-        width: 35vw;
         max-width: 300px;
         min-height: 25px;
-        height: 5vh;
         margin: 1vh auto;
         border-radius: 10px;
         outline: none;
@@ -150,18 +126,9 @@ const ContactStyle = styled('section')`
         font-weight: 400;
         text-shadow: 1px 1px 2.5px rgba(50, 50, 50);
         color: ${white};
-        ${mq[0]} {
-            width: 20vw;
-            font-size: 1.2em;
-            height: 4vw;
-        }
-        ${mq[1]}{
-            font-size: 1.3em;
-        }
-        ${mq[2]}{
-            font-size: 1.4em;
-        }
-
+        width: 20vmin;
+        font-size: 1.6vmax;
+        height: 5vmin;
     }
     #submit-btn:hover {
         background-color: ${white};

@@ -14,64 +14,61 @@ const TemplateStyle = styled('section')`
         justify-content: center;
         text-align: center;
         h1 {
-            font-size: 5em;
-            ${mq[0]} {
-                font-size: 5.5em;
-            }
             ${mq[1]} {
                 margin-bottom: 1vh;
-                font-size: 7em;
             }
             ${mq[3]} {
                 margin-bottom: 1vh;
-                font-size: 10em;
             }
         }
         & span {
-            font-size: 0.70em;
+            font-size: 1.7vmax;
             color: ${grey};
             font-family: Lato;
             font-weight: 400;
-            ${mq[0]} {
-                font-size: 1em;
-            }
-            ${mq[1]} {
-                font-size: 1.2em;
+            font-style: italic;
+            ${mq[0]}{
+                font-size: 1.5vmax;
             }
         }
         p,
         h3 {
             padding-top: 3vh;
         }
-        h3{
-            ${mq[1]} {
-                font-size: 2.5em;
+        ul {
+            width: 80vw;
+            margin: 1vh auto;
+            ${mq[1]}{
+                width: 30vw;
             }
-            ${mq[3]} {
-                font-size: 3.5em;
+            li {
+                text-align: left;
+                width: 20vw;
             }
         }
-
+        hr {
+            margin: 2vh 0;
+        }
         p{
+            width: 80vw;
+            margin: 1vh auto;
             ${mq[1]} {
-                font-size: 1.5em;
                 padding: 3vh 2vw 0 2vw;
+                width: 50vw;
             }
             ${mq[2]} {
                 padding: 3vh 6vw 0 6vw;
             }
             ${mq[3]} {
-                font-size: 2em;
                 padding: 3vh 15vw 0 15vw;
             }
         }
         a{
             text-align: left;
-            font-size: 1em;
             padding: 2.5vh;
             color: ${navy};
-            ${mq[1]} {
-                font-size: 1.2em;
+            ${mq[2]} {
+                padding-left: 10vh;
             }
             .arrow-pink{
                 color: ${pink};

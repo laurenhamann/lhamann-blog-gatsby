@@ -1,5 +1,5 @@
 import * as React from "react";
-import PreviewHome from '../components/previews-index';
+import PreviewHome from '../components/index-preview';
 import Layout from "../components/layout";
 import MidIndex from '../components/mid-index';
 // markup

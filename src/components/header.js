@@ -1,10 +1,9 @@
 import React from 'react';
 import { Link} from 'gatsby';
-import { css } from '@emotion/react';
 import Logo from './logo';
-import LargeNav from './large-nav';
-import MobileNav from './mobile-nav';
-
+import LargeNav from './nav-large';
+import MobileNav from './nav-mobile';
+import HeaderStyle from './header-style';
 
 class Header extends React.Component{
     constructor(props) {
@@ -33,11 +32,12 @@ class Header extends React.Component{
     }
     render() {
         return ( 
-            <header className="flex-row align-ends">
-                <Link to="/" css={css` min-height: 50px; min-width: 100px; height: 40%; width: 50%; max-width: 400px; max-height: 350px;`}><Logo /></Link>
-                {this.state.width < 768 ? <MobileNav opened={this.state.opened} clicked={this.click} /> : <LargeNav />}
-                
-            </header>
+            <HeaderStyle className="align-ends">
+                <div>
+                    <Link to="/" className="logo"><Logo /></Link>
+                    {this.state.width < 768 ? <MobileNav opened={this.state.opened} clicked={this.click} /> : <LargeNav />}
+                </div>
+            </HeaderStyle>
         );
     }
 }
