@@ -5,12 +5,6 @@ import { Link } from 'gatsby';
 const navy = '#516684';
 //const grey = '#a2aebf';
 const dkPink = '#db777c';
-// const black = '#000';
-// const white = '#fbfafb';
-const breakpoints = [364, 768, 1024, 1400, 1600]
-const mq = breakpoints.map(
-    bp => `@media (min-width: ${bp}px)`
-)
 
 
 const NavDiv = styled('div')`

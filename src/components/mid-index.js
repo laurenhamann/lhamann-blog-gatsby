@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { css } from '@emotion/react';
 import MiddleStyle from '../components/middle-style';
 
 

@@ -1,8 +1,7 @@
 import styled from '@emotion/styled';
-
 const breakpoints = [768, 1024, 1400, 1600]
 const mq = breakpoints.map(
-		bp => `@media (min-width: ${bp}px)`
+    bp => `@media (min-width: ${bp}px)`
 )
 
 const ArticleStyle = styled.article(props => ({
@@ -12,6 +11,11 @@ const ArticleStyle = styled.article(props => ({
 	justifyContent: 'space-around',
 	marginTop: '0',
 	paddingBottom: '1%',
+	[mq[1]]:{
+		width: '80%',
+		marginLeft: 'auto',
+		marginRight: 'auto',
+	},
 	'&:first-of-type': {
 		marginTop: '2%',
 
@@ -30,14 +34,13 @@ const ArticleStyle = styled.article(props => ({
 		p:{
 			paddingBottom: '2%',
 			textAlign: 'left',
-			fontSize: '2vmax',
 		},
 	},
 	'.title': {
 		width: 'auto',
 	},
 	'.title a': {
-		fontSize: '3vmax', 
+		fontSize: '2.5vmax', 
 		color: '#000',
 		fontFamily: 'modern',
 		cursor: 'pointer',
@@ -52,7 +55,6 @@ const ArticleStyle = styled.article(props => ({
 		fontFamily: 'lato',
 		fontWeight: '300',
 		fontStyle: 'italic',
-		fontSize: '1.7vmax',
 		padding: '1% 0',
 		width: 'auto',
 	}

@@ -25,7 +25,7 @@ const NavStyle = styled('nav')`
             text-shadow: 0px 2px 1px #C0C0C0;
             padding-bottom: 1vh;
             margin-right: 1vw;
-            font-size: 1.4vmax;
+            font-size: 1.1vmax;
         }
         .active li {
             color: ${dkPink};

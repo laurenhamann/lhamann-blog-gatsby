@@ -33,6 +33,9 @@ const AboutPage = styled('section')`
             ${mq[0]} {
                 margin-left: -8vw;
             }
+            ${mq[1]} {
+                font-size: 5.5vmax;
+            }
         }
     }
     & .gatsby-image-wrapper {
@@ -46,26 +49,21 @@ const AboutPage = styled('section')`
             margin: 3vh auto 1vh auto;
         }
         ${mq[1]} {
-            height: 500px;
-            width: 550px;
-        }
-        ${mq[1]} {
-            height: 550px;
-            width: 600px;
+            height: 400px;
+            width: 450px;
         }
     }
     p   {
         text-align: left;
         width: 80vw;
+        margin-top: 2vh;
         margin-left: 2vw;
         align-item: flex-start;
         ${mq[0]} {
-            width: 50vw;
-            margin-left: 5vw;
+            width: 450px;
         }
         ${mq[1]} {
-            width: 70vw;
-            font-size: 1.7em;
+            width: 550px;
         }
         ${mq[2]} {
             width: 60vw;

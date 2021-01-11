@@ -42,15 +42,17 @@ const GridStyle = styled('section')`
         border-radius: 10px;
         font-family: Lato;
         font-weight: 400;
-        font-size: 1.7vmax;
+        font-size: 1.4vmax;
         box-shadow: -1px 2px 4px rgba(50, 50, 50, 0.5);
         ${mq[0]} {
-            width: 25vmin;
+            width: 15vmin;
+            font-size: 1.5vmax;
         }
         ${mq[1]} {
+            font-size: 1.2vmax;
             margin: 2vh auto 0 2vw;
             align-self: flex-start;
-            width: 30vmin;
+            width: 10vmin;
         }
     }
     .grid-div{
@@ -75,6 +77,7 @@ const GridStyle = styled('section')`
         }
 
         & a {
+            width: 40%;
             ${mq[0]} {
                 width: 45%;
                 margin: 0.5vh auto;
@@ -82,11 +85,13 @@ const GridStyle = styled('section')`
             }
         }
         .article-div{
-            width: 100%;
             text-align: center;
-            ${mq[0]} {
-                width: 100%;
-                margin-left: 4%;
+            ${mq[0]}{
+                width: 90%;
+                p {
+                    width: 50%;
+                    margin: 0 auto;
+                }
             }
             a {
                 text-align: right;

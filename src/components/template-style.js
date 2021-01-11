@@ -22,14 +22,10 @@ const TemplateStyle = styled('section')`
             }
         }
         & span {
-            font-size: 1.7vmax;
             color: ${grey};
             font-family: Lato;
             font-weight: 400;
             font-style: italic;
-            ${mq[0]}{
-                font-size: 1.5vmax;
-            }
         }
         p,
         h3 {
@@ -72,6 +68,16 @@ const TemplateStyle = styled('section')`
             }
             .arrow-pink{
                 color: ${pink};
+            }
+        }
+        p code {
+            background-color: #00000009;
+            padding: 3px;
+            border-radius: 3px;
+            color: ${grey};
+            font-size: 1.5vmax;
+            ${mq[1]} {
+                font-size: 1.4vmax;
             }
         }
     }

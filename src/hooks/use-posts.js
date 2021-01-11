@@ -9,6 +9,7 @@ const usePosts = () => {
                 author
                 slug
                 title
+                date
                 image {
                     sharp: childImageSharp {
                     fluid(maxHeight: 350, maxWidth: 400) {
@@ -25,6 +26,7 @@ const usePosts = () => {
     return data.allMdx.nodes.map(post => ({
         title: post.frontmatter.title,
         author: post.frontmatter.author,
+        date: post.frontmatter.date,
         slug: post.frontmatter.slug,
         image: post.frontmatter.image,
         excerpt: post.excerpt

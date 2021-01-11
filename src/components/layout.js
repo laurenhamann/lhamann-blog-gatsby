@@ -84,8 +84,8 @@ const Layout = ({ children }) => {
         
             h1{
                 font-family: 'modern';
-                font-size: 4vmax;
-                margin: 2vh 0;
+                font-size: 4.5vmax;
+                margin: 2vh;
                 ${mq[1]} {
                     font-size: 2.9em;
                 }
@@ -110,8 +110,14 @@ const Layout = ({ children }) => {
             h2 {
                 font-family: 'Lato';
                 font-weight: 300;
-                font-size: 3.4vmax;
+                font-size: 3vmax;
                 margin: 1vh 1vw 2vh 1vw;
+                ${mq[0]}{
+                    font-size: 3vmax;
+                }
+                ${mq[1]}{
+                    font-size: 2vmax;
+                }
 
             }
 
@@ -120,6 +126,9 @@ const Layout = ({ children }) => {
                 font-weight: 400;
                 text-decoration: underline;
                 font-size: 3vmax;
+                ${mq[1]}{
+                    font-size: 1.9vmax;
+                }
             }
 
             h4{
@@ -127,12 +136,21 @@ const Layout = ({ children }) => {
                 font-weight: 200;
                 font-style: italic;
                 font-size: 2.6vmax;
+                ${mq[1]}{
+                    font-size: 1.7vmax;
+                }
             }
 
             p{
                 font-family: 'Lato';
                 font-weight: 300;
                 font-size: 2.3vmax;
+                ${mq[0]}{
+                    font-size: 1.9vmax;
+                }
+                ${mq[1]}{
+                    font-size: 1.5vmax;
+                }
             }
             a{
                 font-family: 'Lemonmilk';
@@ -140,9 +158,22 @@ const Layout = ({ children }) => {
                 font-size: 1.7vmax;
                 text-decoration: none;
                 height: auto;
+                ${mq[1]}{
+                    font-size: 1.3vmax;
+                }
             }
             a:hover {
                 text-decoration: underline;
+            }
+
+            .author-span {
+                font-size: 1.2vmax;
+                ${mq[0]}{
+                    font-size: 1.3vmax;
+                }
+                ${mq[1]}{
+                    font-size: 1vmax;
+                }
             }
 
     /**************************** Universal ***************************/

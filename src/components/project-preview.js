@@ -21,7 +21,7 @@ const ProjectPreview = () => {
                             {project.title}
                         </Link>
                     </h3>
-                    <span className="author-span">{project.creator}</span>
+                    <span className="author-span">{project.creator}-{project.date}</span>
                     <p>{project.excerpt}</p>
                     <ReadLink to={project.slug}>Read More &rarr;</ReadLink>
                 </div>

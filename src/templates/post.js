@@ -10,6 +10,7 @@ export const query = graphql`
             frontmatter {
                 title
                 author
+                date
             }
             body
         }
@@ -23,7 +24,7 @@ const PostTemplate = ({ data: {mdx: post} }) => (
         <TemplateStyle className="mid-section">
             <article className="article-flex flex-col">
                 <h1 className="title main">{post.frontmatter.title}</h1>
-                <span className="author-span">author: {post.frontmatter.author}</span>
+                <span className="author-span">author: {post.frontmatter.author}~ {post.frontmatter.date}</span>
                 <MDXRenderer>{post.body}</MDXRenderer>
                 <p>{post.frontmatter.body}</p>
                 <Link to="/" className="load-link"><span className="arrow-pink">&larr;</span> back to all blog posts</Link>

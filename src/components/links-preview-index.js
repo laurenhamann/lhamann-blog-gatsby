@@ -11,14 +11,14 @@ const PreviewLinks = styled('div') `
         justify-content: center;
     }
     width: 80%;
-    padding: 2.5% 0;
+    padding: 0 0 1.5% 0;
     margin: 0 auto;
     .page-links{
         /*  index page project and blog links */
         color: #516684;
         font-size: 2vmax;
         margin:auto 10%;   
-        ${mq[2]} {
+        ${mq[1]} {
             font-size: 1.5vmax;
         }               
     }

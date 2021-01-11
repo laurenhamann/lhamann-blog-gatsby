@@ -1,6 +1,5 @@
 import styled from '@emotion/styled';
 import { Link } from 'gatsby';
-const breakpoints = [768, 1024, 1400, 1600]
 
 const ReadLink = styled(Link)`
         color: #db777c;

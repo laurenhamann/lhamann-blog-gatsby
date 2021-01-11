@@ -8,7 +8,7 @@ const mq = breakpoints.map(
 const HeaderStyle = styled('header')`
     width: 100vw;
     > div {
-        width:80%;
+        width:90%;
         margin: auto;
         display: flex;
         flex-direction: row;
@@ -16,10 +16,10 @@ const HeaderStyle = styled('header')`
     }
 
     .logo{
-        width: 50%;
+        width: 55%;
         margin: 1%;
         ${mq[1]}{
-            width: 40%;
+            width: 30%;
         }
     }
 `;

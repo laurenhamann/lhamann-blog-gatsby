@@ -9,6 +9,7 @@ const useProjects = () => {
                 slug
                 title
                 creator
+                date
                 image {
                     img: childImageSharp {
                     fluid(maxHeight: 350, maxWidth: 400) {
@@ -26,6 +27,7 @@ const useProjects = () => {
         title: project.frontmatter.title,
         creator: project.frontmatter.creator,
         slug: project.frontmatter.slug,
+        date: project.frontmatter.date,
         image: project.frontmatter.image,
         excerpt: project.excerpt
     }))

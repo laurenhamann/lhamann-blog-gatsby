@@ -10,6 +10,7 @@ export const query = graphql`
             frontmatter {
                 title
                 creator
+                date
             }
             body
         }
@@ -24,7 +25,7 @@ const ProjectTemplate = ({ data: {mdx: project} }) => (
                     {project.frontmatter.title}
                 </h1>
                 <span className="author-span main-span">
-                creator: {project.frontmatter.creator}</span>
+                creator: {project.frontmatter.creator}~{project.frontmatter.date}</span>
                 <MDXRenderer>{project.body}</MDXRenderer>
                 <p>{project.frontmatter.body}</p>
                 {/* possibly add state to change to projects displaying */}

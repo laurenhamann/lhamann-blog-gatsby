@@ -35,9 +35,9 @@ const MidAbout = () => (
             .about-links{
                 text-decoration: none;
                 color: ${navy};
-                ${mq[2]}{
-                    font-size: 1.7vmax;
-                }
+                ${mq[1]} {
+                font-size: 1.5vmax;
+            }
             }
             
         }

@@ -21,7 +21,7 @@ const BlogPreview = () =>  {
                             {post.title}
                         </Link>
                     </h3>
-                    <span className="author-span">{post.author}</span>
+                    <span className="author-span">{post.author}-{post.date}</span>
                     <p>{post.excerpt}</p>
                     <ReadLink to={post.slug}>Read This Post &rarr;</ReadLink>
                 </div>

@@ -53,7 +53,7 @@ const ContactStyle = styled('section')`
             margin: 2vh auto;
         }
         ${mq[1]} {
-            width: 70vw;
+            width: 60vw;
         }
         ${mq[2]} {
             min-height: auto;
@@ -70,8 +70,8 @@ const ContactStyle = styled('section')`
         font-family: 'modern';
         font-size: 1.9vmax;
         color: #fff;
-        ${mq[2]}{
-            font-size: 1.7vmax;
+        ${mq[1]}{
+            font-size: 1.5vmax;
         }
     }
 
@@ -79,7 +79,7 @@ const ContactStyle = styled('section')`
         color: ${pink};
         font-size: 2vmax;
         ${mq[2]} {
-            font-size: 1.9vmax;
+            font-size: 1.7vmax;
         }
     }
 

@@ -4,6 +4,9 @@ slug: local-fonts-gatsby
 author: Lauren Hamann
 image: ./images/48.png
 type: post
+published: false
+date: 01-10-2021
+tags: [Gatsby, Tutorial, CSS, React]
 ---
 ![desk-image](./images/48.png)  
   
@@ -52,4 +55,21 @@ To Install
 ```npm i gatsby-web-font-loader --save```  
 
 
+```jsx
+const MidIndex = ({ props }) => (
+    <MiddleStyle className="mid-section">
+        <div className="mid-div">
+            <h1 className="special"> Quick Facts </h1>
+            <ul>
+                <li className="mid-li"> Frontend developer for 5 years </li>
+                <li className="mid-li"> Drawn to problem-solving  </li>
+                <li className="mid-li"> Mom of three little ones </li>
+                <li className="mid-li"> Being creative is my hobby </li>
+            </ul>
+            <Link to="/about"><span className="special-link">Want to know more?</span><span className="load-link">&rarr;</span></Link>
+        </div>
+    </MiddleStyle>
+);
 
+export default MidIndex;
+```
