@@ -26,6 +26,7 @@ const NavStyle = styled('nav')`
             padding-bottom: 1vh;
             margin-right: 1vw;
             font-size: 1.1vmax;
+            text-transform: uppercase;
         }
         .active li {
             color: ${dkPink};

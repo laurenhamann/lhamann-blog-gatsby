@@ -1,0 +1,75 @@
+--- 
+title: Add Local Fonts to Gatsby
+slug: local-fonts-gatsby
+author: Lauren Hamann
+image: ./images/48.png
+type: post
+published: false
+date: 01-10-2021
+tags: [Gatsby, Tutorial, CSS, React]
+---
+![desk-image](./images/48.png)  
+  
+    
+
+## How do you add local fonts to Gatsby?  
+#### Hello
+### ** Problem **  
+After deploying my site on Netlify, I found that my fonts weren't working like I thought they would.  
+
+** Why is this happening? **  
+That was the question I needed to answer  
+
+On other computers that didn't have the fonts preinstalled, they wouldn't show. It is a common problem but I have never used local fonts for websites so I had no idea what the solution would be.  
+After some research, I decided to disable the local fonts on my computer, and low-behold my fonts were not showing up for me either.
+
+** To disable fonts on a Mac **  
+
+Go to Finder  
+
+*CMD + F*  
+
+Find your font you would like to disable. 
+
+Right-click the font you would like to disable.
+
+Click on  
+
+```disable "font" family```  
+  
+
+
+---
+  
+### Next, I turned to trusty Google.
+
+*Add local font files to Gatsby live site*  
+
+I looked at some articles.
+The common solution was to use a plugin!  
+
+gatsby-plugin-web-font-loader  
+
+
+To Install  
+```npm i gatsby-web-font-loader --save```  
+
+Inside of gatsby-config.js --  
+
+```javascript
+{
+    resolve: "gatsby-plugin-web-font-loader",
+        options: {
+        custom: {
+            families: [//your font family names],
+            urls: ["/fonts/fonts.css"],
+        },
+    },
+},
+```  
+
+Then I created a folder inside of src called static  
+src/static/fonts/fonts.css  
+
+This is where I messed up for *hours*  
+I didn't know I was supposed to put a new static folder *inside* of src. Once I did that I was able to 

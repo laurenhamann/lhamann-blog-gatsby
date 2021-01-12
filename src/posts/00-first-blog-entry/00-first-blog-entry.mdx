@@ -1,75 +1,33 @@
 --- 
-title: Add Local Fonts to Gatsby
-slug: local-fonts-gatsby
+title: Introduction
+slug: introduction
 author: Lauren Hamann
 image: ./images/48.png
 type: post
 published: false
-date: 01-10-2021
-tags: [Gatsby, Tutorial, CSS, React]
+date: 01-12-2021
+tags: [Personal]
 ---
 ![desk-image](./images/48.png)  
   
-    
+### I feel like the only thing I can write about for my first entry is a proper introduction  
 
-## How do you add local fonts to Gatsby?  
-#### Hello
-### ** Problem **  
-After deploying my site on Netlify, I found that my fonts weren't working like I thought they would.  
+## 2016
+I started my Web Development journey in 2016, I just had my first baby and wasn't too keen on going back to an unfulfilling stressful office job. I was feeling unmotivated and bored. I had a lot of down-time but also a very unpredictable schedule. **babies can be very demanding at a moment's notice.** I visited my sister, a Software Developer. She showed me some programs she was working on. It looked interesting even though everything went right over my head.  
+Until this point in my life, I had only thought of the internet as a magical invention that does what I need it to do. I hadn't used a desktop since growing up with the shared family computer in the den. I told her, "I need something to do that will help me get a job when I am ready but that isn't going to be a set schedule with classes." She signed me up for Skillcrush.com, the Frontend course.   
+Almost done with the Frontend course on Skillcrush, I felt unstoppable. I could now write basic HTML and CSS. I made fake client websites. ** I did it. I am now a Frontend Developer! ** How very naive of me. To be fair, I could do more on the internet than ever before.  
+The last subject was Javascript, I got discouraged very quickly. I couldn't wrap my head around it. "Why would I ever put a stopwatch on a website?", "What could I need to loop?", "Why do I need reusable variables?" Every Javascript tutorial I saw just didn't seem useful to me. I thought maybe design was more for me.  
+For awhile, I did everything I could to **never** use Javascript. I just couldn't understand it. HTML and CSS just made sense. HTML is the bones(layout and text), CSS is the styling of the bones. But everytime a burst of creativity came for a new website, such as a hamburger menu for mobile screens, Javascript was the only solution. I eventually started to use onClick functions within `<script></script>` in my HTML. That's all I did, the bare minimum of Javascript.  
+## 2019
+Two years and two babies later, I was in another rut. Going no where because design wasn't for me and I couldn't get by without some type of Javascript. That's when my sister told me about React. Something beyond vanilla Javascript. I read some docs and did the tic-tac-toe tutorial from Reactjs.org. This was just what I needed to learn about. I found myself finding more use-cases for Javascript. My first React website was just using JSX for HTML and CSS, so basic. But it was new and interesting. I started creating more and more, using `.map()` and `.filter()`. A couple of months later, I made a recreation of one of my favorite computer games as a kid. The snakegame,  
+* I have no idea if that is the real name. *  
+Basically it is just a dot that you control with the arrow keys, you move it over to a different dot and it "eats the dot" and the snake's tail grows bigger. The bigger the tail the faster it moves. If you hit your own tail or the boundaries then game over.  
 
-** Why is this happening? **  
-That was the question I needed to answer  
+That was my first big Javascript project, almost no HTML and CSS. I still didn't know what to use Javascript for on a website. There was a lot of trial and error. I found a love for figuring out problems in code, or maybe a love for the feeling figuring out the problem and the error disappearing.  
 
-On other computers that didn't have the fonts preinstalled, they wouldn't show. It is a common problem but I have never used local fonts for websites so I had no idea what the solution would be.  
-After some research, I decided to disable the local fonts on my computer, and low-behold my fonts were not showing up for me either.
+## 2020  
+I had big ideas, but I was stuck again. I wanted to make dynamic pages and retrieve data. My idea was to make a site with login access for others. Inside of that individual's account, they would be able to create content through a CMS. The next step was learning about using databases to store data to then retrieve from elsewhere on the site. I found a MERN stack tutorial, but really didn't get that deep understanding I was looking for. I did learn how to make a To-do list! That's when my sister told me about Frontend Masters. I signed up and took the full stack course. I have been taking courses and getting inspired to do little projects ever since.  
 
-** To disable fonts on a Mac **  
+## 2021  
 
-Go to Finder  
-
-*CMD + F*  
-
-Find your font you would like to disable. 
-
-Right-click the font you would like to disable.
-
-Click on  
-
-```disable "font" family```  
-  
-
-
----
-  
-### Next, I turned to trusty Google.
-
-*Add local font files to Gatsby live site*  
-
-I looked at some articles.
-The common solution was to use a plugin!  
-
-gatsby-plugin-web-font-loader  
-
-
-To Install  
-```npm i gatsby-web-font-loader --save```  
-
-
-```jsx
-const MidIndex = ({ props }) => (
-    <MiddleStyle className="mid-section">
-        <div className="mid-div">
-            <h1 className="special"> Quick Facts </h1>
-            <ul>
-                <li className="mid-li"> Frontend developer for 5 years </li>
-                <li className="mid-li"> Drawn to problem-solving  </li>
-                <li className="mid-li"> Mom of three little ones </li>
-                <li className="mid-li"> Being creative is my hobby </li>
-            </ul>
-            <Link to="/about"><span className="special-link">Want to know more?</span><span className="load-link">&rarr;</span></Link>
-        </div>
-    </MiddleStyle>
-);
-
-export default MidIndex;
-```
+This leads me to now, I took my time learning Frontend Development. I took lots of breaks and had plenty of set backs, but I also had a lot of encouragement. If I didn't have someone to ask after spening 5 or more hours trying to figure something out, I would've probably quit a long time ago. Sometimes I feel like I know nothing still, especially when I read someone's answer on stackoverflow.com and I don't understand any of it. But I will never forget when Javascript finally clicked for me or when I finally got data from a database I created. It was all worth it. My goal this year is to share my struggles and solutions and to be closer to getting my first offical job in the tech world. 

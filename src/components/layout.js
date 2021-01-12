@@ -1,6 +1,9 @@
 import React from "react";
 import { css, Global } from "@emotion/react";
 import 'typeface-lato';
+import 'typeface-raleway';
+import 'typeface-montserrat-alternates';
+import 'typeface-source-code-pro';
 import Header from './header';
 import Footer from './footer';
 import '../static/fonts/fonts.css';
@@ -66,6 +69,262 @@ const Layout = ({ children }) => {
                 url('./files/lato-latin-400italic.woff2') format('woff2'), 
                 url('./files/lato-latin-400italic.woff') format('woff'); 
             }
+            /* raleway-100normal - latin */
+            @font-face {
+                font-family: 'Raleway';
+                font-style: normal;
+                font-display: swap;
+                font-weight: 100;
+                src:
+                    local('Raleway Thin '),
+                    local('Raleway-Thin'),
+                    url('./files/raleway-latin-100.woff2') format('woff2'), /* Super Modern Browsers */
+                    url('./files/raleway-latin-100.woff') format('woff'); /* Modern Browsers */
+            }
+
+            /* raleway-100italic - latin */
+            @font-face {
+                font-family: 'Raleway';
+                font-style: italic;
+                font-display: swap;
+                font-weight: 100;
+                src:
+                    local('Raleway Thin italic'),
+                    local('Raleway-Thinitalic'),
+                    url('./files/raleway-latin-100italic.woff2') format('woff2'), /* Super Modern Browsers */
+                    url('./files/raleway-latin-100italic.woff') format('woff'); /* Modern Browsers */
+            }
+
+            /* raleway-200normal - latin */
+            @font-face {
+                font-family: 'Raleway';
+                font-style: normal;
+                font-display: swap;
+                font-weight: 200;
+                src:
+                    local('Raleway Extra Light '),
+                    local('Raleway-Extra Light'),
+                    url('./files/raleway-latin-200.woff2') format('woff2'), /* Super Modern Browsers */
+                    url('./files/raleway-latin-200.woff') format('woff'); /* Modern Browsers */
+            }
+
+            /* raleway-200italic - latin */
+            @font-face {
+                font-family: 'Raleway';
+                font-style: italic;
+                font-display: swap;
+                font-weight: 200;
+                src:
+                    local('Raleway Extra Light italic'),
+                    local('Raleway-Extra Lightitalic'),
+                    url('./files/raleway-latin-200italic.woff2') format('woff2'), /* Super Modern Browsers */
+                    url('./files/raleway-latin-200italic.woff') format('woff'); /* Modern Browsers */
+            }
+
+            /* raleway-300normal - latin */
+            @font-face {
+                font-family: 'Raleway';
+                font-style: normal;
+                font-display: swap;
+                font-weight: 300;
+                src:
+                    local('Raleway Light '),
+                    local('Raleway-Light'),
+                    url('./files/raleway-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+                    url('./files/raleway-latin-300.woff') format('woff'); /* Modern Browsers */
+            }
+
+            /* raleway-300italic - latin */
+            @font-face {
+                font-family: 'Raleway';
+                font-style: italic;
+                font-display: swap;
+                font-weight: 300;
+                src:
+                    local('Raleway Light italic'),
+                    local('Raleway-Lightitalic'),
+                    url('./files/raleway-latin-300italic.woff2') format('woff2'), /* Super Modern Browsers */
+                    url('./files/raleway-latin-300italic.woff') format('woff'); /* Modern Browsers */
+            }
+
+            /* raleway-400normal - latin */
+            @font-face {
+                font-family: 'Raleway';
+                font-style: normal;
+                font-display: swap;
+                font-weight: 400;
+                src:
+                    local('Raleway Regular '),
+                    local('Raleway-Regular'),
+                    url('./files/raleway-latin-400.woff2') format('woff2'), /* Super Modern Browsers */
+                    url('./files/raleway-latin-400.woff') format('woff'); /* Modern Browsers */
+            }
+
+            /* raleway-400italic - latin */
+            @font-face {
+                font-family: 'Raleway';
+                font-style: italic;
+                font-display: swap;
+                font-weight: 400;
+                src:
+                    local('Raleway Regular italic'),
+                    local('Raleway-Regularitalic'),
+                    url('./files/raleway-latin-400italic.woff2') format('woff2'), /* Super Modern Browsers */
+                    url('./files/raleway-latin-400italic.woff') format('woff'); /* Modern Browsers */
+            }
+
+            /* raleway-500normal - latin */
+            @font-face {
+                font-family: 'Raleway';
+                font-style: normal;
+                font-display: swap;
+                font-weight: 500;
+                src:
+                    local('Raleway Medium '),
+                    local('Raleway-Medium'),
+                    url('./files/raleway-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+                    url('./files/raleway-latin-500.woff') format('woff'); /* Modern Browsers */
+            }
+
+            /* raleway-500italic - latin */
+            @font-face {
+                font-family: 'Raleway';
+                font-style: italic;
+                font-display: swap;
+                font-weight: 500;
+                src:
+                    local('Raleway Medium italic'),
+                    local('Raleway-Mediumitalic'),
+                    url('./files/raleway-latin-500italic.woff2') format('woff2'), /* Super Modern Browsers */
+                    url('./files/raleway-latin-500italic.woff') format('woff'); /* Modern Browsers */
+            }
+
+            /* raleway-600normal - latin */
+            @font-face {
+                font-family: 'Raleway';
+                font-style: normal;
+                font-display: swap;
+                font-weight: 600;
+                src:
+                    local('Raleway SemiBold '),
+                    local('Raleway-SemiBold'),
+                    url('./files/raleway-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+                    url('./files/raleway-latin-600.woff') format('woff'); /* Modern Browsers */
+            }
+
+            /* raleway-600italic - latin */
+            @font-face {
+                font-family: 'Raleway';
+                font-style: italic;
+                font-display: swap;
+                font-weight: 600;
+                src:
+                    local('Raleway SemiBold italic'),
+                    local('Raleway-SemiBolditalic'),
+                    url('./files/raleway-latin-600italic.woff2') format('woff2'), /* Super Modern Browsers */
+                    url('./files/raleway-latin-600italic.woff') format('woff'); /* Modern Browsers */
+            }
+
+            /* raleway-700normal - latin */
+            @font-face {
+                font-family: 'Raleway';
+                font-style: normal;
+                font-display: swap;
+                font-weight: 700;
+                src:
+                    local('Raleway Bold '),
+                    local('Raleway-Bold'),
+                    url('./files/raleway-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+                    url('./files/raleway-latin-700.woff') format('woff'); /* Modern Browsers */
+            }
+
+            /* raleway-700italic - latin */
+            @font-face {
+                font-family: 'Raleway';
+                font-style: italic;
+                font-display: swap;
+                font-weight: 700;
+                src:
+                    local('Raleway Bold italic'),
+                    local('Raleway-Bolditalic'),
+                    url('./files/raleway-latin-700italic.woff2') format('woff2'), /* Super Modern Browsers */
+                    url('./files/raleway-latin-700italic.woff') format('woff'); /* Modern Browsers */
+            }
+
+            /* raleway-800normal - latin */
+            @font-face {
+                font-family: 'Raleway';
+                font-style: normal;
+                font-display: swap;
+                font-weight: 800;
+                src:
+                    local('Raleway ExtraBold '),
+                    local('Raleway-ExtraBold'),
+                    url('./files/raleway-latin-800.woff2') format('woff2'), /* Super Modern Browsers */
+                    url('./files/raleway-latin-800.woff') format('woff'); /* Modern Browsers */
+            }
+
+            /* raleway-800italic - latin */
+            @font-face {
+                font-family: 'Raleway';
+                font-style: italic;
+                font-display: swap;
+                font-weight: 800;
+                src:
+                    local('Raleway ExtraBold italic'),
+                    local('Raleway-ExtraBolditalic'),
+                    url('./files/raleway-latin-800italic.woff2') format('woff2'), /* Super Modern Browsers */
+                    url('./files/raleway-latin-800italic.woff') format('woff'); /* Modern Browsers */
+            }
+
+            /* raleway-900normal - latin */
+            @font-face {
+                font-family: 'Raleway';
+                font-style: normal;
+                font-display: swap;
+                font-weight: 900;
+                src:
+                    local('Raleway Black '),
+                    local('Raleway-Black'),
+                    url('./files/raleway-latin-900.woff2') format('woff2'), /* Super Modern Browsers */
+                    url('./files/raleway-latin-900.woff') format('woff'); /* Modern Browsers */
+            }
+
+            /* raleway-900italic - latin */
+            @font-face {
+                font-family: 'Raleway';
+                font-style: italic;
+                font-display: swap;
+                font-weight: 900;
+                src:
+                    local('Raleway Black italic'),
+                    local('Raleway-Blackitalic'),
+                    url('./files/raleway-latin-900italic.woff2') format('woff2'), /* Super Modern Browsers */
+                    url('./files/raleway-latin-900italic.woff') format('woff'); /* Modern Browsers */
+            }
+            @font-face {
+                font-family: 'Montserrat Alternates';
+                font-style: italic;
+                font-display: swap;
+                font-weight: 200;
+                src:
+                    local('Montserrat Alternates Extra Light italic'),
+                    local('Montserrat Alternates-Extra Lightitalic'),
+                    url('./files/montserrat-alternates-latin-200italic.woff2') format('woff2'), /* Super Modern Browsers */
+                    url('./files/montserrat-alternates-latin-200italic.woff') format('woff'); /* Modern Browsers */
+            }
+            /* source-code-pro-500normal - latin */
+            @font-face {
+                font-family: 'Source Code Pro';
+                font-style: normal;
+                font-display: swap;
+                font-weight: 500;
+                src:
+                    local('Source Code Pro Medium '),
+                    local('Source Code Pro-Medium'),
+                    url('./files/source-code-pro-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+                    url('./files/source-code-pro-latin-500.woff') format('woff'); /* Modern Browsers */
+            }
             * {
                 box-sizing: border-box;
                 margin: 0;
@@ -83,7 +342,8 @@ const Layout = ({ children }) => {
 
         
             h1{
-                font-family: 'modern';
+                font-family: 'Lato';
+                font-weight: 300;
                 font-size: 4.5vmax;
                 margin: 2vh;
                 ${mq[1]} {
@@ -109,7 +369,7 @@ const Layout = ({ children }) => {
 
             h2 {
                 font-family: 'Lato';
-                font-weight: 300;
+                font-weight: 200;
                 font-size: 3vmax;
                 margin: 1vh 1vw 2vh 1vw;
                 ${mq[0]}{
@@ -132,7 +392,7 @@ const Layout = ({ children }) => {
             }
 
             h4{
-                font-family: 'Lato';
+                font-family: 'Montserrat Alternates';
                 font-weight: 200;
                 font-style: italic;
                 font-size: 2.6vmax;
@@ -142,7 +402,7 @@ const Layout = ({ children }) => {
             }
 
             p{
-                font-family: 'Lato';
+                font-family: 'Raleway';
                 font-weight: 300;
                 font-size: 2.3vmax;
                 ${mq[0]}{
@@ -153,8 +413,9 @@ const Layout = ({ children }) => {
                 }
             }
             a{
-                font-family: 'Lemonmilk';
-                font-weight: 300;
+                font-family: 'Raleway';
+                font-weight: 600;
+                text-transform: capitalize;
                 font-size: 1.7vmax;
                 text-decoration: none;
                 height: auto;

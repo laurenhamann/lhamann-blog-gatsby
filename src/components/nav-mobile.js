@@ -63,6 +63,7 @@ const NavDiv = styled('div')`
         text-shadow: 0px 1px 1px #0000004a;
         margin-top: 1vh;
         font-size: 2vmax;
+        text-transform: uppercase;
     }
     nav ul .active li{
         /** active link color */

@@ -4,10 +4,10 @@ import React from 'react'
 import styled from '@emotion/styled';
 import { copyToClipboard } from '../utils/copy-to-clipboard'
 
-// const breakpoints = [768, 1024, 1400, 1600]
-// const mq = breakpoints.map(
-//     bp => `@media (min-width: ${bp}px)`
-// )
+const breakpoints = [768, 1024, 1400, 1600]
+const mq = breakpoints.map(
+    bp => `@media (min-width: ${bp}px)`
+)
 export const Pre = styled('pre')`
     text-align: left;
     padding: 0.5em;
@@ -16,13 +16,20 @@ export const Pre = styled('pre')`
     background-color: #00000009 !important;
     width: 80vw;
     margin: 1vh auto; 
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Source Code Pro', Courier, monospace;
+    div {
+        height: 15px;
+        ${mq[1]}{
+            height: auto;
+        }
+    }
 `
 export const LineNo = styled('span')`
     display: inline-block;
     width: 2em;
     user-select: none;
     opacity: 0.3;
+    font-family: 'Source Code Pro', Courier, monospace;
 `
 export const CopyCode = styled('button')`
     position: relative;

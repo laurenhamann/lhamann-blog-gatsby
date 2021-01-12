@@ -27,6 +27,10 @@ const TemplateStyle = styled('section')`
             font-weight: 400;
             font-style: italic;
         }
+        & .token {
+            font-family: 'Source Code Pro', Courier, monospace;
+            font-size: 1.4vmax;
+        }
         p,
         h3 {
             padding-top: 3vh;
