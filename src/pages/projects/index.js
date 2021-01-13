@@ -1,11 +1,11 @@
 import React from 'react';
-import Layout from '../components/layout';
-import useProjects from '../hooks/use-projects';
+import Layout from '../../components/layout';
+import useProjects from '../../hooks/use-projects';
 import { Link } from 'gatsby';
 import Image from 'gatsby-image';
-import ArticleStyle from '../components/article-preview';
-import ReadLink from '../components/read-link';
-import GridStyle from '../components/grid-style';
+import ArticleStyle from '../../components/article-preview';
+import ReadLink from '../../components/read-link';
+import GridStyle from '../../components/grid-style';
 
 const AllProjects = () => {
     const projects = useProjects();

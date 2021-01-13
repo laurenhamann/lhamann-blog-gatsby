@@ -1,11 +1,12 @@
+// /all-blogs/home
 import React from 'react';
-import Layout from '../components/layout';
-import usePosts from '../hooks/use-posts';
+import Layout from '../../components/layout';
+import usePosts from '../../hooks/use-posts';
 import { Link } from 'gatsby';
 import Image from 'gatsby-image';
-import ArticleStyle from '../components/article-preview';
-import ReadLink from '../components/read-link';
-import GridStyle from '../components/grid-style';
+import ArticleStyle from '../../components/article-preview';
+import ReadLink from '../../components/read-link';
+import GridStyle from '../../components/grid-style';
 
 const AllBlogs = () => {
     const posts = usePosts();
@@ -24,6 +25,10 @@ const AllBlogs = () => {
                     </Link>
                 </h3>
                 <span className="author-span">{post.author}</span>
+                {/* {post.tags.map( tag => {
+                    const path = `filter/${tag}`
+                    return <Link to={path}><span className="tags">{tag}</span></Link>
+                })} */}
                 <p>{post.excerpt}</p>
                 <ReadLink to={post.slug}>Read This Post &rarr;</ReadLink>
             </div>

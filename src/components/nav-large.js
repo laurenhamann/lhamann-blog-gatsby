@@ -38,8 +38,8 @@ const LargeNav = (props) => (
     <NavStyle>
         <ul>
             <Link to="/" activeClassName="active"><li className="nav-item">Home</li></Link>
-            <Link to="/all-projects" activeClassName="active"><li className="nav-item">Projects</li></Link>
-            <Link to="/all-blogs" activeClassName="active"><li className="nav-item">Blogs</li></Link>
+            <Link to="/projects" activeClassName="active"><li className="nav-item">Projects</li></Link>
+            <Link to="/blogs" activeClassName="active"><li className="nav-item">Blogs</li></Link>
             <Link to="/about" activeClassName="active"><li className="nav-item">About</li></Link>
             <Link to="/contact" activeClassName="active"><li className="nav-item">Contact</li></Link>
         </ul>

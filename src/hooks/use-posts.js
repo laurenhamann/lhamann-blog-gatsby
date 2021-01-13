@@ -3,13 +3,14 @@ import { graphql, useStaticQuery } from 'gatsby';
 const usePosts = () => {
     const data = useStaticQuery(graphql`
     query {
-        allMdx(filter: {frontmatter: {type: {eq: "post"}}}) {
+        allMdx(filter: {frontmatter: {type: {eq: "post"}, published: {eq: true}}}) {
             nodes {
                 frontmatter {
                 author
                 slug
                 title
                 date
+                tags
                 image {
                     sharp: childImageSharp {
                     fluid(maxHeight: 350, maxWidth: 400) {
@@ -29,7 +30,8 @@ const usePosts = () => {
         date: post.frontmatter.date,
         slug: post.frontmatter.slug,
         image: post.frontmatter.image,
-        excerpt: post.excerpt
+        excerpt: post.excerpt,
+        tags: post.frontmatter.tags
     }))
 }
 
