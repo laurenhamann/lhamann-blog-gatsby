@@ -21,11 +21,7 @@ const FooterStyle = styled('section')`
         transition: color 1s;
         margin-bottom: 0;
         ${mq[2]} {
-            font-size: 8em;
-        }
-        ${mq[2]} {
             margin-bottom: 1vh;
-            font-size: 8em;
         }
     } 
 

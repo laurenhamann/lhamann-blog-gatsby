@@ -16,11 +16,11 @@ const BlogPreview = () =>  {
                     />
                 </Link>
                 <div className="article-div">
-                    <h3 className="title">
+                    <h2 className="title">
                         <Link to={post.slug}>
                             {post.title}
                         </Link>
-                    </h3>
+                    </h2>
                     <span className="author-span">{post.author}-{post.date}</span>
                     {/* <span className="tags">{post.tags}</span> */}
                     <p>{post.excerpt}</p>

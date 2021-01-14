@@ -1,11 +1,6 @@
 import styled from '@emotion/styled';
 
 const pink = '#FBC3BC';
-// const navy = '#516684';
-// const grey = '#a2aebf';
-// const dkPink = '#db777c';
-// const black = '#000';
-// const white = '#fbfafb';
 const breakpoints = [768, 1024, 1400, 1600]
 const mq = breakpoints.map(
     bp => `@media (min-width: ${bp}px)`
@@ -31,6 +26,9 @@ const GridStyle = styled('section')`
         ${mq[1]} {
             margin: 2vh 2vw 0 auto;
         }
+        ${mq[2]}{
+            font-size: 5.5vmax;
+        }
     }
     button {
         outline: none;
@@ -51,8 +49,8 @@ const GridStyle = styled('section')`
         ${mq[1]} {
             font-size: 1.2vmax;
             margin: 2vh auto 0 2vw;
-            align-self: flex-start;
-            width: 10vmin;
+            align-self: center;
+            width: 10vw;
         }
     }
     .grid-div{
@@ -70,16 +68,16 @@ const GridStyle = styled('section')`
         ${mq[0]} {
             flex-direction: column;
             flex-wrap: wrap;
-            width: 40%;
+            width: 50%;
         }
-        ${mq[2]} {
-            width: 30%;
+        h4 a{
+            font-size: 1.4vmax;
         }
 
         & a {
             width: 40%;
             ${mq[0]} {
-                width: 45%;
+                width: 50%;
                 margin: 0.5vh auto;
                 padding: 0;
             }
@@ -89,7 +87,6 @@ const GridStyle = styled('section')`
             ${mq[0]}{
                 width: 90%;
                 p {
-                    width: 50%;
                     margin: 0 auto;
                 }
             }

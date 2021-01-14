@@ -34,6 +34,9 @@ const ArticleStyle = styled.article(props => ({
 		p:{
 			paddingBottom: '2%',
 			textAlign: 'left',
+			[mq[3]]: {
+				fontSize: '1.3vmax'
+			},
 		},
 	},
 	'.title': {
@@ -46,6 +49,9 @@ const ArticleStyle = styled.article(props => ({
 		cursor: 'pointer',
 		textAlign: 'center',
 		width: 'auto',
+		[mq[3]]: {
+			fontSize: '1.7vmax'
+		}
 	},
 	p:{
 		width: 'auto',

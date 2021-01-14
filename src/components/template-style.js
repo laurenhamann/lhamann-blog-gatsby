@@ -21,19 +21,27 @@ const TemplateStyle = styled('section')`
                 margin-bottom: 1vh;
             }
         }
-        & span {
+        & .author-span {
             color: ${grey};
             font-family: Lato;
             font-weight: 400;
             font-style: italic;
+            ${mq[3]}{
+                font-size: 1.3vmax;
+            }
+
         }
         & .token {
             font-family: 'Source Code Pro', Courier, monospace;
             font-size: 1.4vmax;
         }
+
         p,
         h3 {
             padding-top: 3vh;
+        }
+        h3{
+            padding-bottom: 2vh;
         }
         ul {
             width: 80vw;
@@ -52,24 +60,33 @@ const TemplateStyle = styled('section')`
         p{
             width: 80vw;
             margin: 1vh auto;
+            text-align: left;
             ${mq[1]} {
                 padding: 3vh 2vw 0 2vw;
-                width: 50vw;
             }
             ${mq[2]} {
                 padding: 3vh 6vw 0 6vw;
             }
             ${mq[3]} {
-                padding: 3vh 15vw 0 15vw;
+                padding: 3vh 1vw 0 1vw;
+            }
+        }
+        a img{
+            ${mq[2]} {
+                margin: 0;
+                padding: 0;
+            }
+            ${mq[3]} {
+                max-width: 900px;
             }
         }
         a{
+            color: ${navy};
+        }
+        .load-link{
             text-align: left;
             padding: 2.5vh;
             color: ${navy};
-            ${mq[2]} {
-                padding-left: 10vh;
-            }
             .arrow-pink{
                 color: ${pink};
             }

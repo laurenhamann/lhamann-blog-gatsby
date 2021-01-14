@@ -19,12 +19,12 @@ const AllBlogs = () => {
                 />
             </Link>
             <div className="article-div">
-                <h3 className="title">
+                <h4 className="title">
                     <Link to={post.slug}>
                         {post.title}
                     </Link>
-                </h3>
-                <span className="author-span">{post.author}</span>
+                </h4>
+                <span className="author-span">{post.author}~{post.date}</span>
                 {/* {post.tags.map( tag => {
                     const path = `filter/${tag}`
                     return <Link to={path}><span className="tags">{tag}</span></Link>
