@@ -52,7 +52,7 @@ const FooterStyle = styled('section')`
                 font-size: 5.5vmin;
             }
             ${mq[3]} {
-                font-size: 6vmin;
+                font-size: 30px;
             }
         }
     }

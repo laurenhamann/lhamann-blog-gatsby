@@ -13,6 +13,9 @@ const HeaderStyle = styled('header')`
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        ${mq[3]}{
+            width: 75%;
+        }
     }
 
     .logo{

@@ -10,7 +10,7 @@ import '../static/fonts/fonts.css';
 // const pink = '#FBC3BC';
 const navy = '#516684';
 // const grey = '#a2aebf';
-// const dkPink = '#db777c';
+const dkPink = '#db777c';
 // const black = '#000';
 const white = '#fbfafb';
 const Layout = ({ children }) => {
@@ -353,7 +353,7 @@ const Layout = ({ children }) => {
                     font-size: 3.5em;
                 }
                 ${mq[3]} {
-                    font-size: 4em;
+                    font-size: 40px;
                 }
             }
 
@@ -365,11 +365,15 @@ const Layout = ({ children }) => {
                 ${mq[1]}{
                     font-size: 8vmax;
                 }
+                ${mq[3]}{
+                    font-size: 96px;
+                }
             }
 
             h2 {
                 font-family: 'Lato';
-                font-weight: 200;
+                font-weight: 400;
+                text-decoration: underline;
                 font-size: 3vmax;
                 margin: 1vh 1vw 2vh 1vw;
                 ${mq[0]}{
@@ -378,16 +382,21 @@ const Layout = ({ children }) => {
                 ${mq[1]}{
                     font-size: 2vmax;
                 }
+                ${mq[3]}{
+                    font-size: 34px;
+                }
 
             }
 
             h3{
                 font-family: 'Lato';
-                font-weight: 400;
-                text-decoration: underline;
+                font-weight: 200;
                 font-size: 3vmax;
                 ${mq[1]}{
                     font-size: 1.9vmax;
+                }
+                ${mq[3]}{
+                    font-size: 30px;
                 }
             }
 
@@ -399,17 +408,23 @@ const Layout = ({ children }) => {
                 ${mq[1]}{
                     font-size: 1.7vmax;
                 }
+                ${mq[3]}{
+                    font-size: 24px;
+                }
             }
 
             p{
                 font-family: 'Raleway';
                 font-weight: 300;
-                font-size: 2.3vmax;
+                font-size: 13px;
                 ${mq[0]}{
-                    font-size: 1.9vmax;
+                    font-size: 16px;
                 }
                 ${mq[1]}{
-                    font-size: 1.5vmax;
+                    font-size: 18px;
+                }
+                ${mq[3]}{
+                    font-size: 18px;
                 }
             }
             a{
@@ -418,13 +433,19 @@ const Layout = ({ children }) => {
                 text-transform: capitalize;
                 font-size: 1.7vmax;
                 text-decoration: none;
+                text-decoration-color: inherit;
                 height: auto;
                 ${mq[1]}{
                     font-size: 1.3vmax;
+                    transition: all ease-in-out 1s;
+                }
+                ${mq[3]}{
+                    font-size: 18px;
                 }
             }
             a:hover {
                 text-decoration: underline;
+                text-decoration-color: ${dkPink};
             }
 
             .author-span {
@@ -434,6 +455,9 @@ const Layout = ({ children }) => {
                 }
                 ${mq[1]}{
                     font-size: 1vmax;
+                }
+                ${mq[3]}{
+                    font-size: 16px;
                 }
             }
 
@@ -461,10 +485,12 @@ const Layout = ({ children }) => {
     /**************************** MIDDLE SECTIONS ***************************/
             .mid-section {
                 box-shadow: 0 -1px 8px 0 #4b4b4b, 0 2px 8px 0 #4b4b4b;
-                margin: 5vh 0;
+                margin: 5vh auto;
+                max-width: 1260px;
                 ${mq[3]} {
-                    margin: 8vh 0;
+                    margin: 8vh auto;
                 }
+
             }
             
     /************************* //END// MIDDLE SECTION **************************/

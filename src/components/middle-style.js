@@ -12,7 +12,7 @@ const black = '#000';
 
 const MiddleStyle = styled('section') `
     width: 100vw;
-    margin: 5vh 0;
+    margin: 5vh auto;
     align-items: center;
     ${mq[1]} {
         &:hover {
@@ -20,6 +20,9 @@ const MiddleStyle = styled('section') `
                 color: ${dkPink};
             }
         }
+    }
+    ${mq[3]}{
+        border-radius: 18px;
     }
 
     .mid-div{
@@ -53,6 +56,9 @@ const MiddleStyle = styled('section') `
             padding-bottom: 0.5vh; 
             ${mq[1]}{
                 font-size: 1.7vmax;
+            }
+            ${mq[3]}{
+                font-size: 20px;
             }
         }
         .mid-li:before {

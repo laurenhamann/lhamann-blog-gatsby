@@ -30,9 +30,9 @@ const About = ({ data: {file}}) => (
     <>
         <Layout>
             <AboutPage className="mid-section">
-                <h2>
+                <h3>
                     <span className="about-font-span">Hi,</span><br /> I'm Lauren Hamann
-                </h2>
+                </h3>
                 <Img fluid={file.childImageSharp.fluid} alt="family" />
                 <FlowerBorder />
                 <h3>TL/DR</h3>

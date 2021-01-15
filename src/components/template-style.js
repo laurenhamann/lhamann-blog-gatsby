@@ -9,6 +9,9 @@ const navy = '#516684';
 const grey = '#a2aebf';
 
 const TemplateStyle = styled('section')`
+    ${mq[2]}{
+        border-radius: 18px;
+    }
     .article-flex {
         padding-top: 5vh;
         justify-content: center;
@@ -26,10 +29,6 @@ const TemplateStyle = styled('section')`
             font-family: Lato;
             font-weight: 400;
             font-style: italic;
-            ${mq[3]}{
-                font-size: 1.3vmax;
-            }
-
         }
         & .token {
             font-family: 'Source Code Pro', Courier, monospace;
@@ -58,7 +57,7 @@ const TemplateStyle = styled('section')`
             margin: 2vh 0;
         }
         p{
-            width: 80vw;
+            width: 80%;
             margin: 1vh auto;
             text-align: left;
             ${mq[1]} {
@@ -96,10 +95,6 @@ const TemplateStyle = styled('section')`
             padding: 3px;
             border-radius: 3px;
             color: ${grey};
-            font-size: 1.5vmax;
-            ${mq[1]} {
-                font-size: 1.4vmax;
-            }
         }
     }
 `;

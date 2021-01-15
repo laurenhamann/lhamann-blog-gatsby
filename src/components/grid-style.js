@@ -26,9 +26,6 @@ const GridStyle = styled('section')`
         ${mq[1]} {
             margin: 2vh 2vw 0 auto;
         }
-        ${mq[2]}{
-            font-size: 5.5vmax;
-        }
     }
     button {
         outline: none;
@@ -40,17 +37,19 @@ const GridStyle = styled('section')`
         border-radius: 10px;
         font-family: Lato;
         font-weight: 400;
-        font-size: 1.4vmax;
+        font-size: 15px;
         box-shadow: -1px 2px 4px rgba(50, 50, 50, 0.5);
         ${mq[0]} {
             width: 15vmin;
-            font-size: 1.5vmax;
         }
         ${mq[1]} {
-            font-size: 1.2vmax;
+            font-size: 18px;
             margin: 2vh auto 0 2vw;
             align-self: center;
             width: 10vw;
+        }
+        ${mq[3]} {
+            width: 7vw;
         }
     }
     .grid-div{
@@ -69,9 +68,6 @@ const GridStyle = styled('section')`
             flex-direction: column;
             flex-wrap: wrap;
             width: 50%;
-        }
-        h4 a{
-            font-size: 1.4vmax;
         }
 
         & a {

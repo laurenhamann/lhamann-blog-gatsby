@@ -18,13 +18,16 @@ const MidAbout = () => (
         flex-direction: row;
         justify-content: space-between;
         padding: 5vh;
-        margin: 5vh 0;
+        margin: 5vh auto;
         align-items: center;
         & a h3 span {
             color: ${pink};
         }
         ${mq[0]} {
             justify-content: center;
+        }
+        ${mq[3]} {
+            border-radius: 18px;
         }
         a{
             font-size: 2vmax;

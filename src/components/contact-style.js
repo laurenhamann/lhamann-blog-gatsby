@@ -28,11 +28,17 @@ const ContactStyle = styled('section')`
                 }
             }
         }
+        ${mq[3]}{
+            border-radius: 18px;
+        }
 
     & h1{
         color: ${black};
         margin-bottom: 0;
         transition: color 1s;
+        ${mq[2]}{
+            margin-bottom: 2vh;
+        }
     }
 
     & h4 {
@@ -73,6 +79,9 @@ const ContactStyle = styled('section')`
         ${mq[1]}{
             font-size: 1.5vmax;
         }
+        ${mq[3]}{
+            font-size: 18px;
+        }
     }
 
     #contact-form label:focus-within{
@@ -80,6 +89,9 @@ const ContactStyle = styled('section')`
         font-size: 2vmax;
         ${mq[2]} {
             font-size: 1.7vmax;
+        }
+        ${mq[3]} {
+            font-size: 20px;
         }
     }
 
@@ -129,6 +141,9 @@ const ContactStyle = styled('section')`
         width: 20vmin;
         font-size: 1.6vmax;
         height: 5vmin;
+        ${mq[3]}{
+            font-size: 18px;
+        }
     }
     #submit-btn:hover {
         background-color: ${white};

@@ -17,13 +17,16 @@ const AboutPage = styled('section')`
             }
         }
     }
+    ${mq[3]}{
+        border-radius: 18px;
+    }
     padding: 3vh;
     display: flex;
     flex-direction: column;
     margin: 2vh auto;
     width: 100vw;
     align-items: center;
-    & h2 {
+    & h3 {
         & span {
             font-size: 4.5vmax;
             font-family: 'Lato';
@@ -35,6 +38,10 @@ const AboutPage = styled('section')`
             }
             ${mq[1]} {
                 font-size: 5.5vmax;
+            }
+            ${mq[3]} {
+                margin-left: -70px;
+                font-size: 88px;
             }
         }
     }

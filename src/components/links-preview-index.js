@@ -13,6 +13,9 @@ const PreviewLinks = styled('div') `
     width: 80%;
     padding: 0 0 1.5% 0;
     margin: 0 auto;
+    ${mq[3]}{
+        padding-top: 5vh;
+    }
     .page-links{
         /*  index page project and blog links */
         color: #516684;
@@ -20,7 +23,10 @@ const PreviewLinks = styled('div') `
         margin:auto 10%;   
         ${mq[1]} {
             font-size: 1.5vmax;
-        }               
+        } 
+        ${mq[3]} {
+            font-size: 18px;
+        }              
     }
 
 `
