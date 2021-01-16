@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import MiddleStyle from '../components/middle-style';
+import MiddleStyle from '../components/middle-style-index';
 
 
 const MidIndex = ({ props }) => (

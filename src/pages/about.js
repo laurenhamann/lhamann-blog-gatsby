@@ -4,7 +4,7 @@ import FlowerBorder from '../components/flower-border';
 import MidAbout from '../components/mid-about';
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
-import AboutPage from '../components/about-page';
+import AboutStyle from '../components/about-style';
 
 export const query = graphql`
     query imageQuery {
@@ -29,7 +29,7 @@ export const query = graphql`
 const About = ({ data: {file}}) => (
     <>
         <Layout>
-            <AboutPage className="mid-section">
+            <AboutStyle className="mid-section">
                 <h3>
                     <span className="about-font-span">Hi,</span><br /> I'm Lauren Hamann
                 </h3>
@@ -43,7 +43,7 @@ const About = ({ data: {file}}) => (
                     <br />
                     My blogs will be an online journal of my problem-solving/struggles I have encountered, to look back on and hopefully help someone that is just starting out to not get discouraged. 
                 </p>
-            </AboutPage>
+            </AboutStyle>
         <MidAbout />
         </Layout>
     </>

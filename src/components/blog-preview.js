@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import Image from 'gatsby-image';
 import ReadLink from './read-link';
 import usePost from '../hooks/use-posts';
-import ArticleStyle from './article-preview';
+import ArticleStyle from './article-preview-style';
 
 const BlogPreview = () =>  {
     const posts = usePost();

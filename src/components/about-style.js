@@ -9,7 +9,7 @@ const breakpoints = [768, 1024, 1400, 1600]
 const mq = breakpoints.map(
     bp => `@media (min-width: ${bp}px)`
 )
-const AboutPage = styled('section')`
+const AboutStyle = styled('section')`
     ${mq[1]} {
         &:hover{
             .about-font-span{
@@ -84,4 +84,4 @@ const AboutPage = styled('section')`
     }
 `;
 
-export default AboutPage;
+export default AboutStyle;

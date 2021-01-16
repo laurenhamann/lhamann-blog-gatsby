@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import Image from 'gatsby-image';
 import useProjects from '../hooks/use-projects';
 import ReadLink from './read-link';
-import ArticleStyle from './article-preview';
+import ArticleStyle from './article-preview-style';
 
 const ProjectPreview = () => {
     const projects = useProjects();

@@ -3,7 +3,7 @@ import Layout from '../../components/layout';
 import useProjects from '../../hooks/use-projects';
 import { Link } from 'gatsby';
 import Image from 'gatsby-image';
-import ArticleStyle from '../../components/article-preview';
+import ArticleStyle from '../../components/article-preview-style';
 import ReadLink from '../../components/read-link';
 import GridStyle from '../../components/grid-style';
 
