@@ -6,6 +6,7 @@ import 'typeface-montserrat-alternates';
 import 'typeface-source-code-pro';
 import Header from './header';
 import Footer from './footer';
+import SEO from './helmet';
 import '../static/fonts/fonts.css';
 // const pink = '#FBC3BC';
 const navy = '#516684';
@@ -20,6 +21,7 @@ const Layout = ({ children }) => {
     )
     return (
         <>
+        <SEO />
         <Global
             styles={css`
             @font-face {

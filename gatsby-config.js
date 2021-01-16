@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "Lauren's Blog",
-    description: "Portfolio and Blog to detail my journey in web development"
+    title: "Lauren Hamann: Frontend Developer",
+    description: "Portfolio and Blog to detail my journey in web development",
+    url: "https://www.lhamann.com"
   },
   plugins: [
     "gatsby-plugin-emotion",
@@ -58,6 +59,19 @@ module.exports = {
           families: ["Lato, Modern, Lemonmilk, Joselyna"],
           urls: ["/fonts/fonts.css"],
         },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `GatsbyJS`,
+        short_name: `GatsbyJS`,
+        start_url: `/`,
+        background_color: `transparent`,
+        theme_color: `#a2466c`,
+        display: `standalone`,
+        icon: `src/images/favicon.png`,
+        theme_color_in_head: false,
       },
     },
     {
