@@ -8,8 +8,8 @@ const useProjects = () => {
                 frontmatter {
                 slug
                 title
-                creator
                 date
+                codeUrl
                 image {
                     img: childImageSharp {
                     fluid(maxHeight: 350, maxWidth: 400) {
@@ -18,18 +18,16 @@ const useProjects = () => {
                     }
                 }
                 }
-                excerpt(pruneLength: 50)
             }
             }
         }
     `)
     return projects.allMdx.nodes.map(project => ({
         title: project.frontmatter.title,
-        creator: project.frontmatter.creator,
         slug: project.frontmatter.slug,
         date: project.frontmatter.date,
         image: project.frontmatter.image,
-        excerpt: project.excerpt
+        url: project.frontmatter.codeUrl
     }))
 }
 

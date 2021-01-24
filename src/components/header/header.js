@@ -1,9 +1,9 @@
 import React from 'react';
-import { Link} from 'gatsby';
-import Logo from './logo';
-import LargeNav from './nav-large';
-import MobileNav from './nav-mobile';
-import HeaderStyle from './header-style';
+import { Link } from 'gatsby';
+import Hero from './hero';
+import LargeNav from '../nav-large';
+import MobileNav from '../nav-mobile';
+import HeaderStyle from './styles/header-section';
 
 class Header extends React.Component{
     constructor(props) {
@@ -32,11 +32,12 @@ class Header extends React.Component{
     }
     render() {
         return ( 
-            <HeaderStyle className="align-ends">
+            <HeaderStyle>
                 <div>
-                    <Link to="/" className="logo"><Logo /></Link>
+                    <Link to="/"><h1 className="logo">Lauren Hamann</h1></Link>
                     {this.state.width < 768 ? <MobileNav opened={this.state.opened} clicked={this.click} /> : <LargeNav />}
                 </div>
+                <Hero width={this.state.width} />
             </HeaderStyle>
         );
     }
