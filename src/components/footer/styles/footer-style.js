@@ -6,6 +6,9 @@ import { colors } from '../../global/colors';
 const FooterStyle = styled('footer')`
     ${flex.flexCol}
     margin-bottom: ${clamps.marginBottom};
+    h1{
+        margin-bottom: ${clamps.xsMargin};
+    }
     & > span {
         font-size: ${clamps.pSize};
         font-family: "Elsie Swash Caps";

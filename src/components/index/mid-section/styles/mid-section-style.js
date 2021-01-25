@@ -4,7 +4,7 @@ import { flex } from '../../../global/flex-box';
 
 const MidSectionStyle = styled('div')`
     ${flex.flexCol}
-
+    ${flex.alignItemsCenter}
     > .page-links {
         margin-right: auto;
         margin-left: auto;

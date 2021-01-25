@@ -25,6 +25,9 @@ const medMargin =`
 const gridWidth =`
     clamp(${width.gridTwoToThree.min}, ${width.gridTwoToThree.pef}, ${width.gridTwoToThree.max})
 `
+const blogColumnWidth =`
+    clamp(${width.previewDisplay.min}, ${width.previewDisplay.pef}, ${width.previewDisplay.max})
+`
 
 const h1Size =`
     clamp(${fontSize.h1.min},${fontSize.h1.pef}, ${fontSize.h1.max})
@@ -67,6 +70,6 @@ const introSize =`
 `
 
 const largeLinkSize =`
-clamp(${fontSize.intro.min},${fontSize.intro.pef}, ${fontSize.intro.max})
+clamp(${fontSize.largeLink.min},${fontSize.largeLink.pef}, ${fontSize.largeLink.max})
 `
-export const clamps = { marginBottom, marginTop, marginLeft, marginRight, xsMargin, medMargin, gridWidth, largeLinkSize, introSize, spanSize, logoSize, navSize, anchorSize, pSize, h1Size, h2Size, h3Size, h4Size };
+export const clamps = { marginBottom, marginTop, marginLeft, marginRight, xsMargin, medMargin, gridWidth, blogColumnWidth, largeLinkSize, introSize, spanSize, logoSize, navSize, anchorSize, pSize, h1Size, h2Size, h3Size, h4Size };

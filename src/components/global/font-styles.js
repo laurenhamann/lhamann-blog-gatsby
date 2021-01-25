@@ -7,6 +7,7 @@ const h1Style = `
     font-size: ${clamps.h1Size};
     text-align: center;
     margin-bottom: ${clamps.marginBottom};
+    
 `
 const h2Style = `
     font-family: "Elsie Swash Caps";
@@ -54,12 +55,13 @@ const anchorStyle = `
 `
 const navStyle = `
     font-family: "Open Sans";
-    font-weight: 700;
+    font-weight: 400;
     color: ${colors.darkNeutral};
     font-size: ${clamps.navSize};
+    transition: all 0.3s ease-in-out;
     &:hover,
     &.active {
-        font-style: italic;
+        font-weight: 700;
         color: ${colors.accent}
     }
 `
@@ -95,6 +97,10 @@ const largeLink =`
     margin-top: ${clamps.marginTop};
     margin-bottom: ${clamps.xsMargin};
     font-size: ${clamps.largeLinkSize};
+    &:hover {
+        font-style: italic;
+        text-decoration: underline;
+    }
 `
 const typographyStyles = `
     h1 {

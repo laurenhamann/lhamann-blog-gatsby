@@ -1,5 +1,5 @@
 const  h1 = {
-    min: "36px",
+    min: "28px",
     pef: "4.4vw",
     max: "60px"
 }
@@ -11,19 +11,19 @@ const h2 = {
 }
 
 const h3 = {
-    min: "18px",
+    min: "16px",
     pef: "2.39vw",
     max: "30px"
 }
 
 const h4 = {
-    min: "16px",
+    min: "14px",
     pef: "1.8vw",
     max: "20px"
 }
 
 const p = {
-    min: "12px",
+    min: "10px",
     pef: "1.5vw",
     max: "18px"
 }
@@ -53,9 +53,14 @@ const logo = {
 }
 
 const span = { 
-    min: "10px",
+    min: "8px",
     pef: "1.2vw",
     max: "14px"
 }
 
-export const fontSize = { h1, h2, h3, h4, p, anchor, logo, intro, nav, span }
+const largeLink = {
+    min: "12px",
+    pef: "1.4vw",
+    max: "16px"
+}
+export const fontSize = { h1, h2, h3, h4, p, anchor, logo, intro, nav, span, largeLink }

@@ -12,15 +12,10 @@ import { colors } from './global/colors';
 import { fonts } from './global/fonts';
 import  globalStyles  from './global/global-style';
 import typographyStyles from './global/font-styles';
-import { specialSizing } from './global/special-styles';
-import { flex } from './global/flex-box';
+import animation from './global/animation';
 
 
 const Layout = ({ children }) => {
-    const breakpoints = [768, 1024, 1400, 1600]
-    const mq = breakpoints.map(
-        bp => `@media (min-width: ${bp}px)`
-    )
     return (
         <>
         <SEO />
@@ -42,6 +37,7 @@ const Layout = ({ children }) => {
             ${fonts.openSansCondenseditalic300}
 
             ${globalStyles}
+            ${animation}
             html,
             body {
                 background-color: ${colors.lightNeutral};

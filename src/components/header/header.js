@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import Hero from './hero';
-import LargeNav from '../nav-large';
-import MobileNav from '../nav-mobile';
+import Nav from './nav/nav';
 import HeaderStyle from './styles/header-section';
 
 class Header extends React.Component{
@@ -35,7 +34,11 @@ class Header extends React.Component{
             <HeaderStyle>
                 <div>
                     <Link to="/"><h1 className="logo">Lauren Hamann</h1></Link>
-                    {this.state.width < 768 ? <MobileNav opened={this.state.opened} clicked={this.click} /> : <LargeNav />}
+                    <Nav
+                        width={this.state.width}
+                        opened={this.state.opened}
+                        click={this.click}
+                    />
                 </div>
                 <Hero width={this.state.width} />
             </HeaderStyle>

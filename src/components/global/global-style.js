@@ -1,4 +1,4 @@
-import { margin } from './spacing'
+import { clamps } from './clamps'
 
 const globalStyles = `
     * {
@@ -6,10 +6,7 @@ const globalStyles = `
         margin-top: 0;
     }
     body {
-        margin-top: clamp(${margin.marginTB.min}, ${margin.marginTB.pef}, ${margin.marginTB.max});
-        margin-bottom: clamp(${margin.marginTB.min}, ${margin.marginTB.pef}, ${margin.marginTB.max});
-        margin-left: clamp(${margin.marginRL.min}, ${margin.marginRL.pef}, ${margin.marginRL.max});
-        margin-right: clamp(${margin.marginRL.min}, ${margin.marginRL.pef}, ${margin.marginRL.max});
+        margin: ${clamps.marginTop} ${clamps.marginLeft} ${clamps.marginBottom} ${clamps.marginRight};
     }
     ul li {
         list-style: none;

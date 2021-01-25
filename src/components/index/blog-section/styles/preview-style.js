@@ -4,6 +4,12 @@ import { clamps } from '../../../global/clamps'
 
 const PreviewStyle = styled('article')`
     ${flex.flexRow}
+    ${flex.alignItemsCenter}
+    ${flex.justifyCenter}
+    margin-left: auto;
+    margin-right: auto;
+    width: ${clamps.blogColumnWidth};
+    
     > a {
         width: 40%;
         margin-right: ${clamps.marginRight};
@@ -13,6 +19,7 @@ const PreviewStyle = styled('article')`
         width: 55%;
         > * {
             margin-bottom: ${clamps.xsMargin};
+            text-align: left !important;
         }
     }
 
