@@ -7,7 +7,7 @@ const ProjectStyle = styled('article')`
     ${flex.justifyCenter}
     ${flex.alignItemsCenter}
     height: auto;
-    width: ${clamps.gridWidth};
+    width: ${clamps.projectPreviewDivWidth};
     a:nth-child(2){
         width: 100%;
     }

@@ -126,8 +126,11 @@ const typographyStyles = `
     .page-links {
         ${anchorStyle}
     }
-    ul li{
-        ${pStyle}
+    ul {
+        padding-inline-start: 0px;
+        li {
+            ${pStyle}
+        }
     }
     nav ul li a {
         ${navStyle}

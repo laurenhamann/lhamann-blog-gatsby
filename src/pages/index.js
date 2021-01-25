@@ -1,7 +1,7 @@
 import * as React from "react";
-import RecentBlogs from '../components/index/blog-section/recent-blogs';
+import RecentBlogs from '../components/reusable/blog-section/recent-blogs';
 import Layout from "../components/layout";
-import ProjectSection from '../components/index/project-section/project-section'
+import ProjectSection from '../components/reusable/project-section/project-section'
 import MidSection from '../components/index/mid-section/mid-section'
 // markup
 class IndexPage extends React.Component{

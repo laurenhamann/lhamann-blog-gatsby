@@ -2,9 +2,9 @@ import React from 'react'
 import useProjects from '../../../hooks/use-projects'
 import { Link } from 'gatsby';
 import Image from 'gatsby-image';
-import SectionDivider from '../../reusable/section-divider';
+import SectionDivider from '../section-divider';
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import SocialIcon from '../../icon';
+import SocialIcon from '../icon';
 import ProjectSectionStyle from './styles/project-section-style'
 import ProjectStyle from './styles/project-style';
 

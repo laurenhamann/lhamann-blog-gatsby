@@ -2,8 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import Hero from './hero';
 import Nav from './nav/nav';
-import HeaderStyle from './styles/header-section';
-
+import HeaderStyle from './styles/header-style';
 class Header extends React.Component{
     constructor(props) {
         super(props);
@@ -31,8 +30,8 @@ class Header extends React.Component{
     }
     render() {
         return ( 
-            <HeaderStyle>
-                <div>
+            <HeaderStyle width={this.state.width}>
+                <div className="nav">
                     <Link to="/"><h1 className="logo">Lauren Hamann</h1></Link>
                     <Nav
                         width={this.state.width}

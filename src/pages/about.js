@@ -1,10 +1,11 @@
 import React from 'react';
 import Layout from '../components/layout';
-import FlowerBorder from '../components/flower-border';
+import SVGBorder from '../components/reusable/SVG-border';
 import MidAbout from '../components/mid-about';
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import AboutPage from '../components/about-page';
+import SectionDivider from '../components/reusable/section-divider';
 
 export const query = graphql`
     query imageQuery {
@@ -29,13 +30,13 @@ export const query = graphql`
 const About = ({ data: {file}}) => (
     <>
         <Layout>
+            <SectionDivider />
             <AboutPage className="mid-section">
                 <h3>
                     <span className="about-font-span">Hi,</span><br /> I'm Lauren Hamann
                 </h3>
                 <Img fluid={file.childImageSharp.fluid} alt="family" />
-                <FlowerBorder />
-                <h3>TL/DR</h3>
+                <SVGBorder />
                 <p> 
                     I am a Frontend Web Developer for 5 years. I love to code and solve difficult problems. Generally, I am a very creative person. I journal constantly and always look for new creative hobbies. I have two boys and a little girl. I am a stay at home mom and freelance developer currently looking for my first offical developer position.
                     <br />

@@ -1,5 +1,5 @@
 import React from 'react';
-import SocialIcon from '../icon';
+import SocialIcon from '../reusable/icon';
 import SectionDivider from '../reusable/section-divider';
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';

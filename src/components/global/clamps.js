@@ -1,34 +1,63 @@
-import { margin } from './spacing'
+import { space } from './spacing'
 import { width } from './div-width'
 import { fontSize } from './font-size'
+//margins
 const marginTop = `
-    clamp(${margin.marginTB.min}, ${margin.marginTB.pef}, ${margin.marginTB.max})
+    clamp(${space.marginTB.min}, ${space.marginTB.pef}, ${space.marginTB.max})
 `
 
 const marginBottom = `
-    clamp(${margin.marginTB.min}, ${margin.marginTB.pef}, ${margin.marginTB.max})
+    clamp(${space.marginTB.min}, ${space.marginTB.pef}, ${space.marginTB.max})
 `
 
 const marginLeft = `
-    clamp(${margin.marginRL.min}, ${margin.marginRL.pef}, ${margin.marginRL.max})
+    clamp(${space.marginRL.min}, ${space.marginRL.pef}, ${space.marginRL.max})
 `
 
 const marginRight = `
-    clamp(${margin.marginRL.min}, ${margin.marginRL.pef}, ${margin.marginRL.max})
+    clamp(${space.marginRL.min}, ${space.marginRL.pef}, ${space.marginRL.max})
 `
 const xsMargin = `
-    clamp(${margin.xsMargin.min}, ${margin.xsMargin.pef}, ${margin.xsMargin.max})
+    clamp(${space.xsMargin.min}, ${space.xsMargin.pef}, ${space.xsMargin.max})
 `
 const medMargin =`
-    clamp(${margin.medMargin.min}, ${margin.medMargin.pef}, ${margin.medMargin.max})
+    clamp(${space.medMargin.min}, ${space.medMargin.pef}, ${space.medMargin.max})
 `
+
+//widths
 const gridWidth =`
     clamp(${width.gridTwoToThree.min}, ${width.gridTwoToThree.pef}, ${width.gridTwoToThree.max})
 `
 const blogColumnWidth =`
     clamp(${width.previewDisplay.min}, ${width.previewDisplay.pef}, ${width.previewDisplay.max})
 `
+const heroBannerWidth =`
+    clamp(${width.bannerImageWidth.min}, ${width.bannerImageWidth.pef}, ${width.bannerImageWidth.max})
+`
+const heroBannerHeight =`
+    clamp(${width.bannerImageHeight.min}, ${width.bannerImageHeight.pef}, ${width.bannerImageHeight.max})
+`
+const headerWidth =`
+    clamp(${width.headerWidth.min}, ${width.headerWidth.pef}, ${width.headerWidth.max})
+`
+const articleDivWidth =`
+    clamp(${width.blogPreviewArticleWidth.min}, ${width.blogPreviewArticleWidth.pef}, ${width.blogPreviewArticleWidth.max})
+`
+const blogImageDivWidth =`
+    clamp(${width.blogImageDivWidth.min}, ${width.blogImageDivWidth.pef}, ${width.blogImageDivWidth.max})
+`
+const blogPreviewWidth =`
+    clamp(${width.blogPreviewDivWidth.min}, ${width.blogPreviewDivWidth.pef}, ${width.blogPreviewDivWidth.max})
+`
 
+const projectPreviewWidth =`
+    clamp(${width.gridUpToFour.min}, ${width.gridUpToFour.pef}, ${width.gridUpToFour.max})
+`
+const projectPreviewDivWidth =`
+    clamp(${width.gridUpToFourDiv.min}, ${width.gridUpToFourDiv.pef}, ${width.gridUpToFourDiv.max})
+`
+
+//font-size
 const h1Size =`
     clamp(${fontSize.h1.min},${fontSize.h1.pef}, ${fontSize.h1.max})
 `
@@ -72,4 +101,4 @@ const introSize =`
 const largeLinkSize =`
 clamp(${fontSize.largeLink.min},${fontSize.largeLink.pef}, ${fontSize.largeLink.max})
 `
-export const clamps = { marginBottom, marginTop, marginLeft, marginRight, xsMargin, medMargin, gridWidth, blogColumnWidth, largeLinkSize, introSize, spanSize, logoSize, navSize, anchorSize, pSize, h1Size, h2Size, h3Size, h4Size };
+export const clamps = { marginBottom, marginTop, marginLeft, marginRight, xsMargin, medMargin, gridWidth, blogColumnWidth, heroBannerWidth, heroBannerHeight, blogImageDivWidth, blogPreviewWidth, articleDivWidth, projectPreviewDivWidth, projectPreviewWidth, headerWidth, largeLinkSize, introSize, spanSize, logoSize, navSize, anchorSize, pSize, h1Size, h2Size, h3Size, h4Size };

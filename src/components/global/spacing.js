@@ -28,4 +28,5 @@ const medMargin = {
     max: "40px"
 
 }
-export const margin = {marginRL, marginTB, sectionBtnMB, xsMargin, medMargin}
+
+export const space = {marginRL, marginTB, sectionBtnMB, xsMargin, medMargin}

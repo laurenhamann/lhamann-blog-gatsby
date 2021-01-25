@@ -6,9 +6,7 @@ const RecentBlogsStyle = styled('div')`
     ${flex.flexCol}
     ${flex.justifyCenter}
 
-    article:last-child {
-        margin-bottom: ${clamps.marginBottom};
-    }
+    article:last-child,
     .page-links {
         margin-bottom: ${clamps.marginBottom};
     }
