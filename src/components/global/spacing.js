@@ -17,9 +17,9 @@ const sectionBtnMB = {
 }
 
 const xsMargin = {
-    min: "3px",
+    min: "4px",
     pef: "0.5vw",
-    max: "7px"
+    max: "12px"
 }
 
 const medMargin = {
@@ -28,5 +28,6 @@ const medMargin = {
     max: "40px"
 
 }
+
 
 export const space = {marginRL, marginTB, sectionBtnMB, xsMargin, medMargin}

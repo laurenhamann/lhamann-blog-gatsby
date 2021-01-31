@@ -26,25 +26,6 @@ const AboutPage = styled('section')`
     margin: 2vh auto;
     width: 100vw;
     align-items: center;
-    & h3 {
-        & span {
-            font-size: 4.5vmax;
-            font-family: 'Lato';
-            font-weight: 200;
-            align-self: flex-start;
-            margin-left: -5vw;
-            ${mq[0]} {
-                margin-left: -8vw;
-            }
-            ${mq[1]} {
-                font-size: 5.5vmax;
-            }
-            ${mq[3]} {
-                margin-left: -70px;
-                font-size: 88px;
-            }
-        }
-    }
     & .gatsby-image-wrapper {
         border-radius: 50%;
         height:250px;

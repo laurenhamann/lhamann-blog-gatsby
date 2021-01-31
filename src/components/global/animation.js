@@ -1,6 +1,7 @@
 import { gradients } from './gradients';
 
-const animation = `
+
+const colorChange =`
     @keyframes colorChange {
         0% {color: ${gradients.pink[0]};}
         12.5% {color: ${gradients.pink[1]};}
@@ -12,9 +13,10 @@ const animation = `
         87.5% {color: ${gradients.pink[1]};}
         100% {color: ${gradients.pink[0]};}
 
-    }
+    }`
 
-    @keyframes strokeChange {
+
+const strokeChange =  `@keyframes strokeChange {
         0% {stroke: ${gradients.pink[0]};}
         12.5% {stroke: ${gradients.pink[1]};}
         25% {stroke: ${gradients.pink[2]};}
@@ -25,32 +27,17 @@ const animation = `
         87.5% {stroke: ${gradients.pink[1]};}
         100% {stroke: ${gradients.pink[0]};}
 
-    }
+    }`
 
+const dash =`
     @keyframes dash {
         to {
             stroke-dashoffset: 0;
         }
     }
-    div>ul>li::before {
-        content:"\\2022";
-        animation-name: colorChange;
-        animation-duration: 4s;
-        animation-iteration-count: infinite;
-        animation-fill-mode: forwards;
-    }
-
-    .svg-border {
-        svg{
-            #Artboard {
-                animation: 
-                    strokeChange 2s forwards infinite,
-                    dash 9s 3s 1 forwards;
-                stroke-dasharray: 1000;
-                stroke-dashoffset: 1000;
-            }
-        }
-    }
 `
 
-export default animation;
+
+export const animation = { colorChange,
+                            strokeChange,
+                            dash }

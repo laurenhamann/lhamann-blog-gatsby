@@ -1,10 +1,10 @@
 import React from 'react';
 import Layout from '../components/layout';
 import SVGBorder from '../components/reusable/SVG-border';
-import MidAbout from '../components/mid-about';
+import MidLinks from '../components/reusable/mid-link/mid-links'
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
-import AboutPage from '../components/about-page';
+import AboutStyle from '../components/about/styles/about-style';
 import SectionDivider from '../components/reusable/section-divider';
 
 export const query = graphql`
@@ -31,10 +31,13 @@ const About = ({ data: {file}}) => (
     <>
         <Layout>
             <SectionDivider />
-            <AboutPage className="mid-section">
-                <h3>
-                    <span className="about-font-span">Hi,</span><br /> I'm Lauren Hamann
-                </h3>
+            <AboutStyle>
+                <div className="about-title">
+                    <span className="about-font-span">Hi,</span>
+                    <h2>
+                        I'm Lauren Hamann
+                    </h2>
+                </div>
                 <Img fluid={file.childImageSharp.fluid} alt="family" />
                 <SVGBorder />
                 <p> 
@@ -44,8 +47,8 @@ const About = ({ data: {file}}) => (
                     <br />
                     My blogs will be an online journal of my problem-solving/struggles I have encountered, to look back on and hopefully help someone that is just starting out to not get discouraged. 
                 </p>
-            </AboutPage>
-        <MidAbout />
+            </AboutStyle>
+        <MidLinks />
         </Layout>
     </>
         

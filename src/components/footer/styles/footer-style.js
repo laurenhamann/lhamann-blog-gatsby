@@ -19,6 +19,11 @@ const FooterStyle = styled('footer')`
     .social-links {
         color: ${colors.accent};
         align-self: center;
+        font-size: ${clamps.anchorSize};
+        a{
+        margin-left: ${clamps.xsMargin};
+        margin-right: ${clamps.xsMargin};
+        }
     }
 `
 

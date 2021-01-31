@@ -26,8 +26,21 @@ const bannerImageHeight = {
 const headerWidth = {
     min: "250px",
     pef: "90vw",
-    max: "1400px"
+    max: "1500px"
 }
+
+const aboutTitleWidth = {
+    min: headerWidth.min,
+    pef: `calc(${headerWidth.pef} * 0.6)`,
+    max: `calc(${headerWidth.max} * 0.7)`
+}
+
+const article = {
+    min: headerWidth.min,
+    pef: `calc(${headerWidth.pef} * 0.8)`,
+    max: `calc(${headerWidth.max} * 0.8)`
+}
+
 // blog preview index 
 const blogImageDivWidth = {
     min: "calc(100% * 0.5)",
@@ -59,4 +72,11 @@ const gridUpToFourDiv = {
     pef: `calc((${gridUpToFour.pef} - (${space.medMargin.pef} * 2)) / 4 )`,
     max: `calc((${gridUpToFour.max} - (${space.medMargin.max} * 2)) / 4 )`
 }
-export const width = { gridTwoToThree, previewDisplay, bannerImageWidth, bannerImageHeight, headerWidth, blogImageDivWidth, blogPreviewArticleWidth, blogPreviewDivWidth, gridUpToFour, gridUpToFourDiv };
+
+// images
+const fullSizeImage = {
+    min: '220px',
+    pef: '34vw',
+    max: '714px'
+}
+export const width = { gridTwoToThree, previewDisplay, bannerImageWidth, bannerImageHeight, headerWidth, aboutTitleWidth, article, blogImageDivWidth, blogPreviewArticleWidth, blogPreviewDivWidth, gridUpToFour, gridUpToFourDiv, fullSizeImage };

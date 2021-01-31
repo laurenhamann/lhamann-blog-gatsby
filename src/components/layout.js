@@ -12,7 +12,7 @@ import { colors } from './global/colors';
 import { fonts } from './global/fonts';
 import  globalStyles  from './global/global-style';
 import typographyStyles from './global/font-styles';
-import animation from './global/animation';
+import { animation } from './global/animation';
 
 
 const Layout = ({ children }) => {
@@ -37,13 +37,21 @@ const Layout = ({ children }) => {
             ${fonts.openSansCondenseditalic300}
 
             ${globalStyles}
-            ${animation}
+            ${animation.colorChange}
             html,
             body {
                 background-color: ${colors.lightNeutral};
                 max-width: 100vw;
             }
             ${typographyStyles}
+
+            div>ul>li::before {
+                content:"\\2022";
+                animation-name: colorChange;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+                animation-fill-mode: forwards;
+            }
 
 
         `}

@@ -16,7 +16,7 @@ const HeroStyle = styled('div')`
     }
     .intro {
         ${props => props.width > 768 ? 
-        `margin-right: ${clamps.xsMargin};
+        `margin-left: ${clamps.medMargin};
         margin-top: ${clamps.marginTop};` 
         : 
         `margin: 0;`}

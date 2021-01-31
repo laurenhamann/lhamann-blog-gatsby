@@ -73,6 +73,12 @@ const logoStyle = `
     text-decoration: none;
     font-size: ${clamps.logoSize};
 `
+const aboutSpan =`
+    font-family: "Elsie Swash Caps";
+    font-weight: 400;
+    color: ${colors.accent};
+    font-size: calc(${clamps.h1Size} * 2);
+`
 
 const spanStyle = `
     font-family: "Open Sans";
@@ -149,6 +155,9 @@ const typographyStyles = `
     }
     .large-link {
         ${largeLink}
+    }
+    .about-font-span {
+        ${aboutSpan}
     }
 
 `
