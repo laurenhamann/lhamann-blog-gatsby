@@ -1,8 +1,5 @@
 import styled from '@emotion/styled'
-import { flex } from '../../../global/flex-box'
-import { clamps } from '../../../global/clamps'
-import { margin } from '../../../global/margin'
-
+import { margin, clamps, flex } from '../../../global/global'
 const ProjectSectionStyle = styled('div')`
     ${flex.flexCol}
     ${flex.justifyCenter}

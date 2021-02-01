@@ -1,6 +1,5 @@
 import styled from '@emotion/styled';
-import { flex } from '../../../global/flex-box'
-import { clamps } from '../../../global/clamps'
+import { clamps, flex } from '../../../global/global'
 
 const RecentBlogsStyle = styled('div')`
     ${flex.flexCol}

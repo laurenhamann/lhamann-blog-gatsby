@@ -4,7 +4,6 @@ import useProjects from '../../hooks/use-projects';
 import { Link } from 'gatsby';
 import Image from 'gatsby-image';
 import ArticleStyle from '../../components/article-preview';
-import ReadLink from '../../components/read-link';
 import GridStyle from '../../components/grid-style';
 
 const AllProjects = () => {
@@ -25,7 +24,7 @@ const AllProjects = () => {
                     </h3>
                     <span className="author-span">{project.creator}</span>
                     <p>{project.excerpt}</p>
-                    <ReadLink to={project.slug}>Read More &rarr;</ReadLink>
+                    <Link to={project.slug}>Read More &rarr;</Link>
                 </div>
         </ArticleStyle>  
     ))

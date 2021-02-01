@@ -1,7 +1,5 @@
 import styled from '@emotion/styled'
-import { clamps } from '../../../global/clamps'
-import { flex } from '../../../global/flex-box';
-import { margin } from '../../../global/margin';
+import { margin, flex, clamps } from '../../../global/global';
 
 const MidSectionStyle = styled('div')`
     ${flex.flexCol}

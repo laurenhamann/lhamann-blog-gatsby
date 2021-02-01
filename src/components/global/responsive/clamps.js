@@ -1,6 +1,6 @@
-import { space } from './spacing'
-import { width } from './div-width'
-import { fontSize } from './font-size'
+import { space } from '../layout/spacing'
+import { width } from '../layout/div-width'
+import { fontSize } from '../fonts/font-size'
 //margins
 const marginTop = `
     clamp(${space.marginTB.min}, ${space.marginTB.pef}, ${space.marginTB.max})

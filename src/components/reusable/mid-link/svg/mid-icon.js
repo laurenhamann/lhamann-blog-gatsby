@@ -1,8 +1,8 @@
 import React from 'react';
 
 const SVG = () => (
-    <svg width="42px" height="43px" viewBox="0 0 42 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
-        <g id="Page-1" stroke="none" stroke-width="3" fill="none" fill-rule="evenodd" stroke-linecap="square">
+    <svg width="42px" height="43px" viewBox="0 0 42 43">
+        <g id="Page-1" stroke="none" strokeWidth="3" fill="none" fillRule="evenodd" strokeLinecap="square">
             <g id="Artboard" transform="translate(-3.000000, -2.000000)" stroke="#979797">
                 <g id="Group" transform="translate(3.746895, 2.500000)">
                     <path d="M0.253105234,0.5 L40.2531052,0.5" id="top"></path>

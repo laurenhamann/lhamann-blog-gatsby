@@ -1,5 +1,5 @@
-import { colors } from './colors';
-import { clamps } from './clamps';
+import { colors } from '../color/colors';
+import { clamps } from '../responsive/clamps';
 const h1Style = `
     font-family: "Open Sans Condensed";
     font-weight: 700;

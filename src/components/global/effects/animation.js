@@ -1,4 +1,4 @@
-import { gradients } from './gradients';
+import { gradients } from '../color/gradients';
 
 
 const colorChange =`
@@ -37,7 +37,16 @@ const dash =`
     }
 `
 
+const rainbowFill = `
+    @keyframes colorFill {
+        to {
+            fill-opacity: 1;
+        }
+    }
+`
+
 
 export const animation = { colorChange,
                             strokeChange,
-                            dash }
+                            dash,
+                            rainbowFill }

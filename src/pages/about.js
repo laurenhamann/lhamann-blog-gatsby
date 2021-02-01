@@ -27,7 +27,8 @@ export const query = graphql`
     }
 `;
 
-const About = ({ data: {file}}) => (
+const About = ({ data: {file}}) => {
+    return (
     <>
         <Layout>
             <SectionDivider />
@@ -52,6 +53,6 @@ const About = ({ data: {file}}) => (
         </Layout>
     </>
         
-)
+)}
 
 export default About;

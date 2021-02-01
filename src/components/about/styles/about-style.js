@@ -1,9 +1,5 @@
 import styled from '@emotion/styled'
-import { animation } from '../../global/animation'
-import { flex } from '../../global/flex-box'
-import { clamps } from '../../global/clamps'
-import { margin } from '../../global/margin'
-
+import { margin, clamps, flex, animation } from '../../global/global'
 const AboutStyle = styled('div')`
     ${animation}
     ${margin.center}
@@ -20,7 +16,7 @@ const AboutStyle = styled('div')`
             #Line-4 {
                 animation: 
                     strokeChange 2s forwards infinite,
-                    dash 9s 3s 1 forwards;
+                    dash 9s 4s 1 forwards;
                 stroke-dasharray: 1000;
                 stroke-dashoffset: 1000;
             }
@@ -46,6 +42,17 @@ const AboutStyle = styled('div')`
     p {
         width: ${clamps.articleWidth};
         ${margin.center}
+        &:focus,
+        &:hover {
+            svg{
+                #Line-4 {
+                    animation: 
+                        strokeChange 2s forwards infinite,
+                        dash 9s 8s 1 forwards;
+                }
+            }
+
+        }
     }
 
 `

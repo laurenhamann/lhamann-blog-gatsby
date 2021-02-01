@@ -1,7 +1,5 @@
 import styled from '@emotion/styled'
-import { flex } from '../../../global/flex-box'
-import { clamps } from '../../../global/clamps'
-import { colors } from '../../../global/colors'
+import { colors, clamps, flex } from '../../../global/global'
 
 
 const NavStyle = styled('nav')`

@@ -1,16 +1,14 @@
-import React from 'react';
-import useHeroImage from '../../hooks/use-hero-image';
-import Image from 'gatsby-image';
-import HeroStyle from './styles/hero-style';
+import React from 'react'
+import Rainbow from '../reusable/svg/rainbow'
+import HeroStyle from './styles/hero-style'
 
 const Hero = (props) => {
-    const image = useHeroImage();
     return (
     <HeroStyle className="hero" width={props.width}>
         {
         props.width >= 768 ?
             <>
-                <Image fluid={image.childImageSharp.fluid} alt="hero-banner-rainbow" />
+                <Rainbow />
                 <h3 className="intro">
                     Frontend Web Developer -
                 </h3>

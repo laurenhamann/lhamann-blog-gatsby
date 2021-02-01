@@ -1,7 +1,5 @@
 import styled from '@emotion/styled'
-import { clamps } from '../../../global/clamps'
-import { flex } from '../../../global/flex-box'
-
+import { flex, clamps } from '../../../global/global'
 const ProjectStyle = styled('article')`
     ${flex.flexCol}
     ${flex.justifyCenter}

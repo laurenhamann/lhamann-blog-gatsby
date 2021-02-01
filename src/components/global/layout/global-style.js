@@ -1,4 +1,4 @@
-import { clamps } from './clamps'
+import { clamps } from '../responsive/clamps'
 
 const globalStyles = `
     * {

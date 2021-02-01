@@ -5,7 +5,6 @@ import usePosts from '../../hooks/use-posts';
 import { Link } from 'gatsby';
 import Image from 'gatsby-image';
 import ArticleStyle from '../../components/article-preview';
-import ReadLink from '../../components/read-link';
 import GridStyle from '../../components/grid-style';
 
 const AllBlogs = () => {
@@ -30,7 +29,7 @@ const AllBlogs = () => {
                     return <Link to={path}><span className="tags">{tag}</span></Link>
                 })} */}
                 <p>{post.excerpt}</p>
-                <ReadLink to={post.slug}>Read This Post &rarr;</ReadLink>
+                <Link to={post.slug}>Read This Post &rarr;</Link>
             </div>
         </ArticleStyle>  
     ))

@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
-import { colors } from '../global/colors';
-import { clamps } from '../global/clamps';
+import { colors } from '../global/color/colors';
+import { clamps } from '../global/responsive/clamps';
 const SectionDivider = styled('div')`
     border-top: solid 8px ${colors.accent};
     box-shadow: 0 -3px 9px #A8687071,

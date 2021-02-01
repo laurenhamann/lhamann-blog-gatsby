@@ -1,7 +1,5 @@
 import styled from '@emotion/styled'
-import { flex } from '../../global/flex-box'
-import { clamps } from '../../global/clamps'
-import { margin } from '../../global/margin';
+import { margin, clamps, flex } from '../../global/global';
 
 const HeroStyle = styled('div')`
     align-self: center;
@@ -10,10 +8,11 @@ const HeroStyle = styled('div')`
     height: ${clamps.heroBannerHeight};
     ${flex.flexRow}
     ${flex.justifyCenter}
-    >div.gatsby-image-wrapper {
+    >div.rainbow-svg {
         width: ${clamps.heroBannerWidth};
         height: auto;
     }
+
     .intro {
         ${props => props.width > 768 ? 
         `margin-left: ${clamps.medMargin};

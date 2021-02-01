@@ -7,13 +7,9 @@ import 'typeface-open-sans-condensed';
 import Header from './header/header';
 import Footer from './footer/footer';
 import SEO from './helmet';
-import '../static/fonts/fonts.css';
-import { colors } from './global/colors';
-import { fonts } from './global/fonts';
-import  globalStyles  from './global/global-style';
-import typographyStyles from './global/font-styles';
-import { animation } from './global/animation';
+// import '../static/fonts/fonts.css';
 
+import { animation, fonts, colors, typographyStyles, globalStyles } from './global/global'
 
 const Layout = ({ children }) => {
     return (
@@ -22,6 +18,7 @@ const Layout = ({ children }) => {
         <Global
             styles={css`
             /* fonts */
+            ${fonts.elsie400}
             ${fonts.elsie400}
             ${fonts.elsie900}
             ${fonts.elsieSwash400}
