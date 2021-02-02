@@ -65,6 +65,12 @@ const projectPreviewDivWidth =`
 const fullSizeImage =`
     clamp(${width.fullSizeImage.min}, ${width.fullSizeImage.pef}, ${width.fullSizeImage.max})
 `
+const inputWidth =`
+    clamp(${width.inputWidth.min}, ${width.inputWidth.pef}, ${width.inputWidth.max})
+`
+const primBtn =`
+    clamp(${width.primBtn.min}, ${width.primBtn.pef}, ${width.primBtn.max})
+`
 
 //font-size
 const h1Size =`
@@ -111,4 +117,4 @@ const largeLinkSize =`
 clamp(${fontSize.largeLink.min},${fontSize.largeLink.pef}, ${fontSize.largeLink.max})
 `
 
-export const clamps = { marginBottom, marginTop, marginLeft, marginRight, xsMargin, medMargin, gridWidth, blogColumnWidth, heroBannerWidth, heroBannerHeight, blogImageDivWidth, blogPreviewWidth, articleDivWidth, projectPreviewDivWidth, projectPreviewWidth, headerWidth, aboutTitleWidth, articleWidth, fullSizeImage, largeLinkSize, introSize, spanSize, logoSize, navSize, anchorSize, pSize, h1Size, h2Size, h3Size, h4Size };
+export const clamps = { marginBottom, marginTop, marginLeft, marginRight, xsMargin, medMargin, gridWidth, blogColumnWidth, heroBannerWidth, heroBannerHeight, blogImageDivWidth, blogPreviewWidth, articleDivWidth, projectPreviewDivWidth, projectPreviewWidth, headerWidth, aboutTitleWidth, articleWidth, fullSizeImage, inputWidth, primBtn, largeLinkSize, introSize, spanSize, logoSize, navSize, anchorSize, pSize, h1Size, h2Size, h3Size, h4Size };

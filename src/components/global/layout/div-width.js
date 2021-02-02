@@ -79,4 +79,20 @@ const fullSizeImage = {
     pef: '34vw',
     max: '714px'
 }
-export const width = { gridTwoToThree, previewDisplay, bannerImageWidth, bannerImageHeight, headerWidth, aboutTitleWidth, article, blogImageDivWidth, blogPreviewArticleWidth, blogPreviewDivWidth, gridUpToFour, gridUpToFourDiv, fullSizeImage };
+
+//input boxes
+
+const inputWidth = {
+    min: `calc(${fullSizeImage.min} - 20px)`,
+    pef: `calc(${fullSizeImage.pef} - 50px)`,
+    max: `calc(${fullSizeImage.max} - 50px)`
+}
+
+// buttons
+
+const primBtn = {
+    min: `calc(${inputWidth.min} / 2)`,
+    pef: `calc(${inputWidth.pef} / 3)`,
+    max: `calc(${inputWidth.max} / 3)`
+}
+export const width = { gridTwoToThree, previewDisplay, bannerImageWidth, bannerImageHeight, headerWidth, aboutTitleWidth, article, blogImageDivWidth, blogPreviewArticleWidth, blogPreviewDivWidth, gridUpToFour, gridUpToFourDiv, fullSizeImage, inputWidth, primBtn };
