@@ -25,15 +25,15 @@ const RainbowStyle = styled('div')`
             stroke-dasharray:1000;
             stroke-dashoffset: 1000;
             fill-opacity: 0;
-            animation: dash 3s 5s 1 linear forwards,
-                        colorFill 2s 6.5s 1 linear forwards;
+            animation: dash 3s 3.5s 1 linear forwards,
+                        colorFill 2s 5s 1 linear forwards;
         }
         #pink-bow{
             stroke-dasharray:1000;
             stroke-dashoffset: 1000;
             fill-opacity: 0;
-            animation: dash 3s 6.5s 1 linear forwards,
-                        colorFill 2s 8s 1 linear forwards;
+            animation: dash 3s 2s 1 linear forwards,
+                        colorFill 2s 3.5s 1 linear forwards;
         }
     }
 
