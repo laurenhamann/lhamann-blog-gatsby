@@ -2,7 +2,7 @@ import { colors } from '../color/colors';
 import { clamps } from '../responsive/clamps';
 const h1Style = `
     font-family: "Open Sans Condensed";
-    font-weight: 700;
+    font-weight: 600;
     color: ${colors.darkNeutral};
     font-size: ${clamps.h1Size};
     text-align: center;
@@ -108,6 +108,40 @@ const largeLink =`
         text-decoration: underline;
     }
 `
+
+const label = `
+    font-family: "Elsie";
+    font-weight: 400;
+    color: ${colors.darkNeutral};
+    font-size: ${clamps.pSize};
+    transition: color 1s;
+    &:focus-within {
+        font-weight: 900;
+        color: ${colors.accent};
+    }
+`
+
+const input =`
+    font-family: "Open Sans";
+    font-weight: 300;
+    color: ${colors.darkNeutral};
+    font-size: calc(${clamps.pSize} * 0.8);
+    border: none;
+    background: #fffeff;
+    border: solid 2px transparent;
+    outline: none;
+    box-shadow: -1px 2px 4px rgba(50, 50, 50, 0.2);
+    transition: all 1s;
+    &:focus {
+        outline: ${colors.mainBold};
+        border: solid 3px ${colors.mainBold};
+        background: #fffdff;
+        box-shadow: inset -1px 2px 4px rgba(50, 50, 50, 0.2);
+    }
+    &:-internal-autofill-selected {
+        background: #fffdff !important;
+    }
+`
 const typographyStyles = `
     h1 {
         ${h1Style}
@@ -150,15 +184,24 @@ const typographyStyles = `
         ${introStyle}
     }
 
-    .small {
+    .small,
+    .author-span {
         ${spanStyle}
     }
-    .large-link {
+    .large-link,
+    .load-link {
         ${largeLink}
     }
     .about-font-span {
         ${aboutSpan}
     }
 
+    label {
+        ${label}
+    }
+    input,
+    textarea {
+        ${input}
+    }
 `
 export default typographyStyles;

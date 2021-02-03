@@ -7,5 +7,5 @@ import { margin } from './layout/margin'
 import { colors } from './color/colors'
 import globalStyles from './layout/global-style'
 import { fonts } from './fonts/fonts'
-
-export { animation, flex, typographyStyles, gradients, clamps, margin, colors, globalStyles, fonts };
+import primary from './primary/primary-styles'
+export { animation, flex, typographyStyles, gradients, clamps, margin, colors, globalStyles, fonts, primary };

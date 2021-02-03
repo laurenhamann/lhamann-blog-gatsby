@@ -9,7 +9,7 @@ import Footer from './footer/footer';
 import SEO from './helmet';
 // import '../static/fonts/fonts.css';
 
-import { animation, fonts, colors, typographyStyles, globalStyles } from './global/global'
+import { animation, fonts, colors, typographyStyles, globalStyles, primary } from './global/global'
 
 const Layout = ({ children }) => {
     return (
@@ -41,7 +41,7 @@ const Layout = ({ children }) => {
                 max-width: 100vw;
             }
             ${typographyStyles}
-
+            ${primary}
             div>ul>li::before {
                 content:"\\2022";
                 animation-name: colorChange;

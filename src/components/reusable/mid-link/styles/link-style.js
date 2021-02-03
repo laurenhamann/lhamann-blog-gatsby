@@ -1,7 +1,15 @@
 import styled from '@emotion/styled'
-import { gradients, animation, clamps, flex } from '../../../global/global'
+import {animation, clamps, flex } from '../../../global/global'
+let num;  
+function color() {
+    num =  Math.floor(Math.random() * 5);
+    console.log(num);
+}
+color()
+// setInterval(color, 4000) figure out how to reload the new num
+
 const LinkStyle = styled('section')`
-${animation.strokeChange}
+${animation.strokeColor(num)}
     .mid-link {
         margin: ${clamps.marginTop} ${clamps.marginLeft} ${clamps.marginBottom} ${clamps.marginRight};
         ${flex.flexRow}
@@ -18,24 +26,22 @@ ${animation.strokeChange}
         #bottom,
         #left,
         #right {
-            stroke: ${gradients.pink[0]};
+            stroke: transparent;
         }
     }
 
-    &:hover {
         #top {
-            animation: strokeChange 1s infinite forwards;
+            animation: strokeColor 4s linear infinite forwards;
         }
         #left {
-            animation: strokeChange 1s  0.3s infinite forwards;
+            animation: strokeColor 4s 1s infinite forwards;
         }
         #bottom {
-            animation: strokeChange 1s  0.6s infinite forwards;
+            animation: strokeColor 4s 2s infinite forwards;
         }
         #right {
-            animation: strokeChange 1s  0.8s infinite forwards;
+            animation: strokeColor 4s 3s infinite forwards;
         }
-    }
 
 
 `;

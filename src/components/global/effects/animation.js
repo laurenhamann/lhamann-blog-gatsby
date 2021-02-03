@@ -16,7 +16,8 @@ const colorChange =`
     }`
 
 
-const strokeChange =  `@keyframes strokeChange {
+const strokeChange =  `
+    @keyframes strokeChange {
         0% {stroke: ${gradients.pink[0]};}
         12.5% {stroke: ${gradients.pink[1]};}
         25% {stroke: ${gradients.pink[2]};}
@@ -28,6 +29,14 @@ const strokeChange =  `@keyframes strokeChange {
         100% {stroke: ${gradients.pink[0]};}
 
     }`
+
+const strokeColor = (i) => `
+    @keyframes strokeColor {
+        0% {stroke: ${gradients.pink[i]}10;}
+        50% {stroke: ${gradients.pink[i]}ff;}
+        100% {stroke: ${gradients.pink[i]}10;}
+    }
+`
 
 const dash =`
     @keyframes dash {
@@ -49,4 +58,5 @@ const rainbowFill = `
 export const animation = { colorChange,
                             strokeChange,
                             dash,
-                            rainbowFill }
+                            rainbowFill,
+                            strokeColor }

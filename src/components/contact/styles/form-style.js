@@ -21,11 +21,6 @@ const FormStyle = styled('form')`
         width: ${clamps.inputWidth};
     }
 
-    #submit-btn {
-        width: ${clamps.primBtn};
-        ${margin.center}
-    }
-
 
 `
 

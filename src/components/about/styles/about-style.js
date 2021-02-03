@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 import { margin, clamps, flex, animation } from '../../global/global'
 const AboutStyle = styled('div')`
-    ${animation}
+    ${animation.strokeChange}
     ${margin.center}
     @keyframes dash {
         to {
@@ -42,17 +42,6 @@ const AboutStyle = styled('div')`
     p {
         width: ${clamps.articleWidth};
         ${margin.center}
-        &:focus,
-        &:hover {
-            svg{
-                #Line-4 {
-                    animation: 
-                        strokeChange 2s forwards infinite,
-                        dash 9s 8s 1 forwards;
-                }
-            }
-
-        }
     }
 
 `
