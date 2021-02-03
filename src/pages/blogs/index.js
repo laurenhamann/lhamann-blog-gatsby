@@ -4,13 +4,13 @@ import Layout from '../../components/layout';
 import usePosts from '../../hooks/use-posts';
 import { Link } from 'gatsby';
 import Image from 'gatsby-image';
-import ArticleStyle from '../../components/article-preview';
-import GridStyle from '../../components/grid-style';
-
+import GridStyle from '../../components/reusable/grid/style/grid-style'
+import AllBlogStyle from '../../components/template/styles/template-hub-style'
+import SectionDivider from '../../components/reusable/section-divider'
 const AllBlogs = () => {
     const posts = usePosts();
     const allPosts = posts.map(post => (
-        <ArticleStyle key={post.slug} className="blog-preview-container" alignself='center'>
+        <GridStyle key={post.slug} className="blog-preview-container" alignself='center'>
             <Link to={post.slug}>
                 <Image
                     fluid={post.image.sharp.fluid} 
@@ -29,21 +29,20 @@ const AllBlogs = () => {
                     return <Link to={path}><span className="tags">{tag}</span></Link>
                 })} */}
                 <p>{post.excerpt}</p>
-                <Link to={post.slug}>Read This Post &rarr;</Link>
+                <Link to={post.slug} className="small">Read This Post &rarr;</Link>
             </div>
-        </ArticleStyle>  
+        </GridStyle>  
     ))
     return (
         <Layout>
-            <GridStyle className="mid-section">
-                <div>
-                    <h1> Search Blogs </h1>
+        <SectionDivider />
+            <AllBlogStyle className="mid-section">
                     <button className="filter" ariaLabel="filter-blogs">+</button>
-                </div>
+                    <h1> Search Blogs </h1>
                 <div className="grid-div">
                     {allPosts}
                 </div>
-            </GridStyle>
+            </AllBlogStyle>
         </Layout>
 
     )

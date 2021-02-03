@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql, Link } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import Layout from '../components/layout';
-import TemplateStyle from '../components/blog/styles/template-style';
+import TemplateStyle from '../components/template/styles/template-style';
 
 export const query = graphql`
     query($slug: String!) {

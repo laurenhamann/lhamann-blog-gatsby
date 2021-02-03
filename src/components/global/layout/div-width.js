@@ -43,9 +43,9 @@ const article = {
 
 // blog preview index 
 const blogImageDivWidth = {
-    min: "calc(100% * 0.5)",
+    min: `calc((${headerWidth.min} - (${space.xsMargin.min} * 2)) / 2)`,
     pef: "45%",
-    max: `calc(${headerWidth.max} * 0.4)`
+    max: `calc(${headerWidth.max} * 0.3)`
 }
 const blogPreviewArticleWidth = {
     min: "calc(100% * 0.5)",
@@ -61,16 +61,16 @@ const blogPreviewDivWidth = {
 
 // grid / columns
 
-const gridUpToFour = {
+const gridSection = {
     min: `calc(${headerWidth.min} - (${space.xsMargin.min} * 2))`,
     pef: "80vw",
     max: `calc(${headerWidth.max} - (${space.xsMargin.max} * 2))`
 }
 
-const gridUpToFourDiv = {
-    min: `${gridUpToFour.min}`,
-    pef: `calc((${gridUpToFour.pef} - (${space.medMargin.pef} * 2)) / 4 )`,
-    max: `calc((${gridUpToFour.max} - (${space.medMargin.max} * 2)) / 4 )`
+const gridDiv = {
+    min: `${gridSection.min}`,
+    pef: `calc((${gridSection.pef} - (${space.medMargin.pef} * 2)) / 4 )`,
+    max: `calc((${gridSection.max} - (${space.medMargin.max} * 2)) / 4 )`
 }
 
 // images
@@ -95,4 +95,4 @@ const primBtn = {
     pef: `calc(${inputWidth.pef} / 3)`,
     max: `calc(${inputWidth.max} / 3)`
 }
-export const width = { gridTwoToThree, previewDisplay, bannerImageWidth, bannerImageHeight, headerWidth, aboutTitleWidth, article, blogImageDivWidth, blogPreviewArticleWidth, blogPreviewDivWidth, gridUpToFour, gridUpToFourDiv, fullSizeImage, inputWidth, primBtn };
+export const width = { gridTwoToThree, previewDisplay, bannerImageWidth, bannerImageHeight, headerWidth, aboutTitleWidth, article, blogImageDivWidth, blogPreviewArticleWidth, blogPreviewDivWidth, gridSection, gridDiv, fullSizeImage, inputWidth, primBtn };

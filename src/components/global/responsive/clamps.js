@@ -56,11 +56,11 @@ const blogPreviewWidth =`
     clamp(${width.blogPreviewDivWidth.min}, ${width.blogPreviewDivWidth.pef}, ${width.blogPreviewDivWidth.max})
 `
 
-const projectPreviewWidth =`
-    clamp(${width.gridUpToFour.min}, ${width.gridUpToFour.pef}, ${width.gridUpToFour.max})
+const gridSectionWidth =`
+    clamp(${width.gridSection.min}, ${width.gridSection.pef}, ${width.gridSection.max})
 `
-const projectPreviewDivWidth =`
-    clamp(${width.gridUpToFourDiv.min}, ${width.gridUpToFourDiv.pef}, ${width.gridUpToFourDiv.max})
+const gridInnerDivWidth =`
+    clamp(${width.gridDiv.min}, ${width.gridDiv.pef}, ${width.gridDiv.max})
 `
 const fullSizeImage =`
     clamp(${width.fullSizeImage.min}, ${width.fullSizeImage.pef}, ${width.fullSizeImage.max})
@@ -117,4 +117,4 @@ const largeLinkSize =`
 clamp(${fontSize.largeLink.min},${fontSize.largeLink.pef}, ${fontSize.largeLink.max})
 `
 
-export const clamps = { marginBottom, marginTop, marginLeft, marginRight, xsMargin, medMargin, gridWidth, blogColumnWidth, heroBannerWidth, heroBannerHeight, blogImageDivWidth, blogPreviewWidth, articleDivWidth, projectPreviewDivWidth, projectPreviewWidth, headerWidth, aboutTitleWidth, articleWidth, fullSizeImage, inputWidth, primBtn, largeLinkSize, introSize, spanSize, logoSize, navSize, anchorSize, pSize, h1Size, h2Size, h3Size, h4Size };
+export const clamps = { marginBottom, marginTop, marginLeft, marginRight, xsMargin, medMargin, gridWidth, blogColumnWidth, heroBannerWidth, heroBannerHeight, blogImageDivWidth, blogPreviewWidth, articleDivWidth, gridSectionWidth, gridInnerDivWidth, headerWidth, aboutTitleWidth, articleWidth, fullSizeImage, inputWidth, primBtn, largeLinkSize, introSize, spanSize, logoSize, navSize, anchorSize, pSize, h1Size, h2Size, h3Size, h4Size };

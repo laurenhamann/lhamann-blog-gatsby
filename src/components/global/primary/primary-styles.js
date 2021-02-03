@@ -6,6 +6,8 @@ const primaryButton =`
     color: ${colors.darkNeutral};
     border-radius: 10px;
     transition: all 1s;
+    outline: none;
+    border: none;
     &:hover, 
     :focus {
         background-color: ${colors.mainBold};
@@ -18,7 +20,8 @@ const primaryButton =`
 `
 
 const primary = `
-    #submit-btn {
+    #submit-btn,
+    button {
         ${primaryButton}
     }
 
