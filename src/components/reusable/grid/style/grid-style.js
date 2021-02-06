@@ -4,6 +4,7 @@ import { clamps, flex } from '../../../global/global'
 const GridStyle = styled('article') `
     width: ${clamps.gridInnerDivWidth};
     ${flex.flexCol};
+    margin: ${clamps.medMargin};
     h4.title {
         margin-bottom: ${clamps.xsMargin};
         text-align: left;

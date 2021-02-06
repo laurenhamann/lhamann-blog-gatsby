@@ -71,6 +71,12 @@ const inputWidth =`
 const primBtn =`
     clamp(${width.primBtn.min}, ${width.primBtn.pef}, ${width.primBtn.max})
 `
+const secondaryBtn =`
+    clamp(${width.secondaryBtn.min}, ${width.secondaryBtn.pef}, ${width.secondaryBtn.max})
+`
+const filterDivWidth =`
+    clamp(${width.filterDivWidth.min}, ${width.filterDivWidth.pef}, ${width.filterDivWidth.max})
+`
 
 //font-size
 const h1Size =`
@@ -117,4 +123,4 @@ const largeLinkSize =`
 clamp(${fontSize.largeLink.min},${fontSize.largeLink.pef}, ${fontSize.largeLink.max})
 `
 
-export const clamps = { marginBottom, marginTop, marginLeft, marginRight, xsMargin, medMargin, gridWidth, blogColumnWidth, heroBannerWidth, heroBannerHeight, blogImageDivWidth, blogPreviewWidth, articleDivWidth, gridSectionWidth, gridInnerDivWidth, headerWidth, aboutTitleWidth, articleWidth, fullSizeImage, inputWidth, primBtn, largeLinkSize, introSize, spanSize, logoSize, navSize, anchorSize, pSize, h1Size, h2Size, h3Size, h4Size };
+export const clamps = { marginBottom, marginTop, marginLeft, marginRight, xsMargin, medMargin, gridWidth, blogColumnWidth, heroBannerWidth, heroBannerHeight, blogImageDivWidth, blogPreviewWidth, articleDivWidth, gridSectionWidth, gridInnerDivWidth, headerWidth, aboutTitleWidth, articleWidth, fullSizeImage, inputWidth, primBtn, secondaryBtn, filterDivWidth, largeLinkSize, introSize, spanSize, logoSize, navSize, anchorSize, pSize, h1Size, h2Size, h3Size, h4Size };

@@ -95,4 +95,18 @@ const primBtn = {
     pef: `calc(${inputWidth.pef} / 3)`,
     max: `calc(${inputWidth.max} / 3)`
 }
-export const width = { gridTwoToThree, previewDisplay, bannerImageWidth, bannerImageHeight, headerWidth, aboutTitleWidth, article, blogImageDivWidth, blogPreviewArticleWidth, blogPreviewDivWidth, gridSection, gridDiv, fullSizeImage, inputWidth, primBtn };
+
+const secondaryBtn = {
+    min: `calc(${primBtn.min} / 2)`,
+    pef: `calc(${primBtn.pef} / 2)`,
+    max: '40px'
+}
+
+// filter menu
+
+const filterDivWidth = {
+    min: `${headerWidth.min}`,
+    pef: '40vw',
+    max: '450px'
+}
+export const width = { gridTwoToThree, previewDisplay, bannerImageWidth, bannerImageHeight, headerWidth, aboutTitleWidth, article, blogImageDivWidth, blogPreviewArticleWidth, blogPreviewDivWidth, gridSection, gridDiv, fullSizeImage, inputWidth, primBtn, secondaryBtn, filterDivWidth };

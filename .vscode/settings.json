@@ -1,4 +1,25 @@
 {
     "diffEditor.wordWrap": "on",
-    "breadcrumbs.enabled": false
+    "breadcrumbs.enabled": false,
+    "grammarly.overrides": [
+        {
+            "files": [
+                "**/src/posts/00-first-blog-entry/01-Add-Local-Fonts-Gatsby.mdx"
+            ],
+            "config": {
+                "audience": "knowledgeable",
+                "dialect": "american",
+                "domain": "creative",
+                "emotions": [
+                    "optimistic",
+                    "respectful",
+                    "friendly"
+                ],
+                "goals": [
+                    "inform",
+                    "describe"
+                ]
+            }
+        }
+    ]
 }

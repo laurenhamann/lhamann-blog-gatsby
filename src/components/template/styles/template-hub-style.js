@@ -1,13 +1,13 @@
 import styled from '@emotion/styled'
 import { clamps, margin, flex } from '../../global/global'
 const AllBlogStyle = styled('section') `
-    width:${clamps.gridDivWidth};
+    width:${clamps.gridSectionWidth};
     ${margin.center}
     ${flex.flexCol}
     ${flex.alignItemsCenter}
-
-    button {
-        margin: 0 ${clamps.marginBottom}${clamps.medMargin} auto;
+    .grid-div {
+        ${flex.flexRow}
+        flex-wrap: wrap;
     }
 `
 
