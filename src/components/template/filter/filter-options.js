@@ -5,10 +5,11 @@ const FilterOptions = (props) => {
     let uniqueCategories = [...new Set(props.categories)];
     const categories = uniqueCategories.map(cat => (
         <div>
-            <input type="checkbox" id={cat} name="scales" />
+            <input type="checkbox" id={cat} name="scales" className="checkbox" onClick={(e) => props.filterCheck(e.target.id)} />
             <label for={cat}>{cat}</label>
         </div>
     ))
+
     return (
     <>
     {
@@ -21,6 +22,7 @@ const FilterOptions = (props) => {
                 <p>Categories</p>
                 {categories}
             </section>
+            <button className="submit" type="button"  onClick={() => props.click(!props.open)}> Done </button>
         </FilterStyle>
         </>
         :
