@@ -123,4 +123,9 @@ const largeLinkSize =`
 clamp(${fontSize.largeLink.min},${fontSize.largeLink.pef}, ${fontSize.largeLink.max})
 `
 
-export const clamps = { marginBottom, marginTop, marginLeft, marginRight, xsMargin, medMargin, gridWidth, blogColumnWidth, heroBannerWidth, heroBannerHeight, blogImageDivWidth, blogPreviewWidth, articleDivWidth, gridSectionWidth, gridInnerDivWidth, headerWidth, aboutTitleWidth, articleWidth, fullSizeImage, inputWidth, primBtn, secondaryBtn, filterDivWidth, largeLinkSize, introSize, spanSize, logoSize, navSize, anchorSize, pSize, h1Size, h2Size, h3Size, h4Size };
+const catTags=`
+    clamp(${fontSize.spanSmall.min}, ${fontSize.spanSmall.pef}, ${fontSize.spanSmall.max})
+`
+
+
+export const clamps = { marginBottom, marginTop, marginLeft, marginRight, xsMargin, medMargin, gridWidth, blogColumnWidth, heroBannerWidth, heroBannerHeight, blogImageDivWidth, blogPreviewWidth, articleDivWidth, gridSectionWidth, gridInnerDivWidth, headerWidth, aboutTitleWidth, articleWidth, fullSizeImage, inputWidth, primBtn, secondaryBtn, filterDivWidth, largeLinkSize, introSize, spanSize, logoSize, navSize, anchorSize, pSize, h1Size, h2Size, h3Size, h4Size, catTags };

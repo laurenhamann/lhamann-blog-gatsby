@@ -142,6 +142,17 @@ const input =`
         background: #fffdff !important;
     }
 `
+
+const categoryTag =`
+    font-family: "Elsie Swash Caps";
+    font-weight: 300;
+    color: ${colors.mainBold};
+    font-size: ${clamps.catTags};
+    &:hover,
+    &:focus {
+        animation: pastelRainbow 2s infinite;
+    }
+`
 const typographyStyles = `
     h1 {
         ${h1Style}
@@ -202,6 +213,11 @@ const typographyStyles = `
     input,
     textarea {
         ${input}
+    }
+
+    .tags {
+        ${categoryTag}
+        margin-right: ${clamps.xsMargin};
     }
 `
 export default typographyStyles;

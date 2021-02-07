@@ -58,9 +58,15 @@ const span = {
     max: "18px"
 }
 
+const spanSmall = { 
+    min: "8px",
+    pef: "1.1vw",
+    max: "16px"
+}
+
 const largeLink = {
     min: "12px",
     pef: "1.8vw",
     max: "34px"
 }
-export const fontSize = { h1, h2, h3, h4, p, anchor, logo, intro, nav, span, largeLink }
+export const fontSize = { h1, h2, h3, h4, p, anchor, logo, intro, nav, span, largeLink, spanSmall }

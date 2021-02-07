@@ -15,6 +15,7 @@ const AllBlogs = ({data}) => {
     const allPosts = data.allMdx.nodes.map(post => {
         post.frontmatter.tags.forEach( tag => {
             categories.push(tag);
+
         })
         return (
             <GridStyle key={post.frontmatter.slug} className="blog-preview-container" alignself='center'>
@@ -31,10 +32,12 @@ const AllBlogs = ({data}) => {
                         </Link>
                     </h4>
                     <span className="author-span">{post.frontmatter.author}~{post.frontmatter.date}</span>
-                    {/* {post.tags.map( tag => {
-                        const path = `filter/${tag}`
-                        return <Link to={path}><span className="tags">{tag}</span></Link>
-                    })} */}
+                    <br />
+                    {
+                        post.frontmatter.tags.map( tag => (
+                            <span className="tags">{tag}</span>
+                        ))
+                    }
                     <p>{post.excerpt}</p>
                     <Link to={post.frontmatter.slug} className="small">Read This Post &rarr;</Link>
                 </div>

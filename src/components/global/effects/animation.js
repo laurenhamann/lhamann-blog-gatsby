@@ -15,7 +15,27 @@ const colorChange =`
 
     }`
 
+    const pastelRainbow =`
+    @keyframes pastelRainbow {
+        0% {color: ${gradients.pastel[0]};}
+        7% {color: ${gradients.pastel[1]};}
+        14% {color: ${gradients.pastel[2]};}
+        21% {color: ${gradients.pastel[3]};}
+        28% {color: ${gradients.pastel[4]};}
+        35% {color: ${gradients.pastel[5]};}
+        42% {color: ${gradients.pastel[6]};}
+        49% {color: ${gradients.pastel[7]};}
+        56% {color: ${gradients.pastel[8]};}
+        61% {color: ${gradients.pastel[7]};}
+        68% {color: ${gradients.pastel[6]};}
+        75% {color: ${gradients.pastel[5]};}
+        82% {color: ${gradients.pastel[4]};}
+        89% {color: ${gradients.pastel[3]};}
+        95% {color: ${gradients.pastel[2]};}
+        98% {color: ${gradients.pastel[1]};}
+        100% {color: ${gradients.pastel[0]};}
 
+    }`
 const strokeChange =  `
     @keyframes strokeChange {
         0% {stroke: ${gradients.pink[0]};}
@@ -30,6 +50,7 @@ const strokeChange =  `
 
     }`
 
+    
 const strokeColor = (i) => `
     @keyframes strokeColor {
         0% {stroke: ${gradients.pink[i]}10;}
@@ -59,4 +80,5 @@ export const animation = { colorChange,
                             strokeChange,
                             dash,
                             rainbowFill,
-                            strokeColor }
+                            strokeColor,
+                        pastelRainbow }

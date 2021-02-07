@@ -35,6 +35,7 @@ const Layout = ({ children }) => {
 
             ${globalStyles}
             ${animation.colorChange}
+            ${animation.pastelRainbow}
             html,
             body {
                 background-color: ${colors.lightNeutral};
