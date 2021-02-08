@@ -1,11 +1,11 @@
 import React from 'react'
 import { Link } from 'gatsby'
-
+import NavUlStyle from './styles/nav-ul-style'
 
 
 
 const NavUl = (props) => (
-    <ul className={props.visible ? "visible" : "hidden"}>
+    <NavUlStyle className={props.visible ? "visible" : "hidden"}>
         <li className="nav-item">
             <Link to="/" activeClassName="active">
                 Home
@@ -31,7 +31,7 @@ const NavUl = (props) => (
                 Contact
             </Link>
         </li>
-    </ul>
+    </NavUlStyle>
 )
 
 export default NavUl;

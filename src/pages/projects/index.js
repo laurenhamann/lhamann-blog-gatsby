@@ -4,11 +4,11 @@ import useProjects from '../../hooks/use-projects';
 import { Link } from 'gatsby';
 import Image from 'gatsby-image';
 import GridStyle from '../../components/reusable/grid/style/grid-style'
-import AllBlogStyle from '../../components/template/styles/template-hub-style'
+import HubStyle from '../../components/template/styles/template-hub-style'
 const AllProjects = () => {
     const projects = useProjects();
     const allProjects = projects.map(project => (
-        <AllBlogStyle key={project.slug} className="project-preview-container"  alignself='center'>
+        <GridStyle key={project.slug} className="project-preview-container"  alignself='center'>
                 <Link to={project.slug}>
                     <Image
                         fluid={project.image.img.fluid} 
@@ -25,17 +25,17 @@ const AllProjects = () => {
                     <p>{project.excerpt}</p>
                     <Link to={project.slug}>Read More &rarr;</Link>
                 </div>
-        </AllBlogStyle>  
+        </GridStyle>  
     ))
     return (
         <Layout>
-            <GridStyle className="mid-section">
+            <HubStyle className="mid-section">
                 <div>
                     <h1> Search Projects </h1>
                     <button className="filter" ariaLabel="filter-projects">+</button>
                 </div>
                 {allProjects}
-            </GridStyle>
+            </HubStyle>
         </Layout>
 
     )

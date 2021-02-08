@@ -5,7 +5,7 @@ import Layout from '../../components/layout'
 import { Link, graphql } from 'gatsby'
 import Image from 'gatsby-image'
 import GridStyle from '../../components/reusable/grid/style/grid-style'
-import AllBlogStyle from '../../components/template/styles/template-hub-style'
+import HubStyle from '../../components/template/styles/template-hub-style'
 import SectionDivider from '../../components/reusable/section-divider'
 // import FilterOptions from '../../components/template/filter/filter-options'
 import { css } from '@emotion/react'
@@ -105,13 +105,13 @@ const AllBlogs = ({data}) => {
             <Layout>
             <div css={css` position: relative; `}>
                 <SectionDivider />
-                    <AllBlogStyle className="mid-section">
+                    <HubStyle className="mid-section">
                             {/* <FilterOptions open={open} click={isOpen} categories={categories} filterCheck={filterOnClick} /> */}
                             <h1> Search Blogs </h1>
                         <div className="grid-div">
                             {allPosts}
                         </div>
-                    </AllBlogStyle>
+                    </HubStyle>
             </div>
             </Layout>
 

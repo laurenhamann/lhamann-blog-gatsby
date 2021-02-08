@@ -15,7 +15,8 @@ const Nav = (props) => (
                 : 
             <>
                 <NavUl 
-                    visible={props.opened} 
+                    visible={props.opened}
+                    width={props.width} 
                 /> 
                 <HamburgerBtn 
                     change={props.opened}

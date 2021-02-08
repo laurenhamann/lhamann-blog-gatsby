@@ -3,25 +3,21 @@ import theme from 'prism-react-renderer/themes/nightOwlLight'
 import React from 'react'
 import styled from '@emotion/styled';
 import { copyToClipboard } from '../utils/copy-to-clipboard'
+import { clamps } from './global/global'
 
-const breakpoints = [768, 1024, 1400, 1600]
-const mq = breakpoints.map(
-    bp => `@media (min-width: ${bp}px)`
-)
+
 export const Pre = styled('pre')`
     text-align: left;
-    padding: 0.5em;
+    padding: ${clamps.xsMargin};
     overflow-x: auto;
     border-radius: 3px;
-    background-color: #00000009 !important;
-    width: 80vw;
-    margin: 1vh auto; 
+    width: ${clamps.headerWidth};
+    margin: ${clamps.medMargin} auto; 
     font-family: 'Source Code Pro', Courier, monospace;
+    height: auto;
+    max-height: ${clamps.aboutTitleWidth};
     div {
-        height: 15px;
-        ${mq[1]}{
-            height: auto;
-        }
+        height: auto;
     }
 `
 export const LineNo = styled('span')`
@@ -35,10 +31,10 @@ export const CopyCode = styled('button')`
     position: relative;
     right: -90%;
     border: 0;
-    border-radius: 3px;
-    margin: 0.25em;
-    opacity: 0.3;
-    font-size: 1.3vmax;
+    border-radius: 15px;
+    margin: ${clamps.xsMargin};
+    opacity: 0.5;
+    font-size: ${clamps.pSize};
     &:hover {
         opacity: 1;
     }

@@ -1,5 +1,5 @@
 import React from 'react'
-import Rainbow from '../reusable/svg/rainbow'
+import Rainbow from '../../reusable/svg/rainbow'
 import HeroStyle from './styles/hero-style'
 
 const Hero = (props) => {

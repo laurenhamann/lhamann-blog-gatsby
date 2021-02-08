@@ -1,8 +1,8 @@
 import React from 'react';
-
+import HamburgerStyle from './styles/hamburger-btn-style'
 
 const HamburgerBtn = (props) => (
-    <div 
+    <HamburgerStyle
         className={props.change ? "container change" : "container"} 
         onClick={props.click} onKeyDown={props.click} role = "button" ariaLabel="nav" 
         tabIndex={0}
@@ -13,7 +13,7 @@ const HamburgerBtn = (props) => (
             </div>
             <div className="bar3">
             </div>
-        </div>
+        </HamburgerStyle>
 )
 
 export default HamburgerBtn;

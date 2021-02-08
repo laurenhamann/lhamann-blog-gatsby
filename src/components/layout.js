@@ -7,7 +7,7 @@ import 'typeface-open-sans-condensed';
 import Header from './header/header';
 import Footer from './footer/footer';
 import SEO from './helmet';
-// import '../static/fonts/fonts.css';
+
 
 import { animation, fonts, colors, typographyStyles, globalStyles, elements } from './global/global'
 

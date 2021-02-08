@@ -1,6 +1,6 @@
 import styled from '@emotion/styled'
 import { clamps, margin, flex } from '../../global/global'
-const AllBlogStyle = styled('section') `
+const HubStyle = styled('section') `
     width:${clamps.gridSectionWidth};
     ${margin.center}
     ${flex.flexCol}
@@ -11,4 +11,4 @@ const AllBlogStyle = styled('section') `
     }
 `
 
-export default AllBlogStyle;
+export default HubStyle;

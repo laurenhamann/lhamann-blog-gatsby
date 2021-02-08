@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import { clamps, colors, margin, flex } from '../../global/global'
+import { clamps, colors, margin, flex } from '../../../global/global'
 
 
 const FormStyle = styled('form')`

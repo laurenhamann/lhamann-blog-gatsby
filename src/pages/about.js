@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../components/layout';
-import SVGBorder from '../components/reusable/SVG-border';
+import SVGBorder from '../components/reusable/svg/SVG-border';
 import MidLinks from '../components/reusable/mid-link/mid-links'
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';

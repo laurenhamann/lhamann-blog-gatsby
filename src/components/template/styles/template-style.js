@@ -22,6 +22,12 @@ const TemplateStyle = styled('article')`
     code {
         color: ${colors.mainComp};
     }
+    a {
+        color: ${colors.mainBold};
+        &:hover {
+            font-style: italic;
+        }
+    }
 
 
 `

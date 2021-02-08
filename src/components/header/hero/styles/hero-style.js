@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import { margin, clamps, flex } from '../../global/global';
+import { margin, clamps, flex } from '../../../global/global';
 
 const HeroStyle = styled('div')`
     align-self: center;

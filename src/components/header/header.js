@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import Hero from './hero';
+import Hero from './hero/hero';
 import Nav from './nav/nav';
 import HeaderStyle from './styles/header-style';
 class Header extends React.Component{

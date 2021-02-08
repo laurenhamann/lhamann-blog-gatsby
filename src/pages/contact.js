@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../components/layout'
 import ContactStyle from '../components/contact/styles/contact-style'
-import Form from '../components/contact/form'
+import Form from '../components/contact/form/form'
 import SectionDivider from '../components/reusable/section-divider'
 
 const Contact = (props) => (
