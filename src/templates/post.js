@@ -21,7 +21,8 @@ export const query = graphql`
 
 
 
-const PostTemplate = ({ data: {mdx: post} }) => (
+function PostTemplate({ data: {mdx: post} }) { 
+    return (
     <Layout>
         <SectionDivider />
         <TemplateStyle>
@@ -32,6 +33,6 @@ const PostTemplate = ({ data: {mdx: post} }) => (
             <Link to="/" className="load-link"><span className="arrow-pink">&larr;</span> back to all blog posts</Link>
         </TemplateStyle>
     </Layout>
-)
+)}
 
 export default PostTemplate;

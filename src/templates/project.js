@@ -4,19 +4,6 @@ import { MDXRenderer } from 'gatsby-plugin-mdx';
 import Layout from '../components/layout';
 import TemplateStyle from '../components/template/styles/template-style';
 
-export const query = graphql`
-    query($slug: String!) {
-        mdx(frontmatter: {slug: { eq: $slug }}){
-            frontmatter {
-                title
-                creator
-                date
-            }
-            body
-        }
-    }
-`;
-
 const ProjectTemplate = ({ data: {mdx: project} }) => (
     <Layout>
         <TemplateStyle className="mid-section">
@@ -36,3 +23,16 @@ const ProjectTemplate = ({ data: {mdx: project} }) => (
 )
 
 export default ProjectTemplate;
+
+export const query = graphql`
+    query($slug: String!) {
+        mdx(frontmatter: {slug: { eq: $slug }}){
+            frontmatter {
+                title
+                creator
+                date
+            }
+            body
+        }
+    }
+`;
