@@ -1,8 +1,9 @@
 import * as React from "react";
-import RecentBlogs from '../components/reusable/blog-section/recent-blogs';
-import Layout from "../components/layout";
-import ProjectSection from '../components/reusable/project-section/project-section'
-import MidSection from '../components/index/mid-section/mid-section'
+import RecentBlogs from '../components/components/recent-blogs';
+import Layout from "../components/components/layout";
+import ProjectSection from '../components/components/project-section'
+import MidSection from '../components/components/mid-section'
+
 // markup
 const IndexPage = () => {
       return (

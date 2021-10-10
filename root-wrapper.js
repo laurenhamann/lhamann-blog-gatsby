@@ -1,6 +1,7 @@
 import { MDXProvider } from '@mdx-js/react'
-import Code from './src/components/Code'
+import Code from './src/components/components/Code'
 import React from 'react'
+
 const components = {
     pre: ({ children: { props } }) => {
         if (props.mdxType === 'code') {

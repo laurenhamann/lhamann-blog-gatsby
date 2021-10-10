@@ -6,32 +6,32 @@ const usePosts = () => {
         allMdx(filter: {frontmatter: {type: {eq: "post"}, published: {eq: true}}}) {
             nodes {
                 frontmatter {
-                author
-                slug
-                title
-                date
-                tags
-                image {
-                    sharp: childImageSharp {
-                    fluid(maxHeight: 350, maxWidth: 400) {
-                        ...GatsbyImageSharpFluid_withWebp
+                    author
+                    slug
+                    title
+                    datePublished
+                    tags
+                    hero_image_alt
+                    hero_image {
+                        childImageSharp {
+                            gatsbyImageData(placeholder: BLURRED, height: 200, width: 250)
+                        }
                     }
-                    }
-                }
                 }
                 excerpt(pruneLength: 50)
             }
-            }
         }
-    `)
+    }
+`)
     return data.allMdx.nodes.map(post => ({
         title: post.frontmatter.title,
         author: post.frontmatter.author,
-        date: post.frontmatter.date,
+        date: post.frontmatter.datePublished,
         slug: post.frontmatter.slug,
-        image: post.frontmatter.image,
         excerpt: post.excerpt,
-        tags: post.frontmatter.tags
+        tags: post.frontmatter.tags,
+        hero_image: post.frontmatter.hero_image,
+        hero_image_alt: post.frontmatter.hero_image_alt
     }))
 }
 

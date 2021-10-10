@@ -1,19 +1,22 @@
 import React from 'react';
-import Layout from '../../components/layout';
+import Layout from '../../components/components/layout';
 import useProjects from '../../hooks/use-projects';
 import { Link } from 'gatsby';
-import Image from 'gatsby-image';
-import GridStyle from '../../components/reusable/grid/style/grid-style'
-import HubStyle from '../../components/template/styles/template-hub-style'
+import GridStyle from '../../components/styles/grid__style__'
+import HubStyle from '../../components/styles/template_hub__style__'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+
 const AllProjects = () => {
     const projects = useProjects();
-    const allProjects = projects.map(project => (
+    const allProjects = projects.map(project => {
+        const image = getImage(project.frontmatter.hero_image)
+        return (
         <GridStyle key={project.slug} className="project-preview-container"  alignself='center'>
                 <Link to={project.slug}>
-                    <Image
-                        fluid={project.image.img.fluid} 
-                        alt={project.title}
-                    />
+                <GatsbyImage
+                    image={image}
+                    alt={project.frontmatter.hero_image_alt}
+                />
                 </Link>
                 <div className="article-div">
                     <h3 className="title">
@@ -26,7 +29,8 @@ const AllProjects = () => {
                     <Link to={project.slug}>Read More &rarr;</Link>
                 </div>
         </GridStyle>  
-    ))
+    )})
+
     return (
         <Layout>
             <HubStyle className="mid-section">

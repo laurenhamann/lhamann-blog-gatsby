@@ -43,21 +43,12 @@
     "gatsby-remark-prismjs": "^3.11.0",
     "gatsby-source-filesystem": "^2.8.0",
     "gatsby-transformer-remark": "^2.14.0",
-    "gatsby-transformer-sharp": "^2.9.0",
+    "gatsby-transformer-sharp": "^2.12.1",
     "prism-react-renderer": "^1.1.1",
     "prismjs": "^1.23.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
-    "react-live": "^2.2.3",
-    "typeface-bad-script": "^1.1.13",
-    "typeface-elsie": "^1.1.13",
-    "typeface-elsie-swash-caps": "^1.1.13",
-    "typeface-lato": "^1.1.13",
-    "typeface-montserrat-alternates": "^1.1.13",
-    "typeface-open-sans": "^1.1.13",
-    "typeface-open-sans-condensed": "^1.1.13",
-    "typeface-raleway": "^1.1.13",
-    "typeface-source-code-pro": "^1.1.13"
+    "react-live": "^2.2.3"
   }
 }

@@ -1,12 +1,57 @@
 import React from 'react';
-import Layout from '../components/layout';
-import SVGBorder from '../components/reusable/svg/SVG-border';
-import MidLinks from '../components/reusable/mid-link/mid-links'
+import styled from '@emotion/styled'
+import Layout from '../components/components/layout';
+import SVGBorder from '../components/assets/svg/SVG-border';
+import MidLinks from '../components/components/mid-links'
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
-import AboutStyle from '../components/about/styles/about-style';
-import SectionDivider from '../components/reusable/section-divider';
+import SectionDivider from '../components/styles/section-divider__';
+import { clamps, margin, flex, animation  } from '../components/styles/global'
 
+const AboutStyle = styled('div')`
+    ${animation.strokeChange}
+    ${margin.center}
+    @keyframes dash {
+        to {
+            stroke-dashoffset: 0;
+        }
+    }
+    width: ${clamps.header_width};
+    .svg-border {
+            width: ${clamps.full_size_image};
+            ${margin.center}
+        svg{
+            #Line-4 {
+                animation: 
+                    strokeChange 2s forwards infinite,
+                    dash 9s 4s 1 forwards;
+                stroke-dasharray: 1000;
+                stroke-dashoffset: 1000;
+            }
+        }
+    }
+    .about-title {
+        ${flex.flexCol}
+        width:${clamps.about_title_width};
+        padding: 0 ${clamps.med_margin};
+        ${margin.center}
+    }
+    .about-font-span {
+        animation: colorChange 4s forwards infinite;
+        align-self: flex-start;
+    }
+    & .gatsby-image-wrapper {
+        border-radius: 50%;
+        height: ${clamps.full_size_image};
+        width: ${clamps.full_size_image};
+        margin: 3vh auto;
+    }
+
+    p {
+        width: ${clamps.article_width};
+        ${margin.center}
+    }
+`
 export const query = graphql`
     query imageQuery {
         file(relativePath: {eq: "about-picture.JPG"}) {

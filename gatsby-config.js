@@ -12,19 +12,24 @@ module.exports = {
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
     {
-      resolve: 'gatsby-plugin-mdx',
-      options: {
-        defaultLayouts: {
-          default: require.resolve('./src/components/layout.js')
+    resolve: 'gatsby-plugin-mdx',
+    options: {
+      defaultLayouts: {
+        default: require.resolve('./src/components/components/layout.js')
+      },
+      gatsbyRemarkPlugins:[{ 
+        resolve: 'gatsby-remark-images', 
+        options: {
+          maxWidth: 590,
         },
-        gatsbyRemarkPlugins:[{ resolve: 'gatsby-remark-images'}],
-      }
+      }],
+    }
     },
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
-        path: `${__dirname}/src/images/`,
+        path: `${__dirname}/src/components/assets/images/`,
       },
       __key: "images",
     },
@@ -53,15 +58,6 @@ module.exports = {
       __key: "posts",
     },
     {
-      resolve: "gatsby-plugin-web-font-loader",
-      options: {
-        custom: {
-          families: ["Lato, Modern, Lemonmilk, Joselyna"],
-          urls: ["/fonts/fonts.css"],
-        },
-      },
-    },
-    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `GatsbyJS`,
@@ -70,7 +66,7 @@ module.exports = {
         background_color: `transparent`,
         theme_color: `#a2466c`,
         display: `standalone`,
-        icon: `src/images/favicon.png`,
+        icon: `src/components/assets/images/favicon.png`,
         theme_color_in_head: false,
       },
     },
