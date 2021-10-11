@@ -55,7 +55,9 @@ const blog_img_div_width =`
 const blog_preview_width =`
     clamp(${width.blogPreviewDivWidth.min}, ${width.blogPreviewDivWidth.pef}, ${width.blogPreviewDivWidth.max})
 `
-
+const project_preview_width =`
+    clamp(${width.projectPreviewDivWidth.min}, ${width.projectPreviewDivWidth.pef}, ${width.projectPreviewDivWidth.max})
+`
 const grid_section_width =`
     clamp(${width.gridSection.min}, ${width.gridSection.pef}, ${width.gridSection.max})
 `
@@ -129,4 +131,4 @@ const cat_tags=`
 `
 
 
-export const clamps = { margin_bottom, margin_top, margin_left, margin_right, xs_margin, med_margin, grid_width, blog_column_width, hero_banner_width, hero_banner_height, blog_img_div_width, blog_preview_width, article_div_width, grid_section_width, grid_inner_div_width, header_width, about_title_width, article_width, full_size_image, input_width, prim_btn, secondary_btn, filter_div_width, intro_size, span_size, logo_size, nav_size, anchor_size, p_size, h1_size, h2_size, h3_size,  h4_size, large_link_size, cat_tags };
+export const clamps = { margin_bottom, margin_top, margin_left, margin_right, xs_margin, med_margin, grid_width, blog_column_width, hero_banner_width, hero_banner_height, blog_img_div_width, blog_preview_width, project_preview_width, article_div_width, grid_section_width, grid_inner_div_width, header_width, about_title_width, article_width, full_size_image, input_width, prim_btn, secondary_btn, filter_div_width, intro_size, span_size, logo_size, nav_size, anchor_size, p_size, h1_size, h2_size, h3_size,  h4_size, large_link_size, cat_tags };

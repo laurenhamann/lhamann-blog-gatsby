@@ -11,26 +11,32 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 const ProjectSectionStyle = styled('div')`
     ${flex.flexCol}
     ${flex.justifyCenter}
-    .grid-project {
+    div {
         ${flex.flexRow}
-        width: ${clamps.project_preview_width};
         ${flex.justifyCenter}
-        ${margin.center}
     }
 `
 const ProjectStyle = styled('article')`
     ${flex.flexCol}
-    ${flex.justifyCenter}
     ${flex.alignItemsCenter}
-    height: auto;
-    width: ${clamps.project_preview_div_width};
-    a:nth-child(2){
-        width: 100%;
+    ${flex.justifyCenter}
+    width: 30vw;
+    > a {
+        width: ${clamps.blog_image_div_width};
     }
-    > * {
-        margin-bottom: ${clamps.xs_margin};
-        align-self: center;
+    .article-div {
+        ${flex.flexCol}
+        width: 30vw;
+        > * {
+            margin-bottom: ${clamps.xs_margin};
+            text-align: center !important;
+            margin-left: 10px;
+        }
     }
+`
+
+const grid = styled('div')`
+    ${flex.flexRow}
 `
 const ProjectSection = () => {
     const projects = useProjects();
@@ -38,32 +44,34 @@ const ProjectSection = () => {
         const image = getImage(project.hero_image)
         return (
         <ProjectStyle key={project.slug} className="project-preview-container"  alignself='center'>
-            <h3 className="title">
-                <Link to={project.slug}>
-                    {project.title}
-                </Link>
-            </h3>
             <Link to={project.slug}>
                 <GatsbyImage
                     image={image}
                     alt={project.hero_image_alt}
                 />
             </Link>
+            <div className="article-div">
+            <h3 className="title">
+                <Link to={project.slug}>
+                    {project.title}
+                </Link>
+            </h3>
             <span className="small">{project.date}</span>
             <SocialIcon url={project.url} target="_blank" label="Github" icon={faGithub} />
             <Link to={project.slug} className="page-links">Read More &rarr;</Link>
+            </div>
         </ProjectStyle>
         )})
     return (
         <>
         <SectionDivider />
-        <ProjectSectionStyle>
             <h1>Projects</h1>
-            <div className="grid-project">
-                {allProjects}
-            </div>
+            <ProjectSectionStyle>
+                <div>
+                    {allProjects}
+                </div>
             <Link to="projects" className="large-link">All Projects</Link>
-        </ProjectSectionStyle>
+            </ProjectSectionStyle>
         </>
     )
 }

@@ -31,6 +31,11 @@ const blogPreviewDivWidth = {
     max: `calc(${headerWidth.max} - (${marginXS.max} * 2))`
 }
 
+const projectPreviewDivWidth = {
+    min: '20vw',
+    pef: "30vw",
+    max: '40xw'
+}
 // grid / columns
 
 const gridSection = {
@@ -73,4 +78,4 @@ const filterDivWidth = {
     max: '450px'
 }
 
-export const width = { aboutTitleWidth, article, blogImageDivWidth, blogPreviewArticleWidth, blogPreviewDivWidth, gridSection, gridDiv, inputWidth, primBtn, secondaryBtn, filterDivWidth };
+export const width = { aboutTitleWidth, article, blogImageDivWidth, blogPreviewArticleWidth, blogPreviewDivWidth, gridSection, gridDiv, inputWidth, primBtn, secondaryBtn, filterDivWidth,projectPreviewDivWidth};

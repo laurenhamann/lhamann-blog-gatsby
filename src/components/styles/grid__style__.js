@@ -1,6 +1,7 @@
 import styled from '@emotion/styled'
-import { clamps } from './global'
+import { clamps, margin } from './global'
 import { flex } from './styles*'
+
 const GridStyle = styled('article') `
     width: ${clamps.grid_inner_div_width};
     ${flex.flexCol};
@@ -10,7 +11,15 @@ const GridStyle = styled('article') `
         text-align: left;
     }
     span {
-        margin-bottom: ${clamps.med_margin};
+        margin-bottom: ${clamps.xs_margin};
+        font-size: ${clamps.span_size};
+    }
+    .article-div {
+        ${flex.flexCol}
+        ${flex.justifyCenter}
+    }
+    div a {
+        align-self: center;
     }
 `
 

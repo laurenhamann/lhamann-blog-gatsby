@@ -124,7 +124,7 @@ const logo = {
 const span = { 
     min: "8px",
     pef: "1.2vw",
-    max: "18px"
+    max: "14px"
 }
 
 const spanSmall = { 

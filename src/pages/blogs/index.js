@@ -35,11 +35,13 @@ const AllBlogs = ({data}) => {
                             {post.frontmatter.author}~{post.frontmatter.date}
                         </span>
                         <br />
-                        {
-                            post.frontmatter.tags.map( tag => (
-                                <span className="tags">{tag}</span>
-                            ))
-                        }
+                        <div className="tags">
+                            {
+                                post.frontmatter.tags.map( tag => (
+                                    <span className="tags">{tag}</span>
+                                ))
+                            }
+                        </div>
                         <p>{post.excerpt}</p>
                         <Link to={post.frontmatter.slug} className="small">
                             Read This Post &rarr;

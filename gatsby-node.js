@@ -32,15 +32,18 @@ exports.createPages = async({ actions, graphql, reporter }) => {
         })
     })
 
+    const allpaths = ['', 'projects/'];
     const projects = entries.filter(entry => entry.frontmatter.type === "project");
+
     projects.forEach(project => {
+        allpaths.forEach(all => {
             actions.createPage({
-                path: project.frontmatter.slug,
+                path: `${all}${project.frontmatter.slug}`,
                 component: require.resolve('./src/templates/project.js'),
                 context: {
                     slug: project.frontmatter.slug
                 },
             });
         })
+    })
 }
-

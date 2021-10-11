@@ -6,11 +6,16 @@ const TemplateStyle = styled('article')`
     margin: ${clamps.margin_top} auto;
     padding: 0 ${clamps.med_margin};
     ${flex.flexCol}
+    ${flex.justifyCenter}
     .title {
-        margin-bottom: ${clamps.xs_margin};
+        margin-bottom: ${clamps.med_margin};
     }
     h3 {
         margin-top: ${clamps.margin_top};
+    }
+
+    p {
+        text-align: center;
     }
     .author-span {
         margin: ${clamps.xs_margin} auto;
