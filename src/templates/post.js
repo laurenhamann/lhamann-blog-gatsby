@@ -34,11 +34,11 @@ function PostTemplate({ data: {mdx: post} }) {
     <Layout>
         <SectionDivider />
         <TemplateStyle>
-            <h1 className="title main">{post.frontmatter.title}</h1>
             <GatsbyImage
                 image={image}
                 alt={post.frontmatter.hero_image_alt}
                 />
+            <h1 className="title main">{post.frontmatter.title}</h1>
             <span className="author-span">author: {post.frontmatter.author}~ {post.frontmatter.date}</span>
             <MDXRenderer>{post.body}</MDXRenderer>
             <p>{post.frontmatter.body}</p>

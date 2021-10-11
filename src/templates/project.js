@@ -11,13 +11,13 @@ const ProjectTemplate = ({ data: {mdx: project} }) => {
     <Layout>
         <TemplateStyle className="mid-section">
             <div className="article-flex flex-col">
-                <h1 className="title main">
-                    {project.frontmatter.title}
-                </h1>
                 <GatsbyImage
                     image={image}
                     alt={project.frontmatter.hero_image_alt}
                     />
+                <h1 className="title main">
+                    {project.frontmatter.title}
+                </h1>
                 <span className="author-span main-span">
                 creator: {project.frontmatter.creator}~{project.frontmatter.date}</span>
                     <MDXRenderer>{project.body}
