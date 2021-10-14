@@ -1,11 +1,11 @@
 import React from 'react';
-import Layout from '../../components/components/layout';
 import useProjects from '../../hooks/use-projects';
 import { Link } from 'gatsby';
-import GridStyle from '../../components/styles/grid__style__'
-import HubStyle from '../../components/styles/template_hub__style__'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
-import SectionDivider from '../../components/styles/section-divider__';
+import Layout from '../../components/components/Global/layout';
+import GridStyle from '../../components/components/Pages/Hub/grid__style__'
+import HubStyle from '../../components/components/Pages/Hub/template_hub__style__'
+import SectionDivider from '../../components/components/Global/section-divider__';
 
 const AllProjects = () => {
     const projects = useProjects();

@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from '@emotion/styled'
-import Layout from '../components/components/layout';
-import SVGBorder from '../components/assets/svg/SVG-border';
-import MidLinks from '../components/components/mid-links'
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
-import SectionDivider from '../components/styles/section-divider__';
-import { clamps, margin, flex, animation  } from '../components/styles/global'
+import Layout from '../components/components/Global/layout';
+import SVGBorder from '../components/assets/svg/SVG-border';
+import MidLinks from '../components/components/Pages/About/mid-links'
+import SectionDivider from '../components/components/Global/section-divider__'
+import { clamps, margin, flex, animation  } from '../components/components/Global/Styles/__global'
 
 const AboutStyle = styled('div')`
     ${animation.strokeChange}

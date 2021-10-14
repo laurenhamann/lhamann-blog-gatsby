@@ -1,3 +1,4 @@
+require("dotenv").config()
 module.exports = {
   siteMetadata: {
     title: "Lauren Hamann: Frontend Developer",
@@ -12,18 +13,26 @@ module.exports = {
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
     {
-    resolve: 'gatsby-plugin-mdx',
-    options: {
-      defaultLayouts: {
-        default: require.resolve('./src/components/components/layout.js')
-      },
-      gatsbyRemarkPlugins:[{ 
-        resolve: 'gatsby-remark-images', 
-        options: {
-          maxWidth: 590,
+      resolve: 'gatsby-plugin-mdx',
+      options: {
+        defaultLayouts: {
+          default: require.resolve('./src/components/components/layout.js')
         },
-      }],
-    }
+        gatsbyRemarkPlugins:[{ 
+          resolve: 'gatsby-remark-images', 
+          options: {
+            maxWidth: 590,
+          },
+        }],
+      }
+    },
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        typekit: {
+          id: process.env.TYPEKIT_ID,
+        },
+      },
     },
     {
       resolve: "gatsby-source-filesystem",
@@ -32,22 +41,22 @@ module.exports = {
         path: `${__dirname}/src/components/assets/images/`,
       },
       __key: "images",
+      },
+    {
+    resolve: "gatsby-source-filesystem",
+    options: {
+      name: "pages",
+      path: `${__dirname}/src/pages/`,
+    },
+    __key: "pages",
     },
     {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "pages",
-        path: `${__dirname}/src/pages/`,
-      },
-      __key: "pages",
+    resolve: "gatsby-source-filesystem",
+    options: {
+      name: "projects",
+      path: `${__dirname}/src/projects/`,
     },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "projects",
-        path: `${__dirname}/src/projects/`,
-      },
-      __key: "projects",
+    __key: "projects",
     },
     {
       resolve: "gatsby-source-filesystem",
@@ -58,7 +67,7 @@ module.exports = {
       __key: "posts",
     },
     {
-      resolve: `gatsby-plugin-manifest`,
+    resolve: `gatsby-plugin-manifest`,
       options: {
         name: `GatsbyJS`,
         short_name: `GatsbyJS`,
@@ -71,7 +80,7 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-webpack-bundle-analyzer',
+    resolve: 'gatsby-plugin-webpack-bundle-analyzer',
       options: {
         production: true,
         disable: !process.env.ANALYZE_BUNDLE_SIZE,

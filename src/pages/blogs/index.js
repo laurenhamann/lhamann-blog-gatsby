@@ -1,12 +1,12 @@
 // /all-blogs/home
 import React, { useState} from 'react';
-import Layout from '../../components/components/layout'
 import { Link, graphql } from 'gatsby'
-import GridStyle from '../../components/styles/grid__style__'
-import HubStyle from '../../components/styles/template_hub__style__'
-import SectionDivider from '../../components/styles/section-divider__'
 import { css } from '@emotion/react'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+import Layout from '../../components/components/Global/layout'
+import GridStyle from '../../components/components/Pages/Hub/grid__style__'
+import HubStyle from '../../components/components/Pages/Hub/template_hub__style__'
+import SectionDivider from '../../components/components/Global/section-divider__'
 
 const AllBlogs = ({data}) => {
     let checkedOptions = ["React"];

@@ -1,9 +1,9 @@
 import React from 'react'
-import Layout from '../components/components/layout'
-import Form from '../components/components/form'
-import SectionDivider from '../components/styles/section-divider__'
 import styled from '@emotion/styled'
-import { clamps, margin, flex, animation } from '../components/styles/global'
+import Layout from '../components/components/Global/layout'
+import Form from '../components/components/Pages/Contact/form'
+import SectionDivider from '../components/components/Global/section-divider__'
+import { clamps, margin, flex, animation } from '../components/components/Global/Styles/__global'
 
 const ContactStyle = styled('section')`
     ${flex.flexCol}

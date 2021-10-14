@@ -3,7 +3,7 @@ import React from 'react'
 //     console.log("triggered")
 // }
 import styled from '@emotion/styled'
-import { animation, clamps} from '../../styles/global'
+import { animation, clamps} from '../../components/Global/Styles/__global'
 
 const RainbowStyle = styled('div')`
     width: ${clamps.hero_banner_width};
