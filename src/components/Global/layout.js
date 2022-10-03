@@ -3,7 +3,6 @@ import { css, Global } from "@emotion/react";
 import Header from '../Header/index';
 import Footer from '../Footer/index';
 import SEO from './helmet';
-import "../../sass/styles.scss"
 
 
 import { animation, elements, colors, clamps, typographyStyles } from './Styles/__global'
