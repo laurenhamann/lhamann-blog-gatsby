@@ -4,7 +4,6 @@ import { Link } from 'gatsby'
 import styled from '@emotion/styled'
 
 const NavStyle = styled('nav')`
-    width: 40%;
     height:auto;
     margin: auto 15px;
     ul.hidden{
@@ -64,14 +63,14 @@ const Nav = (props) => (
             /> 
                 : 
             <>
-                <NavUl 
-                    visible={props.opened}
-                    width={props.width} 
-                /> 
                 <HamburgerBtn 
                     change={props.opened}
                     click={props.click}
                 />
+                <NavUl 
+                    visible={props.opened}
+                    width={props.width} 
+                /> 
             </>
         }
     </NavStyle>

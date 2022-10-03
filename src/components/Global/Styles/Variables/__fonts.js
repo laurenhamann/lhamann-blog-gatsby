@@ -62,7 +62,6 @@ const navStyle = `
     transition: all 0.3s ease-in-out;
     &:hover,
     &.active {
-        font-weight: 700;
         color: ${colors.accent}
     }
 `
