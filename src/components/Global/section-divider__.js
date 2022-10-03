@@ -3,8 +3,8 @@ import { clamps, colors } from './Styles/__global';
 
 const SectionDivider = styled('div')`
     border-top: solid 4px ${colors.accent};
-    box-shadow: 0 -3px 9px #A8687071,
-    0 6px 8px #A8687071;
+    box-shadow: 0 -2px 3px #A8687071,
+    0 2px 3px #A8687071;
     margin: ${clamps.margin_top} 0;
 
 `
