@@ -16,7 +16,7 @@ module.exports = {
       resolve: 'gatsby-plugin-mdx',
       options: {
         defaultLayouts: {
-          default: require.resolve('./src/components/components/layout.js')
+          default: require.resolve('./src/components/Global/layout.js')
         },
         gatsbyRemarkPlugins:[{ 
           resolve: 'gatsby-remark-images', 
@@ -38,7 +38,7 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
-        path: `${__dirname}/src/components/assets/images/`,
+        path: `${__dirname}/src/assets/images/`,
       },
       __key: "images",
       },
@@ -75,7 +75,7 @@ module.exports = {
         background_color: `transparent`,
         theme_color: `#a2466c`,
         display: `standalone`,
-        icon: `src/components/assets/images/favicon.png`,
+        icon: `src/assets/images/favicon.png`,
         theme_color_in_head: false,
       },
     },

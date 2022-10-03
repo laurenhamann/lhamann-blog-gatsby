@@ -2,10 +2,10 @@ import React from 'react';
 import useProjects from '../../hooks/use-projects';
 import { Link } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
-import Layout from '../../components/components/Global/layout';
-import GridStyle from '../../components/components/Pages/Hub/grid__style__'
-import HubStyle from '../../components/components/Pages/Hub/template_hub__style__'
-import SectionDivider from '../../components/components/Global/section-divider__';
+import Layout from '../../components/Global/layout';
+import GridStyle from '../../components/Pages/Hub/grid__style__'
+import HubStyle from '../../components/Pages/Hub/template_hub__style__'
+import SectionDivider from '../../components/Global/section-divider__';
 
 const AllProjects = () => {
     const projects = useProjects();
@@ -36,10 +36,6 @@ const AllProjects = () => {
         <Layout>
             <SectionDivider />
             <HubStyle className="mid-section">
-                <div className="filter">
-                    <h1> Search Projects </h1>
-                    <button className="filter" ariaLabel="filter-projects">+</button>
-                </div>
                 <div className="grid-div">
                     {allProjects}
                 </div>

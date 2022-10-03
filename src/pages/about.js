@@ -2,11 +2,11 @@ import React from 'react';
 import styled from '@emotion/styled'
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
-import Layout from '../components/components/Global/layout';
-import SVGBorder from '../components/assets/svg/SVG-border';
-import MidLinks from '../components/components/Pages/About/mid-links'
-import SectionDivider from '../components/components/Global/section-divider__'
-import { clamps, margin, flex, animation  } from '../components/components/Global/Styles/__global'
+import Layout from '../components/Global/layout';
+import SVGBorder from '../assets/svg/SVG-border';
+import MidLinks from '../components/Pages/About/mid-links'
+import SectionDivider from '../components/Global/section-divider__'
+import { clamps, margin, flex, animation  } from '../components/Global/Styles/__global'
 
 const AboutStyle = styled('div')`
     ${animation.strokeChange}
@@ -37,7 +37,7 @@ const AboutStyle = styled('div')`
         ${margin.center}
     }
     .about-font-span {
-        animation: colorChange 4s forwards infinite;
+        animation: colorChange 10s forwards infinite;
         align-self: flex-start;
     }
     & .gatsby-image-wrapper {
@@ -87,7 +87,7 @@ const About = ({ data: {file}}) => {
                 <Img fluid={file.childImageSharp.fluid} alt="family" />
                 <SVGBorder />
                 <p> 
-                    I am a Frontend Web Developer for 5 years. I love to code and solve difficult problems. Generally, I am a very creative person. I journal constantly and always look for new creative hobbies. I have two boys and a little girl. I am a stay at home mom and freelance developer currently looking for my first offical developer position.
+                    I have been a Frontend Web Developer for 5 years. I love to code and solve difficult problems. I am a very creative person. I journal constantly and always look for new creative hobbies. I have two boys and a little girl. I am a stay at home mom and freelance developer currently looking for my first offical developer position.
                     <br />
                     I am using Gatsby for one of the first times, with a long-time knowledge of React. I enjoy all things Frontend but Javascript (and the frameworks using it) are some of my favorite aspects. 
                     <br />

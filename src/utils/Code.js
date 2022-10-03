@@ -3,7 +3,7 @@ import theme from 'prism-react-renderer/themes/nightOwlLight'
 import React from 'react'
 import styled from '@emotion/styled';
 import { copyToClipboard } from './copy-to-clipboard'
-import { clamps } from '../components/components/Global/Styles/__global'
+import { clamps } from '../components/Global/Styles/__global'
 
 
 export const Pre = styled('pre')`

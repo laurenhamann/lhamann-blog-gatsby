@@ -3,10 +3,10 @@ import React, { useState} from 'react';
 import { Link, graphql } from 'gatsby'
 import { css } from '@emotion/react'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
-import Layout from '../../components/components/Global/layout'
-import GridStyle from '../../components/components/Pages/Hub/grid__style__'
-import HubStyle from '../../components/components/Pages/Hub/template_hub__style__'
-import SectionDivider from '../../components/components/Global/section-divider__'
+import Layout from '../../components/Global/layout'
+import GridStyle from '../../components/Pages/Hub/grid__style__'
+import HubStyle from '../../components/Pages/Hub/template_hub__style__'
+import SectionDivider from '../../components/Global/section-divider__'
 
 const AllBlogs = ({data}) => {
     let checkedOptions = ["React"];
@@ -69,7 +69,6 @@ const filterOnClick = (id) => {
         <div css={css` position: relative; `}>
             <SectionDivider />
                 <HubStyle className="mid-section">
-                        {/* <FilterOptions open={open} click={isOpen} categories={categories} filterCheck={filterOnClick} /> */}
                         <h1> Search Blogs </h1>
                     <div className="grid-div">
                         {allPosts}

@@ -4,7 +4,7 @@ import styled from '@emotion/styled'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import { clamps, margin, flex} from '../../Global/Styles/__global'
 import SectionDivider from '../../Global/section-divider__';
-import usePost from '../../../../hooks/use-posts';
+import usePost from '../../../hooks/use-posts';
 
 const RecentBlogsStyle = styled('div')`
     ${flex.flexCol}

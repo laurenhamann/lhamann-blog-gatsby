@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import styled from '@emotion/styled'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
-import useProjects from '../../../../hooks/use-projects'
+import useProjects from '../../../hooks/use-projects'
 import SectionDivider from '../../Global/section-divider__';
 import SocialIcon from '../../../assets/icon';
 import { clamps, flex } from '../../Global/Styles/__global'

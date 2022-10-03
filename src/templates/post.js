@@ -2,9 +2,9 @@ import React from 'react'
 import { graphql, Link } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
-import Layout from '../components/components/Global/layout'
-import TemplateStyle from '../components/components/Pages/Templates/template__style__'
-import SectionDivider from '../components/components/Global/section-divider__'
+import Layout from '../components/Global/layout'
+import TemplateStyle from '../components/Pages/Templates/template__style__'
+import SectionDivider from '../components/Global/section-divider__'
 
 
 export const query = graphql`
