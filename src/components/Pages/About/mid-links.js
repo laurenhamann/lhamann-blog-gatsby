@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from '@emotion/styled'
 import { Link }  from 'gatsby'
-import SVG from '../../../assets/svg/mid-icon'
 import SectionDivider from '../../Global/section-divider__'
 import { clamps, flex, animation } from '../../Global/Styles/__global'
 
@@ -56,9 +55,7 @@ const MidLinks = () => (
         <SectionDivider />
         <LinkStyle>
             <div className="mid-link">
-                <Link to="/blogs" className="large-link"> Go to Blogs</Link>
-                <SVG />
-                <Link to="/projects" className="large-link"> Go to Projects</Link>
+                <Link to="/projects" className="large-link"> Back to all Projects</Link>
             </div>
         </LinkStyle>
     </>

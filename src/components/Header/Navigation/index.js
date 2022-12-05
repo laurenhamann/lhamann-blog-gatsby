@@ -20,6 +20,7 @@ const UlStyle = styled('ul')`
     justify-content: space-around;
     @media (min-width: 768px) {
         flex-direction: row;
+        width: 40vw;
     }
 `
 
@@ -35,11 +36,11 @@ const NavUl = (props) => (
                 Projects
             </Link>
         </li>
-        <li className="nav-item">
+        {/* <li className="nav-item">
             <Link to="/blogs" activeClassName="active">
                 Blogs
             </Link>
-        </li>
+        </li> */}
         <li className="nav-item">
             <Link to="/about" activeClassName="active">
                 About
