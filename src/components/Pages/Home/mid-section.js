@@ -21,10 +21,10 @@ const MidSection = () => (
         <MidSectionStyle>
             <h1> Fun Facts </h1>
             <ul>
-                <li>Frontend Developer for 5 years</li>
-                <li>Drawn to problem solving</li>
-                <li>Mom to three little ones</li>
-                <li>Being creative is my hobby</li>
+                <li>Frontend Developer for over 5 years</li>
+                <li>Problem Solving is my niche</li>
+                <li>Drawn to being creative</li>
+                <li>Learning more is my daily achievement</li>
             </ul>
             <Link to="about" className="page-links">Learn More <span className="arrow">&rarr;</span></Link>
         </MidSectionStyle>

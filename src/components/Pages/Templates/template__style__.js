@@ -10,6 +10,15 @@ const TemplateStyle = styled('article')`
     .title {
         margin-bottom: ${clamps.med_margin};
     }
+
+    div.langs {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 3px auto;
+        width: ${clamps.full_size_image};
+    }
+
     h3 {
         margin-top: ${clamps.margin_top};
     }
@@ -23,6 +32,10 @@ const TemplateStyle = styled('article')`
     .gatsby-resp-image-wrapper {
         width: ${clamps.full_size_image};
         margin: ${clamps.margin_top} auto;
+    }
+
+    .image-project {
+        border: 2px solid #000;
     }
     code {
         color: ${colors.main_comp};
