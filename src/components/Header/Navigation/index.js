@@ -1,7 +1,8 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import HamburgerBtn from './hamburger-btn'
 import { Link } from 'gatsby'
 import styled from '@emotion/styled'
+import { p_size } from '../../Global/Styles/Variables/__clamps';
 
 const NavStyle = styled('nav')`
     height:auto;
@@ -17,10 +18,11 @@ const NavStyle = styled('nav')`
 const UlStyle = styled('ul')`
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    @media (min-width: 768px) {
+    align-items: flex-end;
+    @media (min-width: 600px) {
         flex-direction: row;
         width: 40vw;
+        justify-content: space-around;
     }
 `
 
@@ -54,10 +56,12 @@ const NavUl = (props) => (
     </UlStyle>
 )
 
-const Nav = (props) => (
+const Nav = (props) => {
+    return (
     <NavStyle width={props.width}>
+    {console.log(props.width)}
         {
-            props.width > 768 
+            props.width > 600 
                 ? 
             <NavUl 
                 visible ={true}
@@ -76,6 +80,6 @@ const Nav = (props) => (
         }
     </NavStyle>
 
-);
+)};
 
 export default Nav;

@@ -3,6 +3,8 @@ import styled from '@emotion/styled'
 import { colors } from '../../Global/Styles/__global'
 
 const HamburgerStyle = styled('div')`
+    width: 15px;
+    margin: 5px 0 5px auto;
     .bar1,
     .bar2,
     .bar3{
@@ -13,14 +15,14 @@ const HamburgerStyle = styled('div')`
         transition: 0.4s;
     }
 
-    .change .bar1 {
+    .bar1Change {
         -webkit-transform: rotate(-45deg) translate(0px, 9.5px);
         transform: rotate(-50deg) translate(-2px, 9.5px);
     }
 
-    .change .bar2 {opacity: 0;}
+    .bar2Change {opacity: 0;}
 
-    .change .bar3 {
+    .bar3Change {
         -webkit-transform: rotate(45deg) translate(3px, -6px);
         transform: rotate(50deg) translate(2.1px, -6px);
     }
@@ -39,11 +41,11 @@ const HamburgerBtn = (props) => (
         onClick={props.click} onKeyDown={props.click} role = "button" ariaLabel="nav" 
         tabIndex={0}
     >
-            <div className="bar1">
+            <div className={props.change ? "bar1Change bar1" : "bar1"}>
             </div>
-            <div className="bar2">
+            <div className={props.change ? "bar2Change bar2" : "bar2"}>
             </div>
-            <div className="bar3">
+            <div className={props.change ? "bar3Change bar3" : "bar3"}>
             </div>
         </HamburgerStyle>
 )
