@@ -10,9 +10,11 @@ const HeroStyle = styled('div')`
     height: ${clamps.hero_banner_height};
     ${flex.flexRow}
     ${flex.justifyCenter}
+    gap: 12px;
     >div.rainbow-svg {
         width: ${clamps.hero_banner_width};
         height: auto;
+        margin-right: 5px;
     }
 
     .intro {
@@ -25,22 +27,13 @@ const HeroStyle = styled('div')`
     }
 `
 
-const Hero = (props) => {
+const Hero = () => {
     return (
-    <HeroStyle className="hero" width={props.width}>
-        {
-        props.width >= 768 ?
-            <>
-                <Rainbow />
-                <h3 className="intro">
-                    Frontend Web Developer -
-                </h3>
-            </>
-            :
-            <h3 className="intro">
-                Frontend Web Developer -
-            </h3>
-        }
+    <HeroStyle className="hero">
+        <Rainbow />
+        <h3 className="intro">
+            Frontend Web Developer -
+        </h3>
     </HeroStyle>
 )}
 

@@ -12,6 +12,7 @@ const ProjectTemplate = ({ data: {mdx: project} }) => {
     ))
     return (
     <Layout>
+        <hr />
         <TemplateStyle className="mid-section">
             <div className="article-flex flex-col">
                 <h1 className="title main">

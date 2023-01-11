@@ -15,6 +15,7 @@ const ProjectSectionStyle = styled('div')`
         ${flex.flexRow}
         ${flex.justifyCenter}
         flex-wrap: wrap;
+        gap: 10px;
     }
 `
 const ProjectStyle = styled('article')`
@@ -30,10 +31,10 @@ const ProjectStyle = styled('article')`
     .article-div {
         ${flex.flexCol}
         width: 30vw;
+        margin-top: 10px;
+        gap: 5px;
         > * {
-            margin-bottom: ${clamps.xs_margin};
             text-align: center !important;
-            margin-left: 10px;
         }
     }
 `

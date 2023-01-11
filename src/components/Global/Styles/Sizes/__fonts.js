@@ -13,7 +13,7 @@ const h2 = {
 }
 
 const h3 = {
-    min: "16px",
+    min: "10px",
     pef: "2.39vw",
     max: "40px"
 }
@@ -31,7 +31,7 @@ const p = {
 }
 
 const nav = {
-    min: "16px",
+    min: "12px",
     pef: "1.8vw",
     max: "24px"
 }
@@ -43,13 +43,13 @@ const anchor = {
 }
 
 const intro = {
-    min: "18px",
+    min: "14px",
     pef: "2.1vw",
     max: "36px"
 }
 
 const logo = {
-    min: "32px",
+    min: "26px",
     pef: "5.3vw",
     max: "76px"
 }

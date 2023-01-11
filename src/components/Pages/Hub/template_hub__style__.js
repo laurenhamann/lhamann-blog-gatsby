@@ -23,6 +23,8 @@ const HubStyle = styled('section') `
     .grid-div {
         ${flex.flexRow}
         flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
     }
 `
 
